@@ -89,9 +89,9 @@ object HtmlRenderer:
 
   /** @return HTML representing some additional info about the puzzle, such as density and discarded words. */
   def renderPuzzleInfo(puzzle: Puzzle, unusedWords: Seq[String]): String =
-    val infoText = s"This puzzle has a <strong>density of ${(puzzle.density * 100).round}%</strong>. " +
-      s"This is the area covered by letters. " +
-      s"If you prefer a more dense puzzle, add more words to the list above and let the tool discard the words that do not fit well. "
-    val unusedInfoText = Option.when(unusedWords.nonEmpty)(s"The following words from your list were NOT used: ${unusedWords.mkString(", ")}").mkString
+    val infoText = s"Este quebra-cabeça tem uma <strong>densidade de ${(puzzle.density * 100).round}%</strong>. " +
+    s"Esta é a área coberta por letras. " +
+      s"Se preferir um quebra-cabeça mais denso, adicione mais palavras à lista acima e deixe a ferramenta descartar as palavras que não se encaixam bem. "
+    val unusedInfoText = Option.when(unusedWords.nonEmpty)(s"As seguintes palavras da sua lista NÃO foram utilizadas: ${unusedWords.mkString(", ")}").mkString
     infoText + unusedInfoText
 
