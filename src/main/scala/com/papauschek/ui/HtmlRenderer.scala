@@ -2,6 +2,8 @@ package com.papauschek.ui
 
 import com.papauschek.puzzle.{Point, Puzzle}
 import org.scalajs.dom
+import scala.scalajs.js
+import org.scalajs.dom.html.{Select}
 
 object HtmlRenderer:
 
@@ -59,6 +61,37 @@ object HtmlRenderer:
       |  $renderedPuzzle
       |</svg>""".stripMargin
 
+  /** @return HTML representing the clues (= solution) words for this puzzle */
+  def renderQuestions(questions: Seq[String], puzzle: Puzzle, extraWords: Set[String]): String =
+    val annotation = puzzle.getAnnotation
+    val sortedAnnotationValues = annotation.values.flatten.toSeq.sortBy(_.index)
+
+    def renderDescriptions(vertical: Boolean): String = {
+      sortedAnnotationValues.filter(_.vertical == vertical).map {
+        p =>
+          val word = p.word
+          def replaceWord(str: String): String = {
+            str.toUpperCase.replace(word, "_" * word.length)
+          }
+
+          val firstQuestionFinded: String = questions.find(_.toUpperCase.contains(word)).map(replaceWord).getOrElse("")
+          println(s"HERE: - ${firstQuestionFinded}")
+
+          "<div>" + p.index + ") " + firstQuestionFinded + "</div>"
+      }.mkString("\r\n")
+    }
+
+    s"""<div class="row">
+       |  <div class="col-lg-6">
+       |    <h4>Horizontal</h4>
+       |    <p>${renderDescriptions(vertical = false)}</p>
+       |  </div>
+       |  <div class="col-lg-6">
+       |    <h4>Vertical</h4>
+       |    <p>${renderDescriptions(vertical = true)}</p>
+       |  </div>
+       |</div>
+       |""".stripMargin
 
   /** @return HTML representing the clues (= solution) words for this puzzle */
   def renderClues(puzzle: Puzzle, extraWords: Set[String]): String =
@@ -89,9 +122,7 @@ object HtmlRenderer:
 
   /** @return HTML representing some additional info about the puzzle, such as density and discarded words. */
   def renderPuzzleInfo(puzzle: Puzzle, unusedWords: Seq[String]): String =
-    val infoText = s"Este quebra-cabeça tem uma <strong>densidade de ${(puzzle.density * 100).round}%</strong>. " +
-    s"Esta é a área coberta por letras. " +
-      s"Se preferir um quebra-cabeça mais denso, adicione mais palavras à lista acima e deixe a ferramenta descartar as palavras que não se encaixam bem. "
+    val infoText = s"Este quebra-cabeça tem uma <strong>densidade de ${(puzzle.density * 100).round}%</strong>. "
     val unusedInfoText = Option.when(unusedWords.nonEmpty)(s"As seguintes palavras da sua lista NÃO foram utilizadas: ${unusedWords.mkString(", ")}").mkString
     infoText + unusedInfoText
 

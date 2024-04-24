@@ -10,10 +10,17 @@ object Globals extends js.Object:
   /** the Browser window */
   def window: Window = js.native
 
-
 @js.native
 trait Window extends js.Object:
 
   /** @return a word dictionary loaded in the Javascript window/global scope */
   @JSBracketAccess
   def apply(language: String): js.Array[String] = js.native
+
+class ConsoleLogger {
+
+  // Método para imprimir uma mensagem no console do navegador
+  def log(message: String): Unit = {
+    js.Dynamic.global.console.log(message)
+  }
+}

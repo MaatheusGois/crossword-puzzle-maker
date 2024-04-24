@@ -11,7 +11,6 @@ libraryDependencies ++= Seq(
   "com.lihaoyi" %%% "upickle" % "2.0.0"
 )
 
-// Output Directory for Main Javascript Application
-Compile / fastOptJS / artifactPath := baseDirectory.value / "docs/js/main.js"
-Compile / fullOptJS / artifactPath := baseDirectory.value / "docs/js/main.js"
-
+Compile / fastOptJS / scalaJSLinkerConfig ~= {
+  _.withSourceMap(false) // Desabilita a geração de source maps
+}

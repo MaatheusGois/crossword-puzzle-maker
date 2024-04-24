@@ -44,6 +44,8 @@ object WorkerMain:
     }.sortBy(-_.density)
     val end = System.currentTimeMillis()
     val bestPuzzle = puzzles.head
+
+    println(s"Words: ${bestPuzzle.words}")
     println(s"Best density: ${bestPuzzle.density}% - $count - ms: ${end - start}")
     bestPuzzle
 

@@ -4,75 +4,57 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Criador de Palavras Cruzadas</title>
+    <title>Criador de Palavras Cruzadas por Matheus Gois</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <style media="print">
-        .print-hidden {
-            display: none;
+        .print-hidden { display: none; }
+        .pagebreak { page-break-before: always; }
+        .container { margin: 0 !important; max-width: 2000px !important; }
+        #output-puzzle {
+            max-width: 70%;
+        }
+
+        #output-questions div div {
+            font-size: smaller;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Gerador de Palavras Cruzadas</h1>
+        <div id="title"><h1>Gerador de Palavras Cruzadas</h1></div>
 
         <div class="row print-hidden">
             <div class="col-lg-6">
-
                 <h2><i class="bi bi-1-circle"></i> Insira suas Palavras</h2>
-                <div class="mb-3">
+                    <div class="form-group">
                     <label for="input" class="form-label">
-                        Essas palavras serão usadas para criar suas palavras cruzadas.
-                        É recomendado um mínimo de 20 palavras, quanto mais, melhor!
+                        Escolha um tema, a partir dele serão escolhidos os versículos para criar suas palavras cruzadas.
                     </label>
-                    <textarea class="form-control" id="input" rows="10">
-Alcachofra
-Aspargo
-Berinjela
-Abacate
-Beterraba
-Couve Chinesa
-Brócolis
-Brócolis-Rábano
-Couve-de-Bruxelas
-Repolho
-Cenouras
-Salsifi
-Aipo
-Acelga
-Chicória
-Agrião
-Agrião-da-Alemanha
-Pepinos
-Nabo
-Alho
-Abóboras
-Jicama
-Couve
-Kohlrabi
-Alface
-Almeirão
-Feijões
-Cogumelos
-Cebolas
-Pastinagas
-Ervilhas
-Pimentões
-Batatas
-Abóbora
-Radicchio
-Rabanete
-Ruibarbo
-Espinafre
-Abóbora
-Tomatillo
-Tomates
-Nabos
-Abobrinha
-                </textarea>
+                    <select class="form-control" id="input">
+                        <option value="criacao_mundo">Criação do Mundo</option>
+                        <option value="amor_deus">Amor de Deus</option>
+                        <option value="vida_jesus_cristo">Vida de Jesus Cristo</option>
+                        <option value="perdao">Perdão</option>
+                        <option value="salvacao">Salvação</option>
+                        <option value="fe">Fé</option>
+                        <option value="oracao">Oração</option>
+                        <option value="espirito_santo">Espírito Santo</option>
+                        <option value="justica">Justiça</option>
+                        <option value="esperanca">Esperança</option>
+                        <option value="graca">Graça</option>
+                        <option value="misericordia">Misericórdia</option>
+                        <option value="proposito_vida">Propósito da Vida</option>
+                        <option value="reino_deus">Reino de Deus</option>
+                        <option value="ressurreicao">Ressurreição</option>
+                        <option value="amor_proximo">Amor ao Próximo</option>
+                        <option value="pacienca">Paciência</option>
+                        <option value="humildade">Humildade</option>
+                        <option value="fidelidade">Fidelidade</option>
+                        <option value="cuidado_necessitados">Cuidado com os Necessitados</option>
+                    </select>
                 </div>
             </div>
 
@@ -133,7 +115,7 @@ Abobrinha
                 </div>
 
                 <div id="output-puzzle" class="mb-3"></div>
-
+                <div id="output-questions"></div>
             </div>
         </div>
 
@@ -147,10 +129,8 @@ Abobrinha
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="form-group">
-                            <select class="form-control" id="language-select">
+                            <select class="form-control mb-3" id="language-select">
                                 <option value="pt">Português</option>
-                                <option value="en">Inglês</option>
-                                <option value="de">Alemão</option>
                             </select>
                         </div>
                     </div>
@@ -162,19 +142,12 @@ Abobrinha
 
             </div>
         </div>
+        <div class="pagebreak"> </div>
 
         <div class="row invisible" id="clues-row">
             <div class="col">
-
-                <h2><i class="
-
-bi bi-5-circle print-hidden"></i> Solução & Dicas</h2>
-                <p>
-                    Esta é a solução do quebra-cabeça. Você pode usá-la para escrever as dicas para o quebra-cabeça.
-                    Copie a seguinte lista para um editor de texto e substitua as palavras por pistas.
-                </p>
+                <h2><i class="bi bi-5-circle print-hidden"></i> Solução</h2>
                 <div id="output-clues"></div>
-
             </div>
         </div>
 
@@ -183,12 +156,18 @@ bi bi-5-circle print-hidden"></i> Solução & Dicas</h2>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-    <script src="./data/croisee/german.js"></script>
-    <script src="./data/croisee/english.js"></script>
     <script src="./data/croisee/portuguese.js"></script>
+    <script src="./data/croisee/versicles-pt.js"></script>
+    
     <script src="./js/main.js"></script>
     <script type="text/javascript">UIMain.main();</script>
 
 </body>
+
+<style>
+    .col-lg-6, .col {
+        margin-bottom: 20px;
+    }
+</style>
 
 </html>

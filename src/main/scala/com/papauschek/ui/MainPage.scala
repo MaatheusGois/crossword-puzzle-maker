@@ -1,5 +1,6 @@
 package com.papauschek.ui
 
+import scala.scalajs.js
 import com.papauschek.puzzle.{Puzzle, PuzzleConfig, PuzzleWords}
 import com.papauschek.ui.{Globals, HtmlRenderer}
 import org.scalajs.dom
@@ -8,6 +9,7 @@ import org.scalajs.dom.html.{Button, Div, Input, Select, TextArea}
 import upickle.default.*
 import concurrent.ExecutionContext.Implicits.global
 import scala.scalajs.js.annotation.JSExport
+import scala.util.Random
 
 /** the main user interface based on the `index.html` */
 class MainPage:
@@ -15,11 +17,15 @@ class MainPage:
   private var initialPuzzle: Puzzle = Puzzle.empty(PuzzleConfig())
   private var refinedPuzzle: Puzzle = initialPuzzle
 
+  private var mainInputQuestions: Seq[String] = Nil
   private var mainInputWords: Seq[String] = Nil
 
-  private val inputElement = dom.document.getElementById("input").asInstanceOf[TextArea]
+  private val titleElement = dom.document.getElementById("title").asInstanceOf[Div]
+  private val inputElement = dom.document.getElementById("input").asInstanceOf[Select]
   private val outputPuzzleElement = dom.document.getElementById("output-puzzle")
   private val outputCluesElement = dom.document.getElementById("output-clues")
+  private val outputQuestionsElement = dom.document.getElementById("output-questions")
+  
   private val resultInfoElement = dom.document.getElementById("result-info")
 
   private val generateButton = dom.document.getElementById("generate-button").asInstanceOf[Button]
@@ -39,7 +45,7 @@ class MainPage:
   private val resultRow = dom.document.getElementById("result-row").asInstanceOf[Div]
   private val refineRow = dom.document.getElementById("refine-row").asInstanceOf[Div]
   private val cluesRow = dom.document.getElementById("clues-row").asInstanceOf[Div]
-  
+
   generateButton.addEventListener("click", { _ => generateSolution() })
   refineButton.addEventListener("click", { _ => refineSolution() })
   printButton.addEventListener("click", { _ => printSolution() })
@@ -50,8 +56,14 @@ class MainPage:
 
   /** read the words from the user interface and generate the puzzle in the background using web workers */
   def generateSolution(): Unit =
-    val rawInputWords = inputElement.value.linesIterator.map(normalizeWord).toSeq
-    val inputWords = rawInputWords.filter(word => word.nonEmpty && !word.startsWith("#"))
+    val newTitle = inputElement.options.toSeq(inputElement.selectedIndex).innerHTML
+    titleElement.innerHTML = s"<h1>${newTitle}</h1>"
+
+    val rawInputWords = js.Dynamic.global.BiblicalThemesPT.asInstanceOf[js.Dictionary[js.Array[String]]](inputElement.value).toSeq
+    mainInputQuestions = rawInputWords
+    val randomWords = rawInputWords.flatMap(selectRandomWord)
+    val inputWords = randomWords.filter(word => word.nonEmpty && !word.startsWith("#"))
+
     if (inputWords.nonEmpty) {
       mainInputWords = PuzzleWords.sortByBest(inputWords)
       val puzzleConfig = PuzzleConfig(
@@ -89,6 +101,7 @@ class MainPage:
     val extraWords = refinedPuzzle.words -- initialPuzzle.words
     resultInfoElement.innerHTML = HtmlRenderer.renderPuzzleInfo(refinedPuzzle, unusedWords)
     outputCluesElement.innerHTML = HtmlRenderer.renderClues(refinedPuzzle, extraWords)
+    outputQuestionsElement.innerHTML = HtmlRenderer.renderQuestions(mainInputQuestions, refinedPuzzle, extraWords)
 
   /** add words from a chosen dictionary to the puzzle */
   def refineSolution(): Unit =
@@ -101,11 +114,11 @@ class MainPage:
   def printSolution(): Unit =
     dom.window.print()
 
-  /** normalize words and expand german umlauts */
-  private def normalizeWord(word: String): String =
-    word.trim.toUpperCase.
-      replace("Ä", "AE").
-      replace("Ö", "OE").
-      replace("Ü", "UE").
-      replace("ß", "SS")
+  /** select random and normalize words */
+  private def selectRandomWord(sentence: String): Option[String] = {
+    val words = sentence.replaceAll("\\(.*?\\)", "").split("\\s+")
+    val cleanedWords = words.map(_.replaceAll("[.,;]", "").toUpperCase)
+    val filteredWords = cleanedWords.filter(_.length > 4)
+    if (filteredWords.nonEmpty) Some(filteredWords(Random.nextInt(filteredWords.length))) else None
+  }
 
