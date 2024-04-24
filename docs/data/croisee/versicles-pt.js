@@ -236,4 +236,28 @@ const BiblicalThemesPT = {
         "Então, enquanto temos tempo, façamos bem a todos, mas principalmente aos domésticos da fé. (Gálatas 6:10)",
         "Quem, pois, tiver bens do mundo, e, vendo o seu irmão necessitado, lhe cerrar as suas entranhas, como estará nele o amor de Deus? (1 João 3:17)",
     ],
+    "sabedoria": [
+        "O temor do Senhor é o princípio do conhecimento; os loucos desprezam a sabedoria e a instrução. (Provérbios 1:7)",
+        "Bem-aventurado o homem que acha sabedoria, e o homem que adquire conhecimento; (Provérbios 3:13)",
+        "O temor do Senhor é o princípio da sabedoria, e o conhecimento do Santo a prudência. (Provérbios 9:10)",
+        "Mas a sabedoria que do alto vem é, primeiramente pura, depois pacífica, moderada, tratável, cheia de misericórdia e de bons frutos, sem parcialidade, e sem hipocrisia. (Tiago 3:17)",
+        "E, se algum de vós tem falta de sabedoria, peça-a a Deus, que a todos dá liberalmente, e o não lança em rosto, e ser-lhe-á dada. (Tiago 1:5)",
+        "Porque a palavra da cruz é loucura para os que perecem; mas para nós, que somos salvos, é o poder de Deus. (1 Coríntios 1:18)",
+        "Mas nós pregamos a Cristo crucificado, que é escândalo para os judeus, e loucura para os gregos. (1 Coríntios 1:23)",
+        "Mas Deus escolheu as coisas loucas deste mundo para confundir as sábias; e Deus escolheu as coisas fracas deste mundo para confundir as fortes; (1 Coríntios 1:27)",
+        "Para que nenhuma carne se glorie perante ele. (1 Coríntios 1:29)",
+        "Graça e paz da parte de Deus nosso Pai, e do Senhor Jesus Cristo. (1 Coríntios 1:3)",
+    ],
+    "unidade": [
+        "Rogo-vos, porém, irmãos, pelo nome de nosso Senhor Jesus Cristo, que digais todos uma mesma coisa, e que não haja entre vós dissensões; antes sejais unidos em um mesmo pensamento e em um mesmo parecer. (1 Coríntios 1:10)",
+        "E, sobre tudo isto, revesti-vos de amor, que é o vínculo da perfeição. (Colossenses 3:14)",
+        "Mas o que nos confirma convosco em Cristo, e o que nos ungiu, é Deus, (2 Coríntios 1:21)",
+        "Para que todos sejam um, como tu, ó Pai, o és em mim, e eu em ti; que também eles sejam um em nós, para que o mundo creia que tu me enviaste. (João 17:21)",
+        "E andai em amor, como também Cristo vos amou, e se entregou a si mesmo por nós, em oferta e sacrifício a Deus, em cheiro suave. (Efésios 5:2)",
+        "E, finalmente, sede todos de um mesmo sentimento, compassivos, amando os irmãos, entranhavelmente misericordiosos e afáveis. (1 Pedro 3:8)",
+        "E era um o coração e a alma da multidão dos que criam, e ninguém dizia que coisa alguma do que possuía era sua própria, mas todas as coisas lhes eram comuns. (Atos 4:32)",
+        "E era um o coração e a alma da multidão dos que criam, e ninguém dizia que coisa alguma do que possuía era sua própria, mas todas as coisas lhes eram comuns. (Atos 4:32)",
+        "Louvando a Deus, e caindo na graça de todo o povo. E todos os dias acrescentava o Senhor à igreja aqueles que se haviam de salvar. (Atos 2:47)",
+        "Paulo (chamado apóstolo de Jesus Cristo, pela vontade de Deus), e o irmão Sóstenes, (1 Coríntios 1:1)",
+    ]
 };
