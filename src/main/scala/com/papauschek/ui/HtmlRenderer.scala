@@ -77,7 +77,9 @@ object HtmlRenderer:
           val firstQuestionFinded: String = questions.find(_.toUpperCase.contains(word)).map(replaceWord).getOrElse("")
           println(s"HERE: - ${firstQuestionFinded}")
 
-          "<div>" + p.index + ") " + firstQuestionFinded + "</div>"
+          val formattedWord = if (firstQuestionFinded.isEmpty) s"<strong>Essa palavra você tem que descobrir sozinho :)</strong>" else firstQuestionFinded
+
+          "<div>" + p.index + ") " + formattedWord + "</div>"
       }.mkString("\r\n")
     }
 
