@@ -1,4 +1,4 @@
-package com.papauschek.ui
+package com.crosswordmaker.ui
 
 import scala.scalajs.js
 import scala.scalajs.js.annotation.*

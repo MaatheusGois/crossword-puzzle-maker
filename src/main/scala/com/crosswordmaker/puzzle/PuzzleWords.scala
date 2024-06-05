@@ -1,4 +1,4 @@
-package com.papauschek.puzzle
+package com.crosswordmaker.puzzle
 
 object PuzzleWords {
 

@@ -1,16 +1,16 @@
+import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
+
 enablePlugins(ScalaJSPlugin)
 
-name := "crossword-puzzle-maker"
+name := "crosswordmaker"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.2.0-SNAPSHOT"
 
-scalaVersion := "2.12.16"
+scalaVersion := "3.2.0"
 
 libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "2.1.0",
   "com.lihaoyi" %%% "upickle" % "2.0.0"
 )
 
-Compile / fastOptJS / scalaJSLinkerConfig ~= {
-  _.withSourceMap(false) // Desabilita a geração de source maps
-}
+Compile / fastOptJS / crossTarget := file("docs/js")

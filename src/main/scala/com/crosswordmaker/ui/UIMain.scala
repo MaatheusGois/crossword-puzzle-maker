@@ -1,6 +1,6 @@
-package com.papauschek.ui
+package com.crosswordmaker.ui
 
-import com.papauschek.ui.MainPage
+import com.crosswordmaker.ui.MainPage
 import org.scalajs.dom
 import org.scalajs.dom.html.{Button, Div, Input, Select}
 import org.scalajs.dom.{Element, Worker}

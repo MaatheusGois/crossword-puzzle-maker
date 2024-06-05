@@ -1,6 +1,6 @@
-package com.papauschek.ui
+package com.crosswordmaker.ui
 
-import com.papauschek.puzzle.{Puzzle, PuzzleConfig}
+import com.crosswordmaker.puzzle.{Puzzle, PuzzleConfig}
 import org.scalajs.dom.{Element, Worker}
 import scala.concurrent.{Future, Promise}
 import upickle.default.*

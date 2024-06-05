@@ -1,9 +1,11 @@
-package com.papauschek.ui
+package com.crosswordmaker.ui
 
-import com.papauschek.puzzle.{Point, Puzzle}
+import com.crosswordmaker.puzzle.{Point, Puzzle}
 import org.scalajs.dom
 import scala.scalajs.js
 import org.scalajs.dom.html.{Select}
+import scala.collection.immutable.Seq
+import scala.util.matching.Regex
 
 object HtmlRenderer:
 
@@ -61,39 +63,56 @@ object HtmlRenderer:
       |  $renderedPuzzle
       |</svg>""".stripMargin
 
-  /** @return HTML representing the clues (= solution) words for this puzzle */
-  def renderQuestions(questions: Seq[String], puzzle: Puzzle, extraWords: Set[String]): String =
+  def renderQuestions(questions: Seq[String], puzzle: Puzzle, extraWords: Set[String]): String = {
     val annotation = puzzle.getAnnotation
     val sortedAnnotationValues = annotation.values.flatten.toSeq.sortBy(_.index)
+
+    // Conjunto para armazenar as palavras já usadas em pistas
+    var usedWords = Set.empty[String]
 
     def renderDescriptions(vertical: Boolean): String = {
       sortedAnnotationValues.filter(_.vertical == vertical).map {
         p =>
           val word = p.word
-          def replaceWord(str: String): String = {
-            str.toUpperCase.replace(word, "_" * word.length)
-          }
+          // Verifica se a palavra já foi usada em alguma pista já processada
+          if (!usedWords.exists(_.toUpperCase.contains(word.toUpperCase))) {
+            def replaceWord(str: String): String = {
+              str.toUpperCase.replace(word.toUpperCase, "_____" * word.length)
+            }
 
-          val firstQuestionFinded: String = questions.find(_.toUpperCase.contains(word)).map(replaceWord).getOrElse("")
-          println(s"HERE: - ${firstQuestionFinded}")
+            val regex = "\\(.*?\\)".r
+            val firstQuestionFinded: String = questions
+              .find(_.toUpperCase.contains(word.toUpperCase))
+              .map(replaceWord)
+              .getOrElse("")
+              .replace("(", "<strong>(")
+              .replace(")", ")</strong>")
 
-          val formattedWord = if (firstQuestionFinded.isEmpty) s"<strong>Essa palavra você tem que descobrir sozinho :)</strong>" else firstQuestionFinded
+            // Adiciona a palavra ao conjunto de palavras usadas
+            usedWords += word.toUpperCase
 
-          "<div>" + p.index + ") " + formattedWord + "</div>"
+            // Retorna a descrição da pista apenas se a palavra não foi usada em outra pista
+            if (!firstQuestionFinded.isEmpty) {
+              s"""<div  class="mb-4">${p.index}) $firstQuestionFinded</div>"""
+            } else ""
+          } else ""
       }.mkString("\r\n")
     }
 
     s"""<div class="row">
-       |  <div class="col-lg-6">
-       |    <h4>Horizontal</h4>
-       |    <p>${renderDescriptions(vertical = false)}</p>
-       |  </div>
-       |  <div class="col-lg-6">
-       |    <h4>Vertical</h4>
-       |    <p>${renderDescriptions(vertical = true)}</p>
-       |  </div>
-       |</div>
-       |""".stripMargin
+      |  <div class="col-lg-6">
+      |    <h4>Horizontal</h4>
+      |    <p>${renderDescriptions(vertical = false)}</p>
+      |  </div>
+      |  <div class="col-lg-6">
+      |    <h4>Vertical</h4>
+      |    <p>${renderDescriptions(vertical = true)}</p>
+      |  </div>
+      |</div>
+      |""".stripMargin
+  }
+
+
 
   /** @return HTML representing the clues (= solution) words for this puzzle */
   def renderClues(puzzle: Puzzle, extraWords: Set[String]): String =

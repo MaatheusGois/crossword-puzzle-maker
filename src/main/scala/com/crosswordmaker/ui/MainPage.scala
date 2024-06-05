@@ -1,8 +1,8 @@
-package com.papauschek.ui
+package com.crosswordmaker.ui
 
 import scala.scalajs.js
-import com.papauschek.puzzle.{Puzzle, PuzzleConfig, PuzzleWords}
-import com.papauschek.ui.{Globals, HtmlRenderer}
+import com.crosswordmaker.puzzle.{Puzzle, PuzzleConfig, PuzzleWords}
+import com.crosswordmaker.ui.{Globals, HtmlRenderer}
 import org.scalajs.dom
 import org.scalajs.dom.Worker
 import org.scalajs.dom.html.{Button, Div, Input, Select, TextArea}
@@ -60,6 +60,7 @@ class MainPage:
     titleElement.innerHTML = s"<h1>${newTitle}</h1>"
 
     val rawInputWords = js.Dynamic.global.BiblicalThemesPT.asInstanceOf[js.Dictionary[js.Array[String]]](inputElement.value).toSeq
+
     mainInputQuestions = rawInputWords
     val randomWords = rawInputWords.flatMap(selectRandomWord)
     val inputWords = randomWords.filter(word => word.nonEmpty && !word.startsWith("#"))

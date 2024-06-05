@@ -1,4 +1,4 @@
-let UIMain,WorkerMain;
+let WorkerMain,UIMain;
 (function(){
 'use strict';
 var $linkingInfo = Object.freeze({
@@ -1037,105 +1037,105 @@ var $d_J = new $TypeData().initPrim(null, "J", "long", $ac_J, (void 0));
 var $d_F = new $TypeData().initPrim(0.0, "F", "float", $ac_F, Float32Array);
 var $d_D = new $TypeData().initPrim(0.0, "D", "double", $ac_D, Float64Array);
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Point(underlying) {
-  this.Lcom_papauschek_puzzle_Point__f_underlying = 0;
-  this.Lcom_papauschek_puzzle_Point__f_underlying = underlying
+function $c_Lcom_crosswordmaker_puzzle_Point(underlying) {
+  this.Lcom_crosswordmaker_puzzle_Point__f_underlying = 0;
+  this.Lcom_crosswordmaker_puzzle_Point__f_underlying = underlying
 }
-$c_Lcom_papauschek_puzzle_Point.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_Point.prototype.constructor = $c_Lcom_papauschek_puzzle_Point;
+$c_Lcom_crosswordmaker_puzzle_Point.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_Point.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Point;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Point() {
+function $h_Lcom_crosswordmaker_puzzle_Point() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Point.prototype = $c_Lcom_papauschek_puzzle_Point.prototype;
-$c_Lcom_papauschek_puzzle_Point.prototype.hashCode__I = (function() {
-  var this$ = this.Lcom_papauschek_puzzle_Point__f_underlying;
+$h_Lcom_crosswordmaker_puzzle_Point.prototype = $c_Lcom_crosswordmaker_puzzle_Point.prototype;
+$c_Lcom_crosswordmaker_puzzle_Point.prototype.hashCode__I = (function() {
+  var this$ = this.Lcom_crosswordmaker_puzzle_Point__f_underlying;
   return this$
 });
-$c_Lcom_papauschek_puzzle_Point.prototype.equals__O__Z = (function(x$0) {
-  return $m_Lcom_papauschek_puzzle_Point$().equals$extension__I__O__Z(this.Lcom_papauschek_puzzle_Point__f_underlying, x$0)
+$c_Lcom_crosswordmaker_puzzle_Point.prototype.equals__O__Z = (function(x$0) {
+  return $m_Lcom_crosswordmaker_puzzle_Point$().equals$extension__I__O__Z(this.Lcom_crosswordmaker_puzzle_Point__f_underlying, x$0)
 });
-$c_Lcom_papauschek_puzzle_Point.prototype.toString__T = (function() {
-  return $m_Lcom_papauschek_puzzle_Point$().toString$extension__I__T(this.Lcom_papauschek_puzzle_Point__f_underlying)
+$c_Lcom_crosswordmaker_puzzle_Point.prototype.toString__T = (function() {
+  return $m_Lcom_crosswordmaker_puzzle_Point$().toString$extension__I__T(this.Lcom_crosswordmaker_puzzle_Point__f_underlying)
 });
-function $as_Lcom_papauschek_puzzle_Point(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_puzzle_Point) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.puzzle.Point"))
+function $as_Lcom_crosswordmaker_puzzle_Point(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_puzzle_Point) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.puzzle.Point"))
 }
-function $isArrayOf_Lcom_papauschek_puzzle_Point(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_puzzle_Point)))
+function $isArrayOf_Lcom_crosswordmaker_puzzle_Point(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_puzzle_Point)))
 }
-function $asArrayOf_Lcom_papauschek_puzzle_Point(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_puzzle_Point(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.puzzle.Point;", depth))
+function $asArrayOf_Lcom_crosswordmaker_puzzle_Point(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_puzzle_Point(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.puzzle.Point;", depth))
 }
-var $d_Lcom_papauschek_puzzle_Point = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Point: 0
-}, false, "com.papauschek.puzzle.Point", {
-  Lcom_papauschek_puzzle_Point: 1,
+var $d_Lcom_crosswordmaker_puzzle_Point = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Point: 0
+}, false, "com.crosswordmaker.puzzle.Point", {
+  Lcom_crosswordmaker_puzzle_Point: 1,
   O: 1
 });
-$c_Lcom_papauschek_puzzle_Point.prototype.$classData = $d_Lcom_papauschek_puzzle_Point;
+$c_Lcom_crosswordmaker_puzzle_Point.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Point;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Point$() {
+function $c_Lcom_crosswordmaker_puzzle_Point$() {
   /*<skip>*/
 }
-$c_Lcom_papauschek_puzzle_Point$.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_Point$.prototype.constructor = $c_Lcom_papauschek_puzzle_Point$;
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Point$;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Point$() {
+function $h_Lcom_crosswordmaker_puzzle_Point$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Point$.prototype = $c_Lcom_papauschek_puzzle_Point$.prototype;
-$c_Lcom_papauschek_puzzle_Point$.prototype.apply__I__I__I = (function(x, y) {
+$h_Lcom_crosswordmaker_puzzle_Point$.prototype = $c_Lcom_crosswordmaker_puzzle_Point$.prototype;
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.apply__I__I__I = (function(x, y) {
   return ((65535 & ((x << 16) >> 16)) | (((y << 16) >> 16) << 16))
 });
-$c_Lcom_papauschek_puzzle_Point$.prototype.equals$extension__I__O__Z = (function(this$, x$0) {
-  if ((x$0 instanceof $c_Lcom_papauschek_puzzle_Point)) {
-    var x$0$2 = ((x$0 === null) ? $uI(null) : $as_Lcom_papauschek_puzzle_Point(x$0).Lcom_papauschek_puzzle_Point__f_underlying);
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.equals$extension__I__O__Z = (function(this$, x$0) {
+  if ((x$0 instanceof $c_Lcom_crosswordmaker_puzzle_Point)) {
+    var x$0$2 = ((x$0 === null) ? $uI(null) : $as_Lcom_crosswordmaker_puzzle_Point(x$0).Lcom_crosswordmaker_puzzle_Point__f_underlying);
     return (this$ === x$0$2)
   } else {
     return false
   }
 });
-$c_Lcom_papauschek_puzzle_Point$.prototype.x$extension__I__I = (function(this$) {
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.x$extension__I__I = (function(this$) {
   var x = (((65535 & this$) << 16) >> 16);
   return x
 });
-$c_Lcom_papauschek_puzzle_Point$.prototype.y$extension__I__I = (function(this$) {
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.y$extension__I__I = (function(this$) {
   var x = ((((this$ >>> 16) | 0) << 16) >> 16);
   return x
 });
-$c_Lcom_papauschek_puzzle_Point$.prototype.toString$extension__I__T = (function(this$) {
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.toString$extension__I__T = (function(this$) {
   return (((("Point(" + this.x$extension__I__I(this$)) + ", ") + this.y$extension__I__I(this$)) + ")")
 });
-var $d_Lcom_papauschek_puzzle_Point$ = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Point$: 0
-}, false, "com.papauschek.puzzle.Point$", {
-  Lcom_papauschek_puzzle_Point$: 1,
+var $d_Lcom_crosswordmaker_puzzle_Point$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Point$: 0
+}, false, "com.crosswordmaker.puzzle.Point$", {
+  Lcom_crosswordmaker_puzzle_Point$: 1,
   O: 1
 });
-$c_Lcom_papauschek_puzzle_Point$.prototype.$classData = $d_Lcom_papauschek_puzzle_Point$;
-var $n_Lcom_papauschek_puzzle_Point$;
-function $m_Lcom_papauschek_puzzle_Point$() {
-  if ((!$n_Lcom_papauschek_puzzle_Point$)) {
-    $n_Lcom_papauschek_puzzle_Point$ = new $c_Lcom_papauschek_puzzle_Point$()
+$c_Lcom_crosswordmaker_puzzle_Point$.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Point$;
+var $n_Lcom_crosswordmaker_puzzle_Point$;
+function $m_Lcom_crosswordmaker_puzzle_Point$() {
+  if ((!$n_Lcom_crosswordmaker_puzzle_Point$)) {
+    $n_Lcom_crosswordmaker_puzzle_Point$ = new $c_Lcom_crosswordmaker_puzzle_Point$()
   };
-  return $n_Lcom_papauschek_puzzle_Point$
+  return $n_Lcom_crosswordmaker_puzzle_Point$
 }
-function $p_Lcom_papauschek_puzzle_PuzzleWords$__rateWord$1__sci_Map__T__D($thiz, frequency$1, word) {
+function $p_Lcom_crosswordmaker_puzzle_PuzzleWords$__rateWord$1__sci_Map__T__D($thiz, frequency$1, word) {
   return $uD($m_sc_StringOps$().map$extension__T__F1__sci_IndexedSeq(word, frequency$1).sum__s_math_Numeric__O($m_s_math_Numeric$DoubleIsFractional$()))
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_PuzzleWords$() {
+function $c_Lcom_crosswordmaker_puzzle_PuzzleWords$() {
   /*<skip>*/
 }
-$c_Lcom_papauschek_puzzle_PuzzleWords$.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_PuzzleWords$.prototype.constructor = $c_Lcom_papauschek_puzzle_PuzzleWords$;
+$c_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_PuzzleWords$;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_PuzzleWords$() {
+function $h_Lcom_crosswordmaker_puzzle_PuzzleWords$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_PuzzleWords$.prototype = $c_Lcom_papauschek_puzzle_PuzzleWords$.prototype;
-$c_Lcom_papauschek_puzzle_PuzzleWords$.prototype.sortByBest__sci_Seq__sci_Seq = (function(words) {
+$h_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype = $c_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype;
+$c_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype.sortByBest__sci_Seq__sci_Seq = (function(words) {
   var allChars = $as_sc_IterableOnceOps(words.flatten__F1__O(new $c_sjsr_AnonFunction1(((s) => {
     var s$1 = $as_T(s);
     return $m_s_Predef$().wrapString__T__sci_WrappedString(s$1)
@@ -1193,41 +1193,41 @@ $c_Lcom_papauschek_puzzle_PuzzleWords$.prototype.sortByBest__sci_Seq__sci_Seq = 
   var frequency = b.result__sci_HashMap();
   var f = new $c_sjsr_AnonFunction1(((word) => {
     var word$1 = $as_T(word);
-    return $p_Lcom_papauschek_puzzle_PuzzleWords$__rateWord$1__sci_Map__T__D(this, frequency, word$1)
+    return $p_Lcom_crosswordmaker_puzzle_PuzzleWords$__rateWord$1__sci_Map__T__D(this, frequency, word$1)
   }));
   var ord = $m_s_math_Ordering$DeprecatedDoubleOrdering$();
   return $as_sci_Seq($as_sc_SeqOps($f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(words, f, ord)).reverse__O())
 });
-var $d_Lcom_papauschek_puzzle_PuzzleWords$ = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_PuzzleWords$: 0
-}, false, "com.papauschek.puzzle.PuzzleWords$", {
-  Lcom_papauschek_puzzle_PuzzleWords$: 1,
+var $d_Lcom_crosswordmaker_puzzle_PuzzleWords$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_PuzzleWords$: 0
+}, false, "com.crosswordmaker.puzzle.PuzzleWords$", {
+  Lcom_crosswordmaker_puzzle_PuzzleWords$: 1,
   O: 1
 });
-$c_Lcom_papauschek_puzzle_PuzzleWords$.prototype.$classData = $d_Lcom_papauschek_puzzle_PuzzleWords$;
-var $n_Lcom_papauschek_puzzle_PuzzleWords$;
-function $m_Lcom_papauschek_puzzle_PuzzleWords$() {
-  if ((!$n_Lcom_papauschek_puzzle_PuzzleWords$)) {
-    $n_Lcom_papauschek_puzzle_PuzzleWords$ = new $c_Lcom_papauschek_puzzle_PuzzleWords$()
+$c_Lcom_crosswordmaker_puzzle_PuzzleWords$.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleWords$;
+var $n_Lcom_crosswordmaker_puzzle_PuzzleWords$;
+function $m_Lcom_crosswordmaker_puzzle_PuzzleWords$() {
+  if ((!$n_Lcom_crosswordmaker_puzzle_PuzzleWords$)) {
+    $n_Lcom_crosswordmaker_puzzle_PuzzleWords$ = new $c_Lcom_crosswordmaker_puzzle_PuzzleWords$()
   };
-  return $n_Lcom_papauschek_puzzle_PuzzleWords$
+  return $n_Lcom_crosswordmaker_puzzle_PuzzleWords$
 }
-function $p_Lcom_papauschek_ui_HtmlRenderer$__renderCell$1__Lcom_papauschek_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__I__T($thiz, puzzle$1, showSolution$1, showPartialSolution$1, annotation$1, partialPoints$1, x, y) {
+function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderCell$1__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__I__T($thiz, puzzle$1, showSolution$1, showPartialSolution$1, annotation$1, partialPoints$1, x, y) {
   var x4 = puzzle$1.getChar__I__I__C(x, y);
   if ((x4 === 32)) {
     return ""
   };
-  var showLetter = (showSolution$1 || (showPartialSolution$1 && partialPoints$1.contains__O__Z(new $c_Lcom_papauschek_puzzle_Point($m_Lcom_papauschek_puzzle_Point$().apply__I__I__I(x, y)))));
+  var showLetter = (showSolution$1 || (showPartialSolution$1 && partialPoints$1.contains__O__Z(new $c_Lcom_crosswordmaker_puzzle_Point($m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I(x, y)))));
   var svgLetter = (showLetter ? new $c_s_Some((((((("<text x=\"" + (Math.imul(10, x) + 4.5)) + "\" y=\"") + (((-2) + Math.imul(10, ((1 + y) | 0))) | 0)) + "\" text-anchor=\"middle\" class=\"letter\">") + $bC(x4)) + "</text>")) : $m_s_None$());
   matchResult1: {
     var svgAnnotation;
-    var x1 = annotation$1.get__O__s_Option(new $c_Lcom_papauschek_puzzle_Point($m_Lcom_papauschek_puzzle_Point$().apply__I__I__I(x, y)));
+    var x1 = annotation$1.get__O__s_Option(new $c_Lcom_crosswordmaker_puzzle_Point($m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I(x, y)));
     if ((x1 instanceof $c_s_Some)) {
       var anno = $as_sci_Seq($as_s_Some(x1).s_Some__f_value);
       if ((!anno.isEmpty__Z())) {
         var this$3 = $as_sc_IterableOnceOps(anno.map__F1__O(new $c_sjsr_AnonFunction1(((_$1) => {
-          var _$1$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(_$1);
-          return _$1$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_index
+          var _$1$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(_$1);
+          return _$1$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index
         }))));
         var annotationIndices = $f_sc_IterableOnceOps__mkString__T__T__T__T(this$3, "", ",", "");
         var value = (((((("<text x=\"" + (Math.imul(10, x) + 0.8)) + "\" y=\"") + (Math.imul(10, ((1 + y) | 0)) - 0.8)) + "\" class=\"annotation\">") + annotationIndices) + "</text>");
@@ -1244,8 +1244,8 @@ function $p_Lcom_papauschek_ui_HtmlRenderer$__renderCell$1__Lcom_papauschek_puzz
   var this$8 = $m_s_Option$().option2Iterable__s_Option__sc_Iterable(svgLetter);
   return ((("" + svgCell) + $$x1) + $f_sc_IterableOnceOps__mkString__T__T__T__T(this$8, "", "", ""))
 }
-function $p_Lcom_papauschek_ui_HtmlRenderer$__renderHeight$1__Lcom_papauschek_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__T($thiz, puzzle$2, showSolution$2, showPartialSolution$2, annotation$2, partialPoints$2, y) {
-  var end = puzzle$2.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderHeight$1__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__T($thiz, puzzle$2, showSolution$2, showPartialSolution$2, annotation$2, partialPoints$2, y) {
+  var end = puzzle$2.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var isEmpty = (end <= 0);
   if (isEmpty) {
     var scala$collection$immutable$Range$$numRangeElements = 0
@@ -1261,73 +1261,87 @@ function $p_Lcom_papauschek_ui_HtmlRenderer$__renderHeight$1__Lcom_papauschek_pu
   var it = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement, isEmpty);
   while (it.sci_RangeIterator__f__hasNext) {
     var arg1 = it.next__I();
-    var elem = $p_Lcom_papauschek_ui_HtmlRenderer$__renderCell$1__Lcom_papauschek_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__I__T($thiz, puzzle$2, showSolution$2, showPartialSolution$2, annotation$2, partialPoints$2, arg1, y);
+    var elem = $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderCell$1__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__I__T($thiz, puzzle$2, showSolution$2, showPartialSolution$2, annotation$2, partialPoints$2, arg1, y);
     b.addOne__O__scm_Growable(elem)
   };
   var this$6 = $as_sci_IndexedSeq(b.result__O());
   return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$6, "", "\r\n", "")
 }
-function $p_Lcom_papauschek_ui_HtmlRenderer$__replaceWord$1__T__T__T($thiz, word$1, str) {
+function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__replaceWord$1__T__T__T($thiz, word$2, str) {
   var this$2 = $as_T(str.toUpperCase());
-  var replacement = $m_sc_StringOps$().$times$extension__T__I__T("_", word$1.length);
-  return $as_T(this$2.split(word$1).join(replacement))
+  var target = $as_T(word$2.toUpperCase());
+  var replacement = $m_sc_StringOps$().$times$extension__T__I__T("_____", word$2.length);
+  return $as_T(this$2.split(target).join(replacement))
 }
-function $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__Z__T($thiz, questions$1, sortedAnnotationValues$1, vertical) {
-  var this$9 = $as_sc_IterableOnceOps($as_sc_IterableOps(sortedAnnotationValues$1.filter__F1__O(new $c_sjsr_AnonFunction1(((_$4) => {
-    var _$4$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(_$4);
-    return (_$4$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical === vertical)
+function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__sr_ObjectRef__Z__T($thiz, questions$1, sortedAnnotationValues$1, usedWords$1, vertical) {
+  var this$12 = $as_sc_IterableOnceOps($as_sc_IterableOps(sortedAnnotationValues$1.filter__F1__O(new $c_sjsr_AnonFunction1(((_$4) => {
+    var _$4$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(_$4);
+    return (_$4$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical === vertical)
   })))).map__F1__O(new $c_sjsr_AnonFunction1(((p) => {
-    var p$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(p);
-    var word = p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_word;
-    var this$4 = questions$1.find__F1__s_Option(new $c_sjsr_AnonFunction1(((_$5) => {
+    var p$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(p);
+    var word = p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word;
+    if ((!$as_sci_Set(usedWords$1.sr_ObjectRef__f_elem).exists__F1__Z(new $c_sjsr_AnonFunction1(((_$5) => {
       var _$5$1 = $as_T(_$5);
       var this$3 = $as_T(_$5$1.toUpperCase());
-      return ($uI(this$3.indexOf(word)) !== (-1))
-    })));
-    if (this$4.isEmpty__Z()) {
-      var this$5 = $m_s_None$()
+      var s = $as_T(word.toUpperCase());
+      return ($uI(this$3.indexOf(s)) !== (-1))
+    }))))) {
+      $ct_s_util_matching_Regex__T__sci_Seq__(new $c_s_util_matching_Regex(), "\\(.*?\\)", $m_sci_Nil$());
+      var this$7 = questions$1.find__F1__s_Option(new $c_sjsr_AnonFunction1(((_$6) => {
+        var _$6$1 = $as_T(_$6);
+        var this$6 = $as_T(_$6$1.toUpperCase());
+        var s$1 = $as_T(word.toUpperCase());
+        return ($uI(this$6.indexOf(s$1)) !== (-1))
+      })));
+      if (this$7.isEmpty__Z()) {
+        var this$8 = $m_s_None$()
+      } else {
+        var arg1 = this$7.get__O();
+        var str = $as_T(arg1);
+        var this$8 = new $c_s_Some($p_Lcom_crosswordmaker_ui_HtmlRenderer$__replaceWord$1__T__T__T($thiz, word, str))
+      };
+      var this$9 = $as_T((this$8.isEmpty__Z() ? "" : this$8.get__O()));
+      var this$10 = $as_T(this$9.split("(").join("<strong>("));
+      var firstQuestionFinded = $as_T(this$10.split(")").join(")</strong>"));
+      var this$11 = $as_sci_Set(usedWords$1.sr_ObjectRef__f_elem);
+      var elem = $as_T(word.toUpperCase());
+      var ev$1 = $as_sci_Set(this$11.incl__O__sci_SetOps(elem));
+      usedWords$1.sr_ObjectRef__f_elem = ev$1;
+      ev$1 = null;
+      return ((firstQuestionFinded !== "") ? (((("<div  class=\"mb-4\">" + p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index) + ") ") + firstQuestionFinded) + "</div>") : "")
     } else {
-      var arg1 = this$4.get__O();
-      var str = $as_T(arg1);
-      var this$5 = new $c_s_Some($p_Lcom_papauschek_ui_HtmlRenderer$__replaceWord$1__T__T__T($thiz, word, str))
-    };
-    var firstQuestionFinded = $as_T((this$5.isEmpty__Z() ? "" : this$5.get__O()));
-    var x = ("HERE: - " + firstQuestionFinded);
-    var this$7 = $m_s_Console$();
-    var this$8 = this$7.out__Ljava_io_PrintStream();
-    this$8.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
-    var formattedWord = ((firstQuestionFinded === "") ? "<strong>Essa palavra voc\u00ea tem que descobrir sozinho :)</strong>" : firstQuestionFinded);
-    return (((("<div>" + p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_index) + ") ") + formattedWord) + "</div>")
+      return ""
+    }
   }))));
-  return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$9, "", "\r\n", "")
+  return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$12, "", "\r\n", "")
 }
-function $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T($thiz, extraWords$1, sortedAnnotationValues$2, vertical) {
-  var this$3 = $as_sc_IterableOnceOps($as_sc_IterableOps(sortedAnnotationValues$2.filter__F1__O(new $c_sjsr_AnonFunction1(((_$7) => {
-    var _$7$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(_$7);
-    return (_$7$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical === vertical)
+function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T($thiz, extraWords$1, sortedAnnotationValues$2, vertical) {
+  var this$3 = $as_sc_IterableOnceOps($as_sc_IterableOps(sortedAnnotationValues$2.filter__F1__O(new $c_sjsr_AnonFunction1(((_$8) => {
+    var _$8$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(_$8);
+    return (_$8$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical === vertical)
   })))).map__F1__O(new $c_sjsr_AnonFunction1(((p) => {
-    var p$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(p);
-    var formattedWord = (extraWords$1.contains__O__Z(p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_word) ? (("<strong>" + p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_word) + "</strong>") : p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_word);
-    return (((("<div>" + p$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_index) + ") ") + formattedWord) + "</div>")
+    var p$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(p);
+    var formattedWord = (extraWords$1.contains__O__Z(p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word) ? (("<strong>" + p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word) + "</strong>") : p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word);
+    return (((("<div>" + p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index) + ") ") + formattedWord) + "</div>")
   }))));
   return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$3, "", "\r\n", "")
 }
 /** @constructor */
-function $c_Lcom_papauschek_ui_HtmlRenderer$() {
+function $c_Lcom_crosswordmaker_ui_HtmlRenderer$() {
   /*<skip>*/
 }
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype = new $h_O();
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.constructor = $c_Lcom_papauschek_ui_HtmlRenderer$;
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.constructor = $c_Lcom_crosswordmaker_ui_HtmlRenderer$;
 /** @constructor */
-function $h_Lcom_papauschek_ui_HtmlRenderer$() {
+function $h_Lcom_crosswordmaker_ui_HtmlRenderer$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_HtmlRenderer$.prototype = $c_Lcom_papauschek_ui_HtmlRenderer$.prototype;
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderPuzzle__Lcom_papauschek_puzzle_Puzzle__Z__Z__T = (function(puzzle, showSolution, showPartialSolution) {
+$h_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype = $c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype;
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.renderPuzzle__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__T = (function(puzzle, showSolution, showPartialSolution) {
   var annotation = puzzle.getAnnotation__sci_Map();
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   var partialPoints = puzzle.getCharsShownInPartialSolution__s_util_Random__D__sci_Set($ct_s_util_Random__I__(new $c_s_util_Random(), this$2.productHash__s_Product__I__Z__I(puzzle, (-889275714), false)), 0.3);
-  var end = puzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+  var end = puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
   var isEmpty = (end <= 0);
   if (isEmpty) {
     var scala$collection$immutable$Range$$numRangeElements = 0
@@ -1343,46 +1357,48 @@ $c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderPuzzle__Lcom_papauschek_puzz
   var it = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement, isEmpty);
   while (it.sci_RangeIterator__f__hasNext) {
     var arg1 = it.next__I();
-    var elem = $p_Lcom_papauschek_ui_HtmlRenderer$__renderHeight$1__Lcom_papauschek_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__T(this, puzzle, showSolution, showPartialSolution, annotation, partialPoints, arg1);
+    var elem = $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderHeight$1__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__sci_Map__sci_Set__I__T(this, puzzle, showSolution, showPartialSolution, annotation, partialPoints, arg1);
     b.addOne__O__scm_Growable(elem)
   };
   var this$8 = $as_sci_IndexedSeq(b.result__O());
   var renderedPuzzle = $f_sc_IterableOnceOps__mkString__T__T__T__T(this$8, "", "\r\n", "");
-  var x = (((((("<svg viewBox=\"-1 -1 " + ((2 + Math.imul(10, puzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width)) | 0)) + " ") + ((2 + Math.imul(10, puzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height)) | 0)) + "\">\r\n      |  <style>\r\n      |    .annotation {\r\n      |      font: 3px sans-serif;\r\n      |      fill: #999999;\r\n      |    }\r\n      |    .letter {\r\n      |      font: 8px sans-serif;\r\n      |      fill: black;\r\n      |    }\r\n      |  </style>\r\n      |  ") + renderedPuzzle) + "\r\n      |</svg>");
+  var x = (((((("<svg viewBox=\"-1 -1 " + ((2 + Math.imul(10, puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width)) | 0)) + " ") + ((2 + Math.imul(10, puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height)) | 0)) + "\">\r\n      |  <style>\r\n      |    .annotation {\r\n      |      font: 3px sans-serif;\r\n      |      fill: #999999;\r\n      |    }\r\n      |    .letter {\r\n      |      font: 8px sans-serif;\r\n      |      fill: black;\r\n      |    }\r\n      |  </style>\r\n      |  ") + renderedPuzzle) + "\r\n      |</svg>");
   return $m_sc_StringOps$().stripMargin$extension__T__C__T(x, 124)
 });
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderQuestions__sci_Seq__Lcom_papauschek_puzzle_Puzzle__sci_Set__T = (function(questions, puzzle, extraWords) {
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.renderQuestions__sci_Seq__Lcom_crosswordmaker_puzzle_Puzzle__sci_Set__T = (function(questions, puzzle, extraWords) {
   var annotation = puzzle.getAnnotation__sci_Map();
   var this$3 = new $c_sc_MapOps$$anon$1(annotation);
   var this$2 = $m_s_$less$colon$less$();
   var asIterable = this$2.s_$less$colon$less$__f_singleton;
   var this$5 = $as_sc_IterableOnceOps($f_sc_IterableOps__flatMap__F1__O(this$3, asIterable)).toSeq__sci_Seq();
   var f = new $c_sjsr_AnonFunction1(((_$3) => {
-    var _$3$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(_$3);
-    return _$3$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_index
+    var _$3$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(_$3);
+    return _$3$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index
   }));
   var ord = $m_s_math_Ordering$Int$();
   var sortedAnnotationValues = $as_sci_Seq($f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(this$5, f, ord));
-  var x = (((("<div class=\"row\">\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Horizontal</h4>\r\n       |    <p>" + $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__Z__T(this, questions, sortedAnnotationValues, false)) + "</p>\r\n       |  </div>\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Vertical</h4>\r\n       |    <p>") + $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__Z__T(this, questions, sortedAnnotationValues, true)) + "</p>\r\n       |  </div>\r\n       |</div>\r\n       |");
+  var elem = $m_sci_Set$EmptySet$();
+  var usedWords = new $c_sr_ObjectRef(elem);
+  var x = (((("<div class=\"row\">\r\n      |  <div class=\"col-lg-6\">\r\n      |    <h4>Horizontal</h4>\r\n      |    <p>" + $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__sr_ObjectRef__Z__T(this, questions, sortedAnnotationValues, usedWords, false)) + "</p>\r\n      |  </div>\r\n      |  <div class=\"col-lg-6\">\r\n      |    <h4>Vertical</h4>\r\n      |    <p>") + $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq__sci_Seq__sr_ObjectRef__Z__T(this, questions, sortedAnnotationValues, usedWords, true)) + "</p>\r\n      |  </div>\r\n      |</div>\r\n      |");
   return $m_sc_StringOps$().stripMargin$extension__T__C__T(x, 124)
 });
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderClues__Lcom_papauschek_puzzle_Puzzle__sci_Set__T = (function(puzzle, extraWords) {
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.renderClues__Lcom_crosswordmaker_puzzle_Puzzle__sci_Set__T = (function(puzzle, extraWords) {
   var annotation = puzzle.getAnnotation__sci_Map();
   var this$3 = new $c_sc_MapOps$$anon$1(annotation);
   var this$2 = $m_s_$less$colon$less$();
   var asIterable = this$2.s_$less$colon$less$__f_singleton;
   var this$5 = $as_sc_IterableOnceOps($f_sc_IterableOps__flatMap__F1__O(this$3, asIterable)).toSeq__sci_Seq();
-  var f = new $c_sjsr_AnonFunction1(((_$6) => {
-    var _$6$1 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(_$6);
-    return _$6$1.Lcom_papauschek_puzzle_AnnotatedPoint__f_index
+  var f = new $c_sjsr_AnonFunction1(((_$7) => {
+    var _$7$1 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(_$7);
+    return _$7$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index
   }));
   var ord = $m_s_math_Ordering$Int$();
   var sortedAnnotationValues = $as_sci_Seq($f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(this$5, f, ord));
-  var x = (((("<div class=\"row\">\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Horizontal</h4>\r\n       |    <p>" + $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T(this, extraWords, sortedAnnotationValues, false)) + "</p>\r\n       |  </div>\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Vertical</h4>\r\n       |    <p>") + $p_Lcom_papauschek_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T(this, extraWords, sortedAnnotationValues, true)) + "</p>\r\n       |  </div>\r\n       |</div>\r\n       |");
+  var x = (((("<div class=\"row\">\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Horizontal</h4>\r\n       |    <p>" + $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T(this, extraWords, sortedAnnotationValues, false)) + "</p>\r\n       |  </div>\r\n       |  <div class=\"col-lg-6\">\r\n       |    <h4>Vertical</h4>\r\n       |    <p>") + $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$2__sci_Set__sci_Seq__Z__T(this, extraWords, sortedAnnotationValues, true)) + "</p>\r\n       |  </div>\r\n       |</div>\r\n       |");
   return $m_sc_StringOps$().stripMargin$extension__T__C__T(x, 124)
 });
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderPuzzleInfo__Lcom_papauschek_puzzle_Puzzle__sci_Seq__T = (function(puzzle, unusedWords) {
-  var x = (100.0 * puzzle.Lcom_papauschek_puzzle_Puzzle__f_density);
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.renderPuzzleInfo__Lcom_crosswordmaker_puzzle_Puzzle__sci_Seq__T = (function(puzzle, unusedWords) {
+  var x = (100.0 * puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_density);
   var this$5 = $m_RTLong$();
   var value = $uD(Math.round(x));
   var lo = this$5.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
@@ -1394,21 +1410,21 @@ $c_Lcom_papauschek_ui_HtmlRenderer$.prototype.renderPuzzleInfo__Lcom_papauschek_
   var unusedInfoText = $f_sc_IterableOnceOps__mkString__T__T__T__T(this$7, "", "", "");
   return (infoText + unusedInfoText)
 });
-var $d_Lcom_papauschek_ui_HtmlRenderer$ = new $TypeData().initClass({
-  Lcom_papauschek_ui_HtmlRenderer$: 0
-}, false, "com.papauschek.ui.HtmlRenderer$", {
-  Lcom_papauschek_ui_HtmlRenderer$: 1,
+var $d_Lcom_crosswordmaker_ui_HtmlRenderer$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_HtmlRenderer$: 0
+}, false, "com.crosswordmaker.ui.HtmlRenderer$", {
+  Lcom_crosswordmaker_ui_HtmlRenderer$: 1,
   O: 1
 });
-$c_Lcom_papauschek_ui_HtmlRenderer$.prototype.$classData = $d_Lcom_papauschek_ui_HtmlRenderer$;
-var $n_Lcom_papauschek_ui_HtmlRenderer$;
-function $m_Lcom_papauschek_ui_HtmlRenderer$() {
-  if ((!$n_Lcom_papauschek_ui_HtmlRenderer$)) {
-    $n_Lcom_papauschek_ui_HtmlRenderer$ = new $c_Lcom_papauschek_ui_HtmlRenderer$()
+$c_Lcom_crosswordmaker_ui_HtmlRenderer$.prototype.$classData = $d_Lcom_crosswordmaker_ui_HtmlRenderer$;
+var $n_Lcom_crosswordmaker_ui_HtmlRenderer$;
+function $m_Lcom_crosswordmaker_ui_HtmlRenderer$() {
+  if ((!$n_Lcom_crosswordmaker_ui_HtmlRenderer$)) {
+    $n_Lcom_crosswordmaker_ui_HtmlRenderer$ = new $c_Lcom_crosswordmaker_ui_HtmlRenderer$()
   };
-  return $n_Lcom_papauschek_ui_HtmlRenderer$
+  return $n_Lcom_crosswordmaker_ui_HtmlRenderer$
 }
-function $p_Lcom_papauschek_ui_MainPage__selectRandomWord__T__s_Option($thiz, sentence) {
+function $p_Lcom_crosswordmaker_ui_MainPage__selectRandomWord__T__s_Option($thiz, sentence) {
   var this$1 = $f_T__replaceAll__T__T__T(sentence, "\\(.*?\\)", "");
   var words = $f_T__split__T__I__AT(this$1, "\\s+", 0);
   var f = ((_$9) => {
@@ -1522,59 +1538,59 @@ function $p_Lcom_papauschek_ui_MainPage__selectRandomWord__T__s_Option($thiz, se
   }
 }
 /** @constructor */
-function $c_Lcom_papauschek_ui_MainPage() {
-  this.Lcom_papauschek_ui_MainPage__f_initialPuzzle = null;
-  this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle = null;
-  this.Lcom_papauschek_ui_MainPage__f_mainInputQuestions = null;
-  this.Lcom_papauschek_ui_MainPage__f_mainInputWords = null;
-  this.Lcom_papauschek_ui_MainPage__f_titleElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_inputElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_outputPuzzleElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_outputCluesElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_outputQuestionsElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_resultInfoElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_generateButton = null;
-  this.Lcom_papauschek_ui_MainPage__f_generateSpinner = null;
-  this.Lcom_papauschek_ui_MainPage__f_resultPartialElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_resultFullElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_widthInputElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_heightInputElement = null;
-  this.Lcom_papauschek_ui_MainPage__f_languageSelect = null;
-  this.Lcom_papauschek_ui_MainPage__f_resultRow = null;
-  this.Lcom_papauschek_ui_MainPage__f_refineRow = null;
-  this.Lcom_papauschek_ui_MainPage__f_cluesRow = null;
-  var $$x1 = $m_Lcom_papauschek_puzzle_Puzzle$();
-  $m_Lcom_papauschek_puzzle_PuzzleConfig$();
-  $m_Lcom_papauschek_puzzle_PuzzleConfig$();
+function $c_Lcom_crosswordmaker_ui_MainPage() {
+  this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_titleElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputPuzzleElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputCluesElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputQuestionsElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultInfoElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_generateButton = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_generateSpinner = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_languageSelect = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultRow = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_refineRow = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_cluesRow = null;
+  var $$x1 = $m_Lcom_crosswordmaker_puzzle_Puzzle$();
+  $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
+  $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
   var width = 18;
-  $m_Lcom_papauschek_puzzle_PuzzleConfig$();
+  $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
   var height = 18;
-  $m_Lcom_papauschek_puzzle_PuzzleConfig$();
+  $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
   var wrapping = false;
-  this.Lcom_papauschek_ui_MainPage__f_initialPuzzle = $$x1.empty__Lcom_papauschek_puzzle_PuzzleConfig__Lcom_papauschek_puzzle_Puzzle(new $c_Lcom_papauschek_puzzle_PuzzleConfig(width, height, wrapping));
-  this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle = this.Lcom_papauschek_ui_MainPage__f_initialPuzzle;
-  this.Lcom_papauschek_ui_MainPage__f_mainInputQuestions = $m_s_package$().s_package$__f_Nil;
-  this.Lcom_papauschek_ui_MainPage__f_mainInputWords = $m_s_package$().s_package$__f_Nil;
-  this.Lcom_papauschek_ui_MainPage__f_titleElement = document.getElementById("title");
-  this.Lcom_papauschek_ui_MainPage__f_inputElement = document.getElementById("input");
-  this.Lcom_papauschek_ui_MainPage__f_outputPuzzleElement = document.getElementById("output-puzzle");
-  this.Lcom_papauschek_ui_MainPage__f_outputCluesElement = document.getElementById("output-clues");
-  this.Lcom_papauschek_ui_MainPage__f_outputQuestionsElement = document.getElementById("output-questions");
-  this.Lcom_papauschek_ui_MainPage__f_resultInfoElement = document.getElementById("result-info");
-  this.Lcom_papauschek_ui_MainPage__f_generateButton = document.getElementById("generate-button");
-  this.Lcom_papauschek_ui_MainPage__f_generateSpinner = document.getElementById("generate-spinner");
+  this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle = $$x1.empty__Lcom_crosswordmaker_puzzle_PuzzleConfig__Lcom_crosswordmaker_puzzle_Puzzle(new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig(width, height, wrapping));
+  this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle = this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle;
+  this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = $m_s_package$().s_package$__f_Nil;
+  this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = $m_s_package$().s_package$__f_Nil;
+  this.Lcom_crosswordmaker_ui_MainPage__f_titleElement = document.getElementById("title");
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputElement = document.getElementById("input");
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputPuzzleElement = document.getElementById("output-puzzle");
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputCluesElement = document.getElementById("output-clues");
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputQuestionsElement = document.getElementById("output-questions");
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultInfoElement = document.getElementById("result-info");
+  this.Lcom_crosswordmaker_ui_MainPage__f_generateButton = document.getElementById("generate-button");
+  this.Lcom_crosswordmaker_ui_MainPage__f_generateSpinner = document.getElementById("generate-spinner");
   var resultWithoutElement = document.getElementById("result-without");
-  this.Lcom_papauschek_ui_MainPage__f_resultPartialElement = document.getElementById("result-partial");
-  this.Lcom_papauschek_ui_MainPage__f_resultFullElement = document.getElementById("result-full");
-  this.Lcom_papauschek_ui_MainPage__f_widthInputElement = document.getElementById("width");
-  this.Lcom_papauschek_ui_MainPage__f_heightInputElement = document.getElementById("height");
-  this.Lcom_papauschek_ui_MainPage__f_languageSelect = document.getElementById("language-select");
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement = document.getElementById("result-partial");
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement = document.getElementById("result-full");
+  this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement = document.getElementById("width");
+  this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement = document.getElementById("height");
+  this.Lcom_crosswordmaker_ui_MainPage__f_languageSelect = document.getElementById("language-select");
   var refineButton = document.getElementById("refine-button");
   var printButton = document.getElementById("print-button");
-  this.Lcom_papauschek_ui_MainPage__f_resultRow = document.getElementById("result-row");
-  this.Lcom_papauschek_ui_MainPage__f_refineRow = document.getElementById("refine-row");
-  this.Lcom_papauschek_ui_MainPage__f_cluesRow = document.getElementById("clues-row");
-  this.Lcom_papauschek_ui_MainPage__f_generateButton.addEventListener("click", ((_$1) => {
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultRow = document.getElementById("result-row");
+  this.Lcom_crosswordmaker_ui_MainPage__f_refineRow = document.getElementById("refine-row");
+  this.Lcom_crosswordmaker_ui_MainPage__f_cluesRow = document.getElementById("clues-row");
+  this.Lcom_crosswordmaker_ui_MainPage__f_generateButton.addEventListener("click", ((_$1) => {
     this.generateSolution__V()
   }));
   refineButton.addEventListener("click", ((_$2) => {
@@ -1586,92 +1602,92 @@ function $c_Lcom_papauschek_ui_MainPage() {
   resultWithoutElement.addEventListener("click", ((_$4) => {
     this.renderSolution__V()
   }));
-  this.Lcom_papauschek_ui_MainPage__f_resultPartialElement.addEventListener("click", ((_$5) => {
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement.addEventListener("click", ((_$5) => {
     this.renderSolution__V()
   }));
-  this.Lcom_papauschek_ui_MainPage__f_resultFullElement.addEventListener("click", ((_$6) => {
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement.addEventListener("click", ((_$6) => {
     this.renderSolution__V()
   }))
 }
-$c_Lcom_papauschek_ui_MainPage.prototype = new $h_O();
-$c_Lcom_papauschek_ui_MainPage.prototype.constructor = $c_Lcom_papauschek_ui_MainPage;
+$c_Lcom_crosswordmaker_ui_MainPage.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.constructor = $c_Lcom_crosswordmaker_ui_MainPage;
 /** @constructor */
-function $h_Lcom_papauschek_ui_MainPage() {
+function $h_Lcom_crosswordmaker_ui_MainPage() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_MainPage.prototype = $c_Lcom_papauschek_ui_MainPage.prototype;
-$c_Lcom_papauschek_ui_MainPage.prototype.generateSolution__V = (function() {
-  var domList = this.Lcom_papauschek_ui_MainPage__f_inputElement.options;
+$h_Lcom_crosswordmaker_ui_MainPage.prototype = $c_Lcom_crosswordmaker_ui_MainPage.prototype;
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.generateSolution__V = (function() {
+  var domList = this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.options;
   var this$2 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-  var $$x1 = $m_sci_Seq$().from__sc_IterableOnce__sci_Seq(this$2).apply__I__O($uI(this.Lcom_papauschek_ui_MainPage__f_inputElement.selectedIndex)).innerHTML;
+  var $$x1 = $m_sci_Seq$().from__sc_IterableOnce__sci_Seq(this$2).apply__I__O($uI(this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.selectedIndex)).innerHTML;
   var newTitle = $as_T($$x1);
-  this.Lcom_papauschek_ui_MainPage__f_titleElement.innerHTML = (("<h1>" + newTitle) + "</h1>");
+  this.Lcom_crosswordmaker_ui_MainPage__f_titleElement.innerHTML = (("<h1>" + newTitle) + "</h1>");
   var dict = BiblicalThemesPT;
-  var key = $as_T(this.Lcom_papauschek_ui_MainPage__f_inputElement.value);
+  var key = $as_T(this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.value);
   if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().sjs_js_WrappedDictionary$Cache$__f_safeHasOwnProperty.call(dict, key)))) {
     throw $ct_ju_NoSuchElementException__T__(new $c_ju_NoSuchElementException(), ("key not found: " + key))
   };
   var array = dict[key];
   var rawInputWords = $m_sci_IndexedSeq$().from__sc_IterableOnce__sci_IndexedSeq($ct_sjs_js_WrappedArray__sjs_js_Array__(new $c_sjs_js_WrappedArray(), array));
-  this.Lcom_papauschek_ui_MainPage__f_mainInputQuestions = rawInputWords;
+  this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = rawInputWords;
   var randomWords = $as_sci_Seq(rawInputWords.flatMap__F1__O(new $c_sjsr_AnonFunction1(((sentence) => {
     var sentence$1 = $as_T(sentence);
-    return $p_Lcom_papauschek_ui_MainPage__selectRandomWord__T__s_Option(this, sentence$1)
+    return $p_Lcom_crosswordmaker_ui_MainPage__selectRandomWord__T__s_Option(this, sentence$1)
   }))));
   var inputWords = $as_sci_Seq(randomWords.filter__F1__O(new $c_sjsr_AnonFunction1(((word) => {
     var word$1 = $as_T(word);
     return ((word$1 !== "") && (!((word$1.length >= 0) && ($as_T(word$1.substring(0, 1)) === "#"))))
   }))));
   if ((!inputWords.isEmpty__Z())) {
-    this.Lcom_papauschek_ui_MainPage__f_mainInputWords = $m_Lcom_papauschek_puzzle_PuzzleWords$().sortByBest__sci_Seq__sci_Seq(inputWords);
-    $m_Lcom_papauschek_puzzle_PuzzleConfig$();
-    var width = $doubleToInt($uD(this.Lcom_papauschek_ui_MainPage__f_widthInputElement.valueAsNumber));
-    var height = $doubleToInt($uD(this.Lcom_papauschek_ui_MainPage__f_heightInputElement.valueAsNumber));
-    $m_Lcom_papauschek_puzzle_PuzzleConfig$();
+    this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = $m_Lcom_crosswordmaker_puzzle_PuzzleWords$().sortByBest__sci_Seq__sci_Seq(inputWords);
+    $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
+    var width = $doubleToInt($uD(this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement.valueAsNumber));
+    var height = $doubleToInt($uD(this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement.valueAsNumber));
+    $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
     var wrapping = false;
-    var puzzleConfig = new $c_Lcom_papauschek_puzzle_PuzzleConfig(width, height, wrapping);
-    this.Lcom_papauschek_ui_MainPage__f_generateSpinner.classList.remove("invisible");
-    this.Lcom_papauschek_ui_MainPage__f_generateButton.classList.add("invisible");
-    var $$x2 = $m_Lcom_papauschek_ui_PuzzleGenerator$();
-    $m_Lcom_papauschek_ui_NewPuzzleMessage$();
-    var words = this.Lcom_papauschek_ui_MainPage__f_mainInputWords;
-    $$x2.send__Lcom_papauschek_ui_NewPuzzleMessage__s_concurrent_Future(new $c_Lcom_papauschek_ui_NewPuzzleMessage(puzzleConfig, words)).foreach__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1(((puzzles) => {
+    var puzzleConfig = new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig(width, height, wrapping);
+    this.Lcom_crosswordmaker_ui_MainPage__f_generateSpinner.classList.remove("invisible");
+    this.Lcom_crosswordmaker_ui_MainPage__f_generateButton.classList.add("invisible");
+    var $$x2 = $m_Lcom_crosswordmaker_ui_PuzzleGenerator$();
+    $m_Lcom_crosswordmaker_ui_NewPuzzleMessage$();
+    var words = this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords;
+    $$x2.send__Lcom_crosswordmaker_ui_NewPuzzleMessage__s_concurrent_Future(new $c_Lcom_crosswordmaker_ui_NewPuzzleMessage(puzzleConfig, words)).foreach__F1__s_concurrent_ExecutionContext__V(new $c_sjsr_AnonFunction1(((puzzles) => {
       var puzzles$1 = $as_sci_Seq(puzzles);
-      this.Lcom_papauschek_ui_MainPage__f_generateSpinner.classList.add("invisible");
-      this.Lcom_papauschek_ui_MainPage__f_generateButton.classList.remove("invisible");
-      this.Lcom_papauschek_ui_MainPage__f_resultRow.classList.remove("invisible");
-      this.Lcom_papauschek_ui_MainPage__f_refineRow.classList.remove("invisible");
-      this.Lcom_papauschek_ui_MainPage__f_cluesRow.classList.remove("invisible");
+      this.Lcom_crosswordmaker_ui_MainPage__f_generateSpinner.classList.add("invisible");
+      this.Lcom_crosswordmaker_ui_MainPage__f_generateButton.classList.remove("invisible");
+      this.Lcom_crosswordmaker_ui_MainPage__f_resultRow.classList.remove("invisible");
+      this.Lcom_crosswordmaker_ui_MainPage__f_refineRow.classList.remove("invisible");
+      this.Lcom_crosswordmaker_ui_MainPage__f_cluesRow.classList.remove("invisible");
       var f = new $c_sjsr_AnonFunction1(((_$7) => {
-        var _$7$1 = $as_Lcom_papauschek_puzzle_Puzzle(_$7);
-        return _$7$1.Lcom_papauschek_puzzle_Puzzle__f_density
+        var _$7$1 = $as_Lcom_crosswordmaker_puzzle_Puzzle(_$7);
+        return _$7$1.Lcom_crosswordmaker_puzzle_Puzzle__f_density
       }));
       var cmp = $m_s_math_Ordering$DeprecatedDoubleOrdering$();
-      this.Lcom_papauschek_ui_MainPage__f_initialPuzzle = $as_Lcom_papauschek_puzzle_Puzzle($f_sc_IterableOnceOps__maxBy__F1__s_math_Ordering__O(puzzles$1, f, cmp));
-      this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle = this.Lcom_papauschek_ui_MainPage__f_initialPuzzle;
+      this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle = $as_Lcom_crosswordmaker_puzzle_Puzzle($f_sc_IterableOnceOps__maxBy__F1__s_math_Ordering__O(puzzles$1, f, cmp));
+      this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle = this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle;
       this.renderSolution__V()
     })), $m_s_concurrent_ExecutionContext$().global__s_concurrent_ExecutionContextExecutor())
   }
 });
-$c_Lcom_papauschek_ui_MainPage.prototype.renderSolution__V = (function() {
-  var showPartialSolution = $uZ(this.Lcom_papauschek_ui_MainPage__f_resultPartialElement.checked);
-  var showFullSolution = $uZ(this.Lcom_papauschek_ui_MainPage__f_resultFullElement.checked);
-  this.Lcom_papauschek_ui_MainPage__f_outputPuzzleElement.innerHTML = $m_Lcom_papauschek_ui_HtmlRenderer$().renderPuzzle__Lcom_papauschek_puzzle_Puzzle__Z__Z__T(this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle, showFullSolution, showPartialSolution);
-  var $$x1 = this.Lcom_papauschek_ui_MainPage__f_mainInputWords;
-  var \u03b41$ = this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle.Lcom_papauschek_puzzle_Puzzle__f_words;
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.renderSolution__V = (function() {
+  var showPartialSolution = $uZ(this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement.checked);
+  var showFullSolution = $uZ(this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement.checked);
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputPuzzleElement.innerHTML = $m_Lcom_crosswordmaker_ui_HtmlRenderer$().renderPuzzle__Lcom_crosswordmaker_puzzle_Puzzle__Z__Z__T(this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle, showFullSolution, showPartialSolution);
+  var $$x1 = this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords;
+  var \u03b41$ = this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
   var unusedWords = $as_sci_Seq($$x1.filterNot__F1__O(new $c_sjsr_AnonFunction1(((elem) => {
     var elem$1 = $as_T(elem);
     return \u03b41$.contains__O__Z(elem$1)
   }))));
-  var this$1 = this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle.Lcom_papauschek_puzzle_Puzzle__f_words;
-  var that = this.Lcom_papauschek_ui_MainPage__f_initialPuzzle.Lcom_papauschek_puzzle_Puzzle__f_words;
+  var this$1 = this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
+  var that = this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
   var extraWords = $as_sci_Set(this$1.removedAll__sc_IterableOnce__sci_SetOps(that));
-  this.Lcom_papauschek_ui_MainPage__f_resultInfoElement.innerHTML = $m_Lcom_papauschek_ui_HtmlRenderer$().renderPuzzleInfo__Lcom_papauschek_puzzle_Puzzle__sci_Seq__T(this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle, unusedWords);
-  this.Lcom_papauschek_ui_MainPage__f_outputCluesElement.innerHTML = $m_Lcom_papauschek_ui_HtmlRenderer$().renderClues__Lcom_papauschek_puzzle_Puzzle__sci_Set__T(this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle, extraWords);
-  this.Lcom_papauschek_ui_MainPage__f_outputQuestionsElement.innerHTML = $m_Lcom_papauschek_ui_HtmlRenderer$().renderQuestions__sci_Seq__Lcom_papauschek_puzzle_Puzzle__sci_Set__T(this.Lcom_papauschek_ui_MainPage__f_mainInputQuestions, this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle, extraWords)
+  this.Lcom_crosswordmaker_ui_MainPage__f_resultInfoElement.innerHTML = $m_Lcom_crosswordmaker_ui_HtmlRenderer$().renderPuzzleInfo__Lcom_crosswordmaker_puzzle_Puzzle__sci_Seq__T(this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle, unusedWords);
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputCluesElement.innerHTML = $m_Lcom_crosswordmaker_ui_HtmlRenderer$().renderClues__Lcom_crosswordmaker_puzzle_Puzzle__sci_Set__T(this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle, extraWords);
+  this.Lcom_crosswordmaker_ui_MainPage__f_outputQuestionsElement.innerHTML = $m_Lcom_crosswordmaker_ui_HtmlRenderer$().renderQuestions__sci_Seq__Lcom_crosswordmaker_puzzle_Puzzle__sci_Set__T(this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions, this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle, extraWords)
 });
-$c_Lcom_papauschek_ui_MainPage.prototype.refineSolution__V = (function() {
-  var language = $as_T(this.Lcom_papauschek_ui_MainPage__f_languageSelect.value);
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.refineSolution__V = (function() {
+  var language = $as_T(this.Lcom_crosswordmaker_ui_MainPage__f_languageSelect.value);
   var array = window[language];
   var res = [];
   var len = $uI(array.length);
@@ -1684,34 +1700,34 @@ $c_Lcom_papauschek_ui_MainPage.prototype.refineSolution__V = (function() {
     };
     i = ((1 + i) | 0)
   };
-  var $$x2 = $m_Lcom_papauschek_puzzle_Puzzle$();
-  var $$x1 = this.Lcom_papauschek_ui_MainPage__f_initialPuzzle;
+  var $$x2 = $m_Lcom_crosswordmaker_puzzle_Puzzle$();
+  var $$x1 = this.Lcom_crosswordmaker_ui_MainPage__f_initialPuzzle;
   var this$6 = $ct_sjs_js_WrappedArray__sjs_js_Array__(new $c_sjs_js_WrappedArray(), res);
   $m_sci_List$();
-  this.Lcom_papauschek_ui_MainPage__f_refinedPuzzle = $$x2.finalize__Lcom_papauschek_puzzle_Puzzle__sci_List__Lcom_papauschek_puzzle_Puzzle($$x1, $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this$6));
+  this.Lcom_crosswordmaker_ui_MainPage__f_refinedPuzzle = $$x2.finalize__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__Lcom_crosswordmaker_puzzle_Puzzle($$x1, $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(this$6));
   this.renderSolution__V()
 });
-$c_Lcom_papauschek_ui_MainPage.prototype.printSolution__V = (function() {
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.printSolution__V = (function() {
   window.print()
 });
-var $d_Lcom_papauschek_ui_MainPage = new $TypeData().initClass({
-  Lcom_papauschek_ui_MainPage: 0
-}, false, "com.papauschek.ui.MainPage", {
-  Lcom_papauschek_ui_MainPage: 1,
+var $d_Lcom_crosswordmaker_ui_MainPage = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_MainPage: 0
+}, false, "com.crosswordmaker.ui.MainPage", {
+  Lcom_crosswordmaker_ui_MainPage: 1,
   O: 1
 });
-$c_Lcom_papauschek_ui_MainPage.prototype.$classData = $d_Lcom_papauschek_ui_MainPage;
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.$classData = $d_Lcom_crosswordmaker_ui_MainPage;
 /** @constructor */
-function $c_Lcom_papauschek_ui_PuzzleGenerator$() {
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_WORKER_COUNT = 0;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_results = null;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_promise = null;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_workers = null;
-  $n_Lcom_papauschek_ui_PuzzleGenerator$ = this;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_WORKER_COUNT = 4;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_results = $as_sci_Seq($m_s_package$().s_package$__f_Seq.empty__sc_SeqOps());
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_promise = $m_s_concurrent_Promise$().successful__O__s_concurrent_Promise($m_s_package$().s_package$__f_Nil);
-  var end = this.Lcom_papauschek_ui_PuzzleGenerator$__f_WORKER_COUNT;
+function $c_Lcom_crosswordmaker_ui_PuzzleGenerator$() {
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_WORKER_COUNT = 0;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results = null;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_promise = null;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_workers = null;
+  $n_Lcom_crosswordmaker_ui_PuzzleGenerator$ = this;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_WORKER_COUNT = 4;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results = $as_sci_Seq($m_s_package$().s_package$__f_Seq.empty__sc_SeqOps());
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_promise = $m_s_concurrent_Promise$().successful__O__s_concurrent_Promise($m_s_package$().s_package$__f_Nil);
+  var end = this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_WORKER_COUNT;
   var isEmpty = (end <= 0);
   if (isEmpty) {
     var scala$collection$immutable$Range$$numRangeElements = 0
@@ -1730,21 +1746,21 @@ function $c_Lcom_papauschek_ui_PuzzleGenerator$() {
     var elem = new Worker("js/worker.js");
     b.addOne__O__scm_Growable(elem)
   };
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_workers = $as_sci_IndexedSeq(b.result__O());
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_workers.foreach__F1__V(new $c_sjsr_AnonFunction1(((worker) => {
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_workers = $as_sci_IndexedSeq(b.result__O());
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_workers.foreach__F1__V(new $c_sjsr_AnonFunction1(((worker) => {
     worker.onmessage = ((msg) => {
       var this$8 = $m_Lupickle_default$();
       var s = $dp_toString__T(msg.data);
       var s$1 = new $c_Lujson_Readable$fromTransformer(s, $m_Lujson_StringParser$());
       $m_Lupickle_default$();
       var trace = false;
-      var evidence$2 = $m_Lcom_papauschek_puzzle_Puzzle$().Lcom_papauschek_puzzle_Puzzle$__f_rw;
-      var puzzle = $as_Lcom_papauschek_puzzle_Puzzle($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$8, s$1, trace, evidence$2));
-      var this$9 = this.Lcom_papauschek_ui_PuzzleGenerator$__f_results;
-      this.Lcom_papauschek_ui_PuzzleGenerator$__f_results = $as_sci_Seq(this$9.appended__O__O(puzzle));
-      if ((this.Lcom_papauschek_ui_PuzzleGenerator$__f_results.length__I() === this.Lcom_papauschek_ui_PuzzleGenerator$__f_WORKER_COUNT)) {
-        var this$10 = this.Lcom_papauschek_ui_PuzzleGenerator$__f_promise;
-        var value = this.Lcom_papauschek_ui_PuzzleGenerator$__f_results;
+      var evidence$2 = $m_Lcom_crosswordmaker_puzzle_Puzzle$().Lcom_crosswordmaker_puzzle_Puzzle$__f_rw;
+      var puzzle = $as_Lcom_crosswordmaker_puzzle_Puzzle($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$8, s$1, trace, evidence$2));
+      var this$9 = this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results;
+      this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results = $as_sci_Seq(this$9.appended__O__O(puzzle));
+      if ((this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results.length__I() === this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_WORKER_COUNT)) {
+        var this$10 = this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_promise;
+        var value = this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results;
         $f_s_concurrent_Promise__success__O__s_concurrent_Promise(this$10, value);
         return (void 0)
       } else {
@@ -1753,74 +1769,74 @@ function $c_Lcom_papauschek_ui_PuzzleGenerator$() {
     })
   })))
 }
-$c_Lcom_papauschek_ui_PuzzleGenerator$.prototype = new $h_O();
-$c_Lcom_papauschek_ui_PuzzleGenerator$.prototype.constructor = $c_Lcom_papauschek_ui_PuzzleGenerator$;
+$c_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype.constructor = $c_Lcom_crosswordmaker_ui_PuzzleGenerator$;
 /** @constructor */
-function $h_Lcom_papauschek_ui_PuzzleGenerator$() {
+function $h_Lcom_crosswordmaker_ui_PuzzleGenerator$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_PuzzleGenerator$.prototype = $c_Lcom_papauschek_ui_PuzzleGenerator$.prototype;
-$c_Lcom_papauschek_ui_PuzzleGenerator$.prototype.send__Lcom_papauschek_ui_NewPuzzleMessage__s_concurrent_Future = (function(newPuzzleMessage) {
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_results = $m_s_package$().s_package$__f_Nil;
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_promise = $ct_s_concurrent_impl_Promise$DefaultPromise__(new $c_s_concurrent_impl_Promise$DefaultPromise());
-  this.Lcom_papauschek_ui_PuzzleGenerator$__f_workers.foreach__F1__V(new $c_sjsr_AnonFunction1(((worker) => {
+$h_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype = $c_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype;
+$c_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype.send__Lcom_crosswordmaker_ui_NewPuzzleMessage__s_concurrent_Future = (function(newPuzzleMessage) {
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_results = $m_s_package$().s_package$__f_Nil;
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_promise = $ct_s_concurrent_impl_Promise$DefaultPromise__(new $c_s_concurrent_impl_Promise$DefaultPromise());
+  this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_workers.foreach__F1__V(new $c_sjsr_AnonFunction1(((worker) => {
     var this$5 = $m_Lupickle_default$();
     $m_Lupickle_default$();
     var indent = (-1);
     $m_Lupickle_default$();
     var escapeUnicode = false;
-    var evidence$4 = $m_Lcom_papauschek_ui_NewPuzzleMessage$().Lcom_papauschek_ui_NewPuzzleMessage$__f_rw;
+    var evidence$4 = $m_Lcom_crosswordmaker_ui_NewPuzzleMessage$().Lcom_crosswordmaker_ui_NewPuzzleMessage$__f_rw;
     var s = $f_Lupickle_Api__write__O__I__Z__Lupickle_core_Types$Writer__T(this$5, newPuzzleMessage, indent, escapeUnicode, evidence$4);
     worker.postMessage(s)
   })));
-  return this.Lcom_papauschek_ui_PuzzleGenerator$__f_promise
+  return this.Lcom_crosswordmaker_ui_PuzzleGenerator$__f_promise
 });
-var $d_Lcom_papauschek_ui_PuzzleGenerator$ = new $TypeData().initClass({
-  Lcom_papauschek_ui_PuzzleGenerator$: 0
-}, false, "com.papauschek.ui.PuzzleGenerator$", {
-  Lcom_papauschek_ui_PuzzleGenerator$: 1,
+var $d_Lcom_crosswordmaker_ui_PuzzleGenerator$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_PuzzleGenerator$: 0
+}, false, "com.crosswordmaker.ui.PuzzleGenerator$", {
+  Lcom_crosswordmaker_ui_PuzzleGenerator$: 1,
   O: 1
 });
-$c_Lcom_papauschek_ui_PuzzleGenerator$.prototype.$classData = $d_Lcom_papauschek_ui_PuzzleGenerator$;
-var $n_Lcom_papauschek_ui_PuzzleGenerator$;
-function $m_Lcom_papauschek_ui_PuzzleGenerator$() {
-  if ((!$n_Lcom_papauschek_ui_PuzzleGenerator$)) {
-    $n_Lcom_papauschek_ui_PuzzleGenerator$ = new $c_Lcom_papauschek_ui_PuzzleGenerator$()
+$c_Lcom_crosswordmaker_ui_PuzzleGenerator$.prototype.$classData = $d_Lcom_crosswordmaker_ui_PuzzleGenerator$;
+var $n_Lcom_crosswordmaker_ui_PuzzleGenerator$;
+function $m_Lcom_crosswordmaker_ui_PuzzleGenerator$() {
+  if ((!$n_Lcom_crosswordmaker_ui_PuzzleGenerator$)) {
+    $n_Lcom_crosswordmaker_ui_PuzzleGenerator$ = new $c_Lcom_crosswordmaker_ui_PuzzleGenerator$()
   };
-  return $n_Lcom_papauschek_ui_PuzzleGenerator$
+  return $n_Lcom_crosswordmaker_ui_PuzzleGenerator$
 }
 /** @constructor */
-function $c_Lcom_papauschek_ui_UIMain$() {
+function $c_Lcom_crosswordmaker_ui_UIMain$() {
   /*<skip>*/
 }
-$c_Lcom_papauschek_ui_UIMain$.prototype = new $h_O();
-$c_Lcom_papauschek_ui_UIMain$.prototype.constructor = $c_Lcom_papauschek_ui_UIMain$;
+$c_Lcom_crosswordmaker_ui_UIMain$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_UIMain$.prototype.constructor = $c_Lcom_crosswordmaker_ui_UIMain$;
 /** @constructor */
-function $h_Lcom_papauschek_ui_UIMain$() {
+function $h_Lcom_crosswordmaker_ui_UIMain$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_UIMain$.prototype = $c_Lcom_papauschek_ui_UIMain$.prototype;
-$c_Lcom_papauschek_ui_UIMain$.prototype.$js$exported$meth$main__O = (function() {
-  new $c_Lcom_papauschek_ui_MainPage()
+$h_Lcom_crosswordmaker_ui_UIMain$.prototype = $c_Lcom_crosswordmaker_ui_UIMain$.prototype;
+$c_Lcom_crosswordmaker_ui_UIMain$.prototype.$js$exported$meth$main__O = (function() {
+  new $c_Lcom_crosswordmaker_ui_MainPage()
 });
-$c_Lcom_papauschek_ui_UIMain$.prototype.main = (function() {
+$c_Lcom_crosswordmaker_ui_UIMain$.prototype.main = (function() {
   return this.$js$exported$meth$main__O()
 });
-var $d_Lcom_papauschek_ui_UIMain$ = new $TypeData().initClass({
-  Lcom_papauschek_ui_UIMain$: 0
-}, false, "com.papauschek.ui.UIMain$", {
-  Lcom_papauschek_ui_UIMain$: 1,
+var $d_Lcom_crosswordmaker_ui_UIMain$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_UIMain$: 0
+}, false, "com.crosswordmaker.ui.UIMain$", {
+  Lcom_crosswordmaker_ui_UIMain$: 1,
   O: 1
 });
-$c_Lcom_papauschek_ui_UIMain$.prototype.$classData = $d_Lcom_papauschek_ui_UIMain$;
-var $n_Lcom_papauschek_ui_UIMain$;
-function $m_Lcom_papauschek_ui_UIMain$() {
-  if ((!$n_Lcom_papauschek_ui_UIMain$)) {
-    $n_Lcom_papauschek_ui_UIMain$ = new $c_Lcom_papauschek_ui_UIMain$()
+$c_Lcom_crosswordmaker_ui_UIMain$.prototype.$classData = $d_Lcom_crosswordmaker_ui_UIMain$;
+var $n_Lcom_crosswordmaker_ui_UIMain$;
+function $m_Lcom_crosswordmaker_ui_UIMain$() {
+  if ((!$n_Lcom_crosswordmaker_ui_UIMain$)) {
+    $n_Lcom_crosswordmaker_ui_UIMain$ = new $c_Lcom_crosswordmaker_ui_UIMain$()
   };
-  return $n_Lcom_papauschek_ui_UIMain$
+  return $n_Lcom_crosswordmaker_ui_UIMain$
 }
-function $p_Lcom_papauschek_worker_WorkerMain$__createPuzzle__Lcom_papauschek_puzzle_PuzzleConfig__sci_Seq__Lcom_papauschek_puzzle_Puzzle($thiz, config, mainWords) {
+function $p_Lcom_crosswordmaker_worker_WorkerMain$__createPuzzle__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_Seq__Lcom_crosswordmaker_puzzle_Puzzle($thiz, config, mainWords) {
   var f = new $c_sjsr_AnonFunction1(((_$1) => {
     var _$1$1 = $as_T(_$1);
     return _$1$1.length
@@ -1835,16 +1851,15 @@ function $p_Lcom_papauschek_worker_WorkerMain$__createPuzzle__Lcom_papauschek_pu
     var this$3 = new $c_s_Some(_$2.length)
   };
   var minSize = $uI((this$3.isEmpty__Z() ? 1 : this$3.get__O()));
-  var x = config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var x = config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var width = ((x > minSize) ? x : minSize);
-  var x$1 = config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+  var x$1 = config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
   var height = ((x$1 > minSize) ? x$1 : minSize);
-  var wrapping = config.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping;
-  var minConfig = new $c_Lcom_papauschek_puzzle_PuzzleConfig(width, height, wrapping);
+  var wrapping = config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping;
+  var minConfig = new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig(width, height, wrapping);
   var this$13 = $m_RTLong$();
   var value = $uD(new Date().getTime());
-  var lo = this$13.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
-  var hi = this$13.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
+  this$13.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value);
   var elem = 0.0;
   elem = 0.0;
   var elem$1 = 0;
@@ -1853,101 +1868,88 @@ function $p_Lcom_papauschek_worker_WorkerMain$__createPuzzle__Lcom_papauschek_pu
   var it = new $c_sci_RangeIterator(0, 1, 999, false);
   while (it.sci_RangeIterator__f__hasNext) {
     it.next__I();
-    var puzzles = $m_Lcom_papauschek_puzzle_Puzzle$().generate__T__sci_List__Lcom_papauschek_puzzle_PuzzleConfig__sci_Seq($as_T(mainWords.head__O()), $as_sc_IterableOnceOps(mainWords.tail__O()).toList__sci_List(), minConfig);
+    var puzzles = $m_Lcom_crosswordmaker_puzzle_Puzzle$().generate__T__sci_List__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_Seq($as_T(mainWords.head__O()), $as_sc_IterableOnceOps(mainWords.tail__O()).toList__sci_List(), minConfig);
     var f$1 = new $c_sjsr_AnonFunction1(((_$4) => {
-      var _$4$1 = $as_Lcom_papauschek_puzzle_Puzzle(_$4);
-      return _$4$1.Lcom_papauschek_puzzle_Puzzle__f_density
+      var _$4$1 = $as_Lcom_crosswordmaker_puzzle_Puzzle(_$4);
+      return _$4$1.Lcom_crosswordmaker_puzzle_Puzzle__f_density
     }));
     var cmp$1 = $m_s_math_Ordering$DeprecatedDoubleOrdering$();
-    var puzzle = $as_Lcom_papauschek_puzzle_Puzzle($f_sc_IterableOnceOps__maxBy__F1__s_math_Ordering__O(puzzles, f$1, cmp$1));
+    var puzzle = $as_Lcom_crosswordmaker_puzzle_Puzzle($f_sc_IterableOnceOps__maxBy__F1__s_math_Ordering__O(puzzles, f$1, cmp$1));
     var ev$1 = ((1 + elem$1) | 0);
     elem$1 = ev$1;
-    if ((puzzle.Lcom_papauschek_puzzle_Puzzle__f_density > elem)) {
-      var ev$2 = puzzle.Lcom_papauschek_puzzle_Puzzle__f_density;
+    if ((puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_density > elem)) {
+      var ev$2 = puzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_density;
       elem = ev$2
     };
     b.addAll__sc_IterableOnce__scm_Growable(puzzles)
   };
   var this$20 = $as_sc_SeqOps(b.result__O());
   var f$2 = new $c_sjsr_AnonFunction1(((_$5) => {
-    var _$5$1 = $as_Lcom_papauschek_puzzle_Puzzle(_$5);
-    return (-_$5$1.Lcom_papauschek_puzzle_Puzzle__f_density)
+    var _$5$1 = $as_Lcom_crosswordmaker_puzzle_Puzzle(_$5);
+    return (-_$5$1.Lcom_crosswordmaker_puzzle_Puzzle__f_density)
   }));
   var ord = $m_s_math_Ordering$DeprecatedDoubleOrdering$();
   var puzzles$1 = $as_sci_IndexedSeq($f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(this$20, f$2, ord));
   var this$22 = $m_RTLong$();
   var value$1 = $uD(new Date().getTime());
-  var lo$1 = this$22.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value$1);
-  var hi$1 = this$22.RTLong$__f_org$scalajs$linker$runtime$RuntimeLong$$hiReturn;
-  var bestPuzzle = $as_Lcom_papauschek_puzzle_Puzzle(puzzles$1.head__O());
-  var x$2 = ("Words: " + bestPuzzle.Lcom_papauschek_puzzle_Puzzle__f_words);
-  var this$24 = $m_s_Console$();
-  var this$25 = this$24.out__Ljava_io_PrintStream();
-  this$25.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$2 + "\n"));
-  var $$x2 = bestPuzzle.Lcom_papauschek_puzzle_Puzzle__f_density;
-  var $$x1 = elem$1;
-  var lo$2 = ((lo$1 - lo) | 0);
-  var hi$2 = ((((-2147483648) ^ lo$2) > ((-2147483648) ^ lo$1)) ? (((-1) + ((hi$1 - hi) | 0)) | 0) : ((hi$1 - hi) | 0));
-  var x$3 = ((((("Best density: " + $$x2) + "% - ") + $$x1) + " - ms: ") + new $c_RTLong(lo$2, hi$2));
-  var this$28 = $m_s_Console$();
-  var this$29 = this$28.out__Ljava_io_PrintStream();
-  this$29.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x$3 + "\n"));
+  this$22.org$scalajs$linker$runtime$RuntimeLong$$fromDoubleImpl__D__I(value$1);
+  var bestPuzzle = $as_Lcom_crosswordmaker_puzzle_Puzzle(puzzles$1.head__O());
   return bestPuzzle
 }
 /** @constructor */
-function $c_Lcom_papauschek_worker_WorkerMain$() {
+function $c_Lcom_crosswordmaker_worker_WorkerMain$() {
   /*<skip>*/
 }
-$c_Lcom_papauschek_worker_WorkerMain$.prototype = new $h_O();
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.constructor = $c_Lcom_papauschek_worker_WorkerMain$;
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.constructor = $c_Lcom_crosswordmaker_worker_WorkerMain$;
 /** @constructor */
-function $h_Lcom_papauschek_worker_WorkerMain$() {
+function $h_Lcom_crosswordmaker_worker_WorkerMain$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_worker_WorkerMain$.prototype = $c_Lcom_papauschek_worker_WorkerMain$.prototype;
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.main__V = (function() {
+$h_Lcom_crosswordmaker_worker_WorkerMain$.prototype = $c_Lcom_crosswordmaker_worker_WorkerMain$.prototype;
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.main__V = (function() {
   addEventListener("message", $m_sjs_js_Any$().fromFunction1__F1__sjs_js_Function1(new $c_sjsr_AnonFunction1(((msg) => {
     this.onMessage__Lorg_scalajs_dom_MessageEvent__V(msg)
   }))))
 });
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.onMessage__Lorg_scalajs_dom_MessageEvent__V = (function(msg) {
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.onMessage__Lorg_scalajs_dom_MessageEvent__V = (function(msg) {
   var string = $dp_toString__T(msg.data);
   var this$3 = $m_Lupickle_default$();
   var s = new $c_Lujson_Readable$fromTransformer(string, $m_Lujson_StringParser$());
   $m_Lupickle_default$();
   var trace = false;
-  var evidence$2 = $m_Lcom_papauschek_ui_NewPuzzleMessage$().Lcom_papauschek_ui_NewPuzzleMessage$__f_rw;
-  var newPuzzleMessage = $as_Lcom_papauschek_ui_NewPuzzleMessage($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$3, s, trace, evidence$2));
-  var puzzle = $p_Lcom_papauschek_worker_WorkerMain$__createPuzzle__Lcom_papauschek_puzzle_PuzzleConfig__sci_Seq__Lcom_papauschek_puzzle_Puzzle(this, newPuzzleMessage.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig, newPuzzleMessage.Lcom_papauschek_ui_NewPuzzleMessage__f_words);
+  var evidence$2 = $m_Lcom_crosswordmaker_ui_NewPuzzleMessage$().Lcom_crosswordmaker_ui_NewPuzzleMessage$__f_rw;
+  var newPuzzleMessage = $as_Lcom_crosswordmaker_ui_NewPuzzleMessage($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$3, s, trace, evidence$2));
+  var puzzle = $p_Lcom_crosswordmaker_worker_WorkerMain$__createPuzzle__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_Seq__Lcom_crosswordmaker_puzzle_Puzzle(this, newPuzzleMessage.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig, newPuzzleMessage.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words);
   var $$x1 = postMessage;
   var this$6 = $m_Lupickle_default$();
   $m_Lupickle_default$();
   var indent = (-1);
   $m_Lupickle_default$();
   var escapeUnicode = false;
-  var evidence$4 = $m_Lcom_papauschek_puzzle_Puzzle$().Lcom_papauschek_puzzle_Puzzle$__f_rw;
+  var evidence$4 = $m_Lcom_crosswordmaker_puzzle_Puzzle$().Lcom_crosswordmaker_puzzle_Puzzle$__f_rw;
   var s$1 = $f_Lupickle_Api__write__O__I__Z__Lupickle_core_Types$Writer__T(this$6, puzzle, indent, escapeUnicode, evidence$4);
   $$x1(s$1)
 });
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.$js$exported$meth$main__O = (function() {
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.$js$exported$meth$main__O = (function() {
   this.main__V()
 });
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.main = (function() {
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.main = (function() {
   return this.$js$exported$meth$main__O()
 });
-var $d_Lcom_papauschek_worker_WorkerMain$ = new $TypeData().initClass({
-  Lcom_papauschek_worker_WorkerMain$: 0
-}, false, "com.papauschek.worker.WorkerMain$", {
-  Lcom_papauschek_worker_WorkerMain$: 1,
+var $d_Lcom_crosswordmaker_worker_WorkerMain$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_worker_WorkerMain$: 0
+}, false, "com.crosswordmaker.worker.WorkerMain$", {
+  Lcom_crosswordmaker_worker_WorkerMain$: 1,
   O: 1
 });
-$c_Lcom_papauschek_worker_WorkerMain$.prototype.$classData = $d_Lcom_papauschek_worker_WorkerMain$;
-var $n_Lcom_papauschek_worker_WorkerMain$;
-function $m_Lcom_papauschek_worker_WorkerMain$() {
-  if ((!$n_Lcom_papauschek_worker_WorkerMain$)) {
-    $n_Lcom_papauschek_worker_WorkerMain$ = new $c_Lcom_papauschek_worker_WorkerMain$()
+$c_Lcom_crosswordmaker_worker_WorkerMain$.prototype.$classData = $d_Lcom_crosswordmaker_worker_WorkerMain$;
+var $n_Lcom_crosswordmaker_worker_WorkerMain$;
+function $m_Lcom_crosswordmaker_worker_WorkerMain$() {
+  if ((!$n_Lcom_crosswordmaker_worker_WorkerMain$)) {
+    $n_Lcom_crosswordmaker_worker_WorkerMain$ = new $c_Lcom_crosswordmaker_worker_WorkerMain$()
   };
-  return $n_Lcom_papauschek_worker_WorkerMain$
+  return $n_Lcom_crosswordmaker_worker_WorkerMain$
 }
 function $is_jl_CharSequence(obj) {
   return ((!(!((obj && obj.$classData) && obj.$classData.ancestors.jl_CharSequence))) || ((typeof obj) === "string"))
@@ -2513,10 +2515,9 @@ function $m_jl_StackTrace$StringRE$() {
 }
 /** @constructor */
 function $c_jl_System$Streams$() {
-  this.jl_System$Streams$__f_out = null;
   this.jl_System$Streams$__f_err = null;
   $n_jl_System$Streams$ = this;
-  this.jl_System$Streams$__f_out = new $c_jl_JSConsoleBasedPrintStream(false);
+  new $c_jl_JSConsoleBasedPrintStream(false);
   this.jl_System$Streams$__f_err = new $c_jl_JSConsoleBasedPrintStream(true)
 }
 $c_jl_System$Streams$.prototype = new $h_O();
@@ -9913,28 +9914,6 @@ function $m_sjs_js_WrappedDictionary$Cache$() {
   return $n_sjs_js_WrappedDictionary$Cache$
 }
 /** @constructor */
-function $c_s_util_DynamicVariable(init) {
-  this.s_util_DynamicVariable__f_v = null;
-  this.s_util_DynamicVariable__f_v = init
-}
-$c_s_util_DynamicVariable.prototype = new $h_O();
-$c_s_util_DynamicVariable.prototype.constructor = $c_s_util_DynamicVariable;
-/** @constructor */
-function $h_s_util_DynamicVariable() {
-  /*<skip>*/
-}
-$h_s_util_DynamicVariable.prototype = $c_s_util_DynamicVariable.prototype;
-$c_s_util_DynamicVariable.prototype.toString__T = (function() {
-  return (("DynamicVariable(" + this.s_util_DynamicVariable__f_v) + ")")
-});
-var $d_s_util_DynamicVariable = new $TypeData().initClass({
-  s_util_DynamicVariable: 0
-}, false, "scala.util.DynamicVariable", {
-  s_util_DynamicVariable: 1,
-  O: 1
-});
-$c_s_util_DynamicVariable.prototype.$classData = $d_s_util_DynamicVariable;
-/** @constructor */
 function $c_s_util_Sorting$() {
   /*<skip>*/
 }
@@ -14056,39 +14035,6 @@ function $m_s_Array$() {
   return $n_s_Array$
 }
 /** @constructor */
-function $c_s_Console$() {
-  this.s_Console$__f_outVar = null;
-  $n_s_Console$ = this;
-  this.s_Console$__f_outVar = new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_out);
-  new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_err);
-  new $c_s_util_DynamicVariable(null)
-}
-$c_s_Console$.prototype = new $h_O();
-$c_s_Console$.prototype.constructor = $c_s_Console$;
-/** @constructor */
-function $h_s_Console$() {
-  /*<skip>*/
-}
-$h_s_Console$.prototype = $c_s_Console$.prototype;
-$c_s_Console$.prototype.out__Ljava_io_PrintStream = (function() {
-  return $as_Ljava_io_PrintStream(this.s_Console$__f_outVar.s_util_DynamicVariable__f_v)
-});
-var $d_s_Console$ = new $TypeData().initClass({
-  s_Console$: 0
-}, false, "scala.Console$", {
-  s_Console$: 1,
-  O: 1,
-  s_io_AnsiColor: 1
-});
-$c_s_Console$.prototype.$classData = $d_s_Console$;
-var $n_s_Console$;
-function $m_s_Console$() {
-  if ((!$n_s_Console$)) {
-    $n_s_Console$ = new $c_s_Console$()
-  };
-  return $n_s_Console$
-}
-/** @constructor */
 function $c_s_LowPriorityImplicits() {
   /*<skip>*/
 }
@@ -15374,6 +15320,36 @@ var $d_s_util_hashing_MurmurHash3$accum$1 = new $TypeData().initClass({
   F2: 1
 });
 $c_s_util_hashing_MurmurHash3$accum$1.prototype.$classData = $d_s_util_hashing_MurmurHash3$accum$1;
+function $ct_s_util_matching_Regex__ju_regex_Pattern__sci_Seq__($thiz, pattern, groupNames) {
+  $thiz.s_util_matching_Regex__f_pattern = pattern;
+  return $thiz
+}
+function $ct_s_util_matching_Regex__T__sci_Seq__($thiz, regex, groupNames) {
+  $ct_s_util_matching_Regex__ju_regex_Pattern__sci_Seq__($thiz, $m_ju_regex_PatternCompiler$().compile__T__I__ju_regex_Pattern(regex, 0), groupNames);
+  return $thiz
+}
+/** @constructor */
+function $c_s_util_matching_Regex() {
+  this.s_util_matching_Regex__f_pattern = null
+}
+$c_s_util_matching_Regex.prototype = new $h_O();
+$c_s_util_matching_Regex.prototype.constructor = $c_s_util_matching_Regex;
+/** @constructor */
+function $h_s_util_matching_Regex() {
+  /*<skip>*/
+}
+$h_s_util_matching_Regex.prototype = $c_s_util_matching_Regex.prototype;
+$c_s_util_matching_Regex.prototype.toString__T = (function() {
+  return this.s_util_matching_Regex__f_pattern.ju_regex_Pattern__f__pattern
+});
+var $d_s_util_matching_Regex = new $TypeData().initClass({
+  s_util_matching_Regex: 0
+}, false, "scala.util.matching.Regex", {
+  s_util_matching_Regex: 1,
+  O: 1,
+  Ljava_io_Serializable: 1
+});
+$c_s_util_matching_Regex.prototype.$classData = $d_s_util_matching_Regex;
 function $ct_Lujson_CharParser__($thiz) {
   $f_Lupickle_core_BufferingCharParser__$init$__V($thiz);
   $thiz.Lujson_CharParser__f_elemOps = $m_Lupickle_core_CharOps$();
@@ -17275,47 +17251,47 @@ $c_Lupickle_implicits_Writers$$anon$9.prototype.$classData = $d_Lupickle_implici
 function $f_Lupickle_implicits_Writers$SimpleMapKeyWriter__write0__Lupickle_core_Visitor__O__O($thiz, out, v) {
   return out.visitString__jl_CharSequence__I__O($thiz.writeString__O__T(v), (-1))
 }
-function $p_Lcom_papauschek_puzzle_Puzzle$__generateAndFinalize__Lcom_papauschek_puzzle_Puzzle__sci_List__Lcom_papauschek_puzzle_Puzzle($thiz, puzzle, words) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle$__generateAndFinalize__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__Lcom_crosswordmaker_puzzle_Puzzle($thiz, puzzle, words) {
   var basePuzzle = puzzle;
-  var finalPuzzle = $p_Lcom_papauschek_puzzle_Puzzle$__generate__Lcom_papauschek_puzzle_Puzzle__sci_List__sci_List__Lcom_papauschek_puzzle_Puzzle($thiz, basePuzzle, words, $m_s_package$().s_package$__f_Nil);
-  while ((finalPuzzle.Lcom_papauschek_puzzle_Puzzle__f_words.size__I() > basePuzzle.Lcom_papauschek_puzzle_Puzzle__f_words.size__I())) {
+  var finalPuzzle = $p_Lcom_crosswordmaker_puzzle_Puzzle$__generate__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__sci_List__Lcom_crosswordmaker_puzzle_Puzzle($thiz, basePuzzle, words, $m_s_package$().s_package$__f_Nil);
+  while ((finalPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_words.size__I() > basePuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_words.size__I())) {
     basePuzzle = finalPuzzle;
-    finalPuzzle = $p_Lcom_papauschek_puzzle_Puzzle$__generate__Lcom_papauschek_puzzle_Puzzle__sci_List__sci_List__Lcom_papauschek_puzzle_Puzzle($thiz, basePuzzle, words, $m_s_package$().s_package$__f_Nil)
+    finalPuzzle = $p_Lcom_crosswordmaker_puzzle_Puzzle$__generate__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__sci_List__Lcom_crosswordmaker_puzzle_Puzzle($thiz, basePuzzle, words, $m_s_package$().s_package$__f_Nil)
   };
   return finalPuzzle
 }
-function $p_Lcom_papauschek_puzzle_Puzzle$__initial__Lcom_papauschek_puzzle_Puzzle__T__Z__Z__Lcom_papauschek_puzzle_Puzzle($thiz, emptyPuzzle, word, vertical, center) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle$__initial__Lcom_crosswordmaker_puzzle_Puzzle__T__Z__Z__Lcom_crosswordmaker_puzzle_Puzzle($thiz, emptyPuzzle, word, vertical, center) {
   if ((!center)) {
     if (vertical) {
       var this$1 = $m_s_util_Random$();
-      var n = emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+      var n = emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
       var $$x1 = this$1.s_util_Random__f_self.nextInt__I__I(n);
       var this$2 = $m_s_util_Random$();
-      var n$1 = ((1 + ((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height - word.length) | 0)) | 0);
-      return emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle($$x1, this$2.s_util_Random__f_self.nextInt__I__I(n$1), vertical, word)
+      var n$1 = ((1 + ((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height - word.length) | 0)) | 0);
+      return emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle($$x1, this$2.s_util_Random__f_self.nextInt__I__I(n$1), vertical, word)
     } else {
       var this$3 = $m_s_util_Random$();
-      var n$2 = ((1 + ((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width - word.length) | 0)) | 0);
+      var n$2 = ((1 + ((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width - word.length) | 0)) | 0);
       var $$x2 = this$3.s_util_Random__f_self.nextInt__I__I(n$2);
       var this$4 = $m_s_util_Random$();
-      var n$3 = emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
-      return emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle($$x2, this$4.s_util_Random__f_self.nextInt__I__I(n$3), vertical, word)
+      var n$3 = emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
+      return emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle($$x2, this$4.s_util_Random__f_self.nextInt__I__I(n$3), vertical, word)
     }
   } else {
-    return (vertical ? emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle(((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width / 2) | 0), ((((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height - word.length) | 0) / 2) | 0), vertical, word) : emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle(((((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width - word.length) | 0) / 2) | 0), ((emptyPuzzle.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height / 2) | 0), vertical, word))
+    return (vertical ? emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle(((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width / 2) | 0), ((((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height - word.length) | 0) / 2) | 0), vertical, word) : emptyPuzzle.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle(((((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width - word.length) | 0) / 2) | 0), ((emptyPuzzle.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height / 2) | 0), vertical, word))
   }
 }
-function $p_Lcom_papauschek_puzzle_Puzzle$__generate__Lcom_papauschek_puzzle_Puzzle__sci_List__sci_List__Lcom_papauschek_puzzle_Puzzle($thiz, puzzle, words, tried) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle$__generate__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__sci_List__Lcom_crosswordmaker_puzzle_Puzzle($thiz, puzzle, words, tried) {
   var puzzle$tailLocal1 = puzzle;
   var tried$tailLocal1 = tried;
   var words$tailLocal1 = words;
   while (true) {
     if (words$tailLocal1.isEmpty__Z()) {
       return puzzle$tailLocal1
-    } else if (puzzle$tailLocal1.Lcom_papauschek_puzzle_Puzzle__f_words.contains__O__Z(words$tailLocal1.head__O())) {
+    } else if (puzzle$tailLocal1.Lcom_crosswordmaker_puzzle_Puzzle__f_words.contains__O__Z(words$tailLocal1.head__O())) {
       words$tailLocal1 = $as_sci_List(words$tailLocal1.tail__O())
     } else {
-      var options = puzzle$tailLocal1.addWord__T__ALcom_papauschek_puzzle_Puzzle($as_T(words$tailLocal1.head__O()));
+      var options = puzzle$tailLocal1.addWord__T__ALcom_crosswordmaker_puzzle_Puzzle($as_T(words$tailLocal1.head__O()));
       if ((options.u.length === 0)) {
         var words$tailLocal1$tmp1 = $as_sci_List(words$tailLocal1.tail__O());
         var elem$1 = $as_T(words$tailLocal1.head__O());
@@ -17338,14 +17314,14 @@ function $p_Lcom_papauschek_puzzle_Puzzle$__generate__Lcom_papauschek_puzzle_Puz
     }
   }
 }
-function $p_Lcom_papauschek_puzzle_Puzzle$__elemsInfo$1__Lcom_papauschek_puzzle_Puzzle__sci_List($thiz, v) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle$__elemsInfo$1__Lcom_crosswordmaker_puzzle_Puzzle__sci_List($thiz, v) {
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["chars", "config", "words"]));
   var labels = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
   var this$2 = $m_Lupickle_default$();
   var r = $m_Lupickle_default$().Lupickle_default$__f_CharWriter;
   var elem$1 = $f_Lupickle_implicits_Writers__ArrayWriter__Lupickle_core_Types$Writer__Lupickle_core_Types$Writer(this$2, r);
-  var elem$1$2 = $m_Lcom_papauschek_puzzle_PuzzleConfig$().Lcom_papauschek_puzzle_PuzzleConfig$__f_rw;
+  var elem$1$2 = $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$().Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw;
   var this$3 = $m_Lupickle_default$();
   var r$1 = $m_Lupickle_default$().Lupickle_default$__f_StringWriter;
   var elem$1$3 = new $c_Lupickle_implicits_LowPriWriters$$anon$1(r$1, this$3);
@@ -17382,11 +17358,11 @@ function $p_Lcom_papauschek_puzzle_Puzzle$__elemsInfo$1__Lcom_papauschek_puzzle_
   }))))
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Puzzle$() {
-  this.Lcom_papauschek_puzzle_Puzzle$__f_rw = null;
-  $n_Lcom_papauschek_puzzle_Puzzle$ = this;
+function $c_Lcom_crosswordmaker_puzzle_Puzzle$() {
+  this.Lcom_crosswordmaker_puzzle_Puzzle$__f_rw = null;
+  $n_Lcom_crosswordmaker_puzzle_Puzzle$ = this;
   var MacroImplicits_this = $m_Lupickle_default$();
-  var x$1$proxy1 = $m_Lcom_papauschek_puzzle_Puzzle$();
+  var x$1$proxy1 = $m_Lcom_crosswordmaker_puzzle_Puzzle$();
   var $$x4 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["chars", "config", "words"]));
@@ -17400,7 +17376,7 @@ function $c_Lcom_papauschek_puzzle_Puzzle$() {
   } else {
     var elem$1 = new $c_Lupickle_implicits_Readers$$anon$19(evidence$3, evidence$4, this$6)
   };
-  var elem$1$2 = $m_Lcom_papauschek_puzzle_PuzzleConfig$().Lcom_papauschek_puzzle_PuzzleConfig$__f_rw;
+  var elem$1$2 = $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$().Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw;
   var this$10 = $m_Lupickle_default$();
   var r = $m_Lupickle_default$().Lupickle_default$__f_StringReader;
   var this$8 = $m_sci_Set$();
@@ -17420,10 +17396,10 @@ function $c_Lcom_papauschek_puzzle_Puzzle$() {
   var $$x3 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$15, that));
   var this$16 = $m_s_$less$colon$less$();
   var defaultParams = $$x3.toMap__s_$less$colon$less__sci_Map(this$16.s_$less$colon$less$__f_singleton);
-  var reader = new $c_Lcom_papauschek_puzzle_Puzzle$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
+  var reader = new $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
   var $$x2 = new $c_sjsr_AnonFunction1(((v) => {
-    var v$1 = $as_Lcom_papauschek_puzzle_Puzzle(v);
-    return $p_Lcom_papauschek_puzzle_Puzzle$__elemsInfo$1__Lcom_papauschek_puzzle_Puzzle__sci_List(this, v$1)
+    var v$1 = $as_Lcom_crosswordmaker_puzzle_Puzzle(v);
+    return $p_Lcom_crosswordmaker_puzzle_Puzzle$__elemsInfo$1__Lcom_crosswordmaker_puzzle_Puzzle__sci_List(this, v$1)
   }));
   var this$18 = $m_s_package$().s_package$__f_Nil;
   var this$17 = $m_s_package$().s_package$__f_Nil;
@@ -17435,21 +17411,21 @@ function $c_Lcom_papauschek_puzzle_Puzzle$() {
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$18, that$1));
   var this$19 = $m_s_$less$colon$less$();
   var writer = new $c_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter(MacroImplicits_this, $$x2, $$x1.toMap__s_$less$colon$less__sci_Map(this$19.s_$less$colon$less$__f_singleton));
-  this.Lcom_papauschek_puzzle_Puzzle$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
+  this.Lcom_crosswordmaker_puzzle_Puzzle$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
 }
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.constructor = $c_Lcom_papauschek_puzzle_Puzzle$;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Puzzle$;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Puzzle$() {
+function $h_Lcom_crosswordmaker_puzzle_Puzzle$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Puzzle$.prototype = $c_Lcom_papauschek_puzzle_Puzzle$.prototype;
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.toString__T = (function() {
+$h_Lcom_crosswordmaker_puzzle_Puzzle$.prototype = $c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.toString__T = (function() {
   return "Puzzle"
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.empty__Lcom_papauschek_puzzle_PuzzleConfig__Lcom_papauschek_puzzle_Puzzle = (function(config) {
-  $m_Lcom_papauschek_puzzle_Puzzle$();
-  var n = Math.imul(config.Lcom_papauschek_puzzle_PuzzleConfig__f_width, config.Lcom_papauschek_puzzle_PuzzleConfig__f_height);
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.empty__Lcom_crosswordmaker_puzzle_PuzzleConfig__Lcom_crosswordmaker_puzzle_Puzzle = (function(config) {
+  $m_Lcom_crosswordmaker_puzzle_Puzzle$();
+  var n = Math.imul(config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width, config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height);
   $m_s_reflect_ManifestFactory$CharManifest$();
   if ((n <= 0)) {
     var chars = new $ac_C(0)
@@ -17463,17 +17439,17 @@ $c_Lcom_papauschek_puzzle_Puzzle$.prototype.empty__Lcom_papauschek_puzzle_Puzzle
     var chars = array
   };
   var words = $m_sci_Set$EmptySet$();
-  return new $c_Lcom_papauschek_puzzle_Puzzle(chars, config, words)
+  return new $c_Lcom_crosswordmaker_puzzle_Puzzle(chars, config, words)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.generate__T__sci_List__Lcom_papauschek_puzzle_PuzzleConfig__sci_Seq = (function(initialWord, list, config) {
-  var emptyPuzzle = this.empty__Lcom_papauschek_puzzle_PuzzleConfig__Lcom_papauschek_puzzle_Puzzle(config);
-  var puzzles = $as_sci_Seq($m_s_package$().s_package$__f_Seq.apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_papauschek_puzzle_Puzzle.getArrayOf().constr)([$p_Lcom_papauschek_puzzle_Puzzle$__initial__Lcom_papauschek_puzzle_Puzzle__T__Z__Z__Lcom_papauschek_puzzle_Puzzle(this, emptyPuzzle, initialWord, false, false), $p_Lcom_papauschek_puzzle_Puzzle$__initial__Lcom_papauschek_puzzle_Puzzle__T__Z__Z__Lcom_papauschek_puzzle_Puzzle(this, emptyPuzzle, initialWord, true, false)]))));
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.generate__T__sci_List__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_Seq = (function(initialWord, list, config) {
+  var emptyPuzzle = this.empty__Lcom_crosswordmaker_puzzle_PuzzleConfig__Lcom_crosswordmaker_puzzle_Puzzle(config);
+  var puzzles = $as_sci_Seq($m_s_package$().s_package$__f_Seq.apply__sci_Seq__sc_SeqOps($m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_crosswordmaker_puzzle_Puzzle.getArrayOf().constr)([$p_Lcom_crosswordmaker_puzzle_Puzzle$__initial__Lcom_crosswordmaker_puzzle_Puzzle__T__Z__Z__Lcom_crosswordmaker_puzzle_Puzzle(this, emptyPuzzle, initialWord, false, false), $p_Lcom_crosswordmaker_puzzle_Puzzle$__initial__Lcom_crosswordmaker_puzzle_Puzzle__T__Z__Z__Lcom_crosswordmaker_puzzle_Puzzle(this, emptyPuzzle, initialWord, true, false)]))));
   return $as_sci_Seq(puzzles.map__F1__O(new $c_sjsr_AnonFunction1(((p) => {
-    var p$1 = $as_Lcom_papauschek_puzzle_Puzzle(p);
-    return $p_Lcom_papauschek_puzzle_Puzzle$__generateAndFinalize__Lcom_papauschek_puzzle_Puzzle__sci_List__Lcom_papauschek_puzzle_Puzzle(this, p$1, list)
+    var p$1 = $as_Lcom_crosswordmaker_puzzle_Puzzle(p);
+    return $p_Lcom_crosswordmaker_puzzle_Puzzle$__generateAndFinalize__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__Lcom_crosswordmaker_puzzle_Puzzle(this, p$1, list)
   }))))
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.finalize__Lcom_papauschek_puzzle_Puzzle__sci_List__Lcom_papauschek_puzzle_Puzzle = (function(puzzle, words) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.finalize__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__Lcom_crosswordmaker_puzzle_Puzzle = (function(puzzle, words) {
   var $$x1 = $m_s_util_Random$();
   var this$1 = $m_sc_BuildFrom$();
   var this$3 = $as_sci_List($$x1.shuffle__sc_IterableOnce__sc_BuildFrom__O(words, new $c_sc_BuildFromLowPriority2$$anon$11(this$1))).take__I__sci_List(10000);
@@ -17483,64 +17459,64 @@ $c_Lcom_papauschek_puzzle_Puzzle$.prototype.finalize__Lcom_papauschek_puzzle_Puz
   }));
   var ord = $m_s_math_Ordering$Int$();
   var sorted = $as_sci_List($f_sc_SeqOps__sortBy__F1__s_math_Ordering__O(this$3, f, ord));
-  return $p_Lcom_papauschek_puzzle_Puzzle$__generate__Lcom_papauschek_puzzle_Puzzle__sci_List__sci_List__Lcom_papauschek_puzzle_Puzzle(this, puzzle, sorted, $m_s_package$().s_package$__f_Nil)
+  return $p_Lcom_crosswordmaker_puzzle_Puzzle$__generate__Lcom_crosswordmaker_puzzle_Puzzle__sci_List__sci_List__Lcom_crosswordmaker_puzzle_Puzzle(this, puzzle, sorted, $m_s_package$().s_package$__f_Nil)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.fromProduct__s_Product__Lcom_papauschek_puzzle_Puzzle = (function(x$0) {
-  return new $c_Lcom_papauschek_puzzle_Puzzle($asArrayOf_C(x$0.productElement__I__O(0), 1), $as_Lcom_papauschek_puzzle_PuzzleConfig(x$0.productElement__I__O(1)), $as_sci_Set(x$0.productElement__I__O(2)))
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.fromProduct__s_Product__Lcom_crosswordmaker_puzzle_Puzzle = (function(x$0) {
+  return new $c_Lcom_crosswordmaker_puzzle_Puzzle($asArrayOf_C(x$0.productElement__I__O(0), 1), $as_Lcom_crosswordmaker_puzzle_PuzzleConfig(x$0.productElement__I__O(1)), $as_sci_Set(x$0.productElement__I__O(2)))
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_papauschek_puzzle_Puzzle(p)
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_crosswordmaker_puzzle_Puzzle(p)
 });
-var $d_Lcom_papauschek_puzzle_Puzzle$ = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Puzzle$: 0
-}, false, "com.papauschek.puzzle.Puzzle$", {
-  Lcom_papauschek_puzzle_Puzzle$: 1,
+var $d_Lcom_crosswordmaker_puzzle_Puzzle$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Puzzle$: 0
+}, false, "com.crosswordmaker.puzzle.Puzzle$", {
+  Lcom_crosswordmaker_puzzle_Puzzle$: 1,
   O: 1,
   s_deriving_Mirror: 1,
   s_deriving_Mirror$Product: 1
 });
-$c_Lcom_papauschek_puzzle_Puzzle$.prototype.$classData = $d_Lcom_papauschek_puzzle_Puzzle$;
-var $n_Lcom_papauschek_puzzle_Puzzle$;
-function $m_Lcom_papauschek_puzzle_Puzzle$() {
-  if ((!$n_Lcom_papauschek_puzzle_Puzzle$)) {
-    $n_Lcom_papauschek_puzzle_Puzzle$ = new $c_Lcom_papauschek_puzzle_Puzzle$()
+$c_Lcom_crosswordmaker_puzzle_Puzzle$.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Puzzle$;
+var $n_Lcom_crosswordmaker_puzzle_Puzzle$;
+function $m_Lcom_crosswordmaker_puzzle_Puzzle$() {
+  if ((!$n_Lcom_crosswordmaker_puzzle_Puzzle$)) {
+    $n_Lcom_crosswordmaker_puzzle_Puzzle$ = new $c_Lcom_crosswordmaker_puzzle_Puzzle$()
   };
-  return $n_Lcom_papauschek_puzzle_Puzzle$
+  return $n_Lcom_crosswordmaker_puzzle_Puzzle$
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Puzzle$$anon$2(valuesArray$2) {
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$2__f_valuesArray$1 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$2__f_valuesArray$1 = valuesArray$2
+function $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2(valuesArray$2) {
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$2__f_valuesArray$1 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$2__f_valuesArray$1 = valuesArray$2
 }
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.constructor = $c_Lcom_papauschek_puzzle_Puzzle$$anon$2;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Puzzle$$anon$2() {
+function $h_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype = $c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype;
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype = $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.productPrefix__T = (function() {
   return ""
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.productArity__I = (function() {
-  return this.Lcom_papauschek_puzzle_Puzzle$$anon$2__f_valuesArray$1.u.length
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.productArity__I = (function() {
+  return this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$2__f_valuesArray$1.u.length
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.productElement__I__O = (function(i) {
-  return this.Lcom_papauschek_puzzle_Puzzle$$anon$2__f_valuesArray$1.get(i)
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.productElement__I__O = (function(i) {
+  return this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$2__f_valuesArray$1.get(i)
 });
-var $d_Lcom_papauschek_puzzle_Puzzle$$anon$2 = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Puzzle$$anon$2: 0
-}, false, "com.papauschek.puzzle.Puzzle$$anon$2", {
-  Lcom_papauschek_puzzle_Puzzle$$anon$2: 1,
+var $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2 = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Puzzle$$anon$2: 0
+}, false, "com.crosswordmaker.puzzle.Puzzle$$anon$2", {
+  Lcom_crosswordmaker_puzzle_Puzzle$$anon$2: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$2.prototype.$classData = $d_Lcom_papauschek_puzzle_Puzzle$$anon$2;
-function $p_Lcom_papauschek_puzzle_PuzzleConfig$__elemsInfo$1__Lcom_papauschek_puzzle_PuzzleConfig__sci_List($thiz, v) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2;
+function $p_Lcom_crosswordmaker_puzzle_PuzzleConfig$__elemsInfo$1__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_List($thiz, v) {
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["width", "height", "wrapping"]));
   var labels = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
@@ -17580,11 +17556,11 @@ function $p_Lcom_papauschek_puzzle_PuzzleConfig$__elemsInfo$1__Lcom_papauschek_p
   }))))
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_PuzzleConfig$() {
-  this.Lcom_papauschek_puzzle_PuzzleConfig$__f_rw = null;
-  $n_Lcom_papauschek_puzzle_PuzzleConfig$ = this;
+function $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$() {
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw = null;
+  $n_Lcom_crosswordmaker_puzzle_PuzzleConfig$ = this;
   var MacroImplicits_this = $m_Lupickle_default$();
-  var x$1$proxy1 = $m_Lcom_papauschek_puzzle_PuzzleConfig$();
+  var x$1$proxy1 = $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
   var $$x4 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["width", "height", "wrapping"]));
@@ -17622,10 +17598,10 @@ function $c_Lcom_papauschek_puzzle_PuzzleConfig$() {
   var $$x3 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$10, that));
   var this$11 = $m_s_$less$colon$less$();
   var defaultParams = $$x3.toMap__s_$less$colon$less__sci_Map(this$11.s_$less$colon$less$__f_singleton);
-  var reader = new $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
+  var reader = new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
   var $$x2 = new $c_sjsr_AnonFunction1(((v) => {
-    var v$1 = $as_Lcom_papauschek_puzzle_PuzzleConfig(v);
-    return $p_Lcom_papauschek_puzzle_PuzzleConfig$__elemsInfo$1__Lcom_papauschek_puzzle_PuzzleConfig__sci_List(this, v$1)
+    var v$1 = $as_Lcom_crosswordmaker_puzzle_PuzzleConfig(v);
+    return $p_Lcom_crosswordmaker_puzzle_PuzzleConfig$__elemsInfo$1__Lcom_crosswordmaker_puzzle_PuzzleConfig__sci_List(this, v$1)
   }));
   $m_s_package$();
   var elems$3 = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["width", "height", "wrapping"]));
@@ -17653,78 +17629,78 @@ function $c_Lcom_papauschek_puzzle_PuzzleConfig$() {
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$15, that$1));
   var this$16 = $m_s_$less$colon$less$();
   var writer = new $c_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter(MacroImplicits_this, $$x2, $$x1.toMap__s_$less$colon$less__sci_Map(this$16.s_$less$colon$less$__f_singleton));
-  this.Lcom_papauschek_puzzle_PuzzleConfig$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
 }
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype.constructor = $c_Lcom_papauschek_puzzle_PuzzleConfig$;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_PuzzleConfig$() {
+function $h_Lcom_crosswordmaker_puzzle_PuzzleConfig$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_PuzzleConfig$.prototype = $c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype;
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype.toString__T = (function() {
+$h_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype.toString__T = (function() {
   return "PuzzleConfig"
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype.fromProduct__s_Product__Lcom_papauschek_puzzle_PuzzleConfig = (function(x$0) {
-  return new $c_Lcom_papauschek_puzzle_PuzzleConfig($uI(x$0.productElement__I__O(0)), $uI(x$0.productElement__I__O(1)), $uZ(x$0.productElement__I__O(2)))
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype.fromProduct__s_Product__Lcom_crosswordmaker_puzzle_PuzzleConfig = (function(x$0) {
+  return new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig($uI(x$0.productElement__I__O(0)), $uI(x$0.productElement__I__O(1)), $uZ(x$0.productElement__I__O(2)))
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_papauschek_puzzle_PuzzleConfig(p)
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_crosswordmaker_puzzle_PuzzleConfig(p)
 });
-var $d_Lcom_papauschek_puzzle_PuzzleConfig$ = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_PuzzleConfig$: 0
-}, false, "com.papauschek.puzzle.PuzzleConfig$", {
-  Lcom_papauschek_puzzle_PuzzleConfig$: 1,
+var $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$: 0
+}, false, "com.crosswordmaker.puzzle.PuzzleConfig$", {
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$: 1,
   O: 1,
   s_deriving_Mirror: 1,
   s_deriving_Mirror$Product: 1
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$.prototype.$classData = $d_Lcom_papauschek_puzzle_PuzzleConfig$;
-var $n_Lcom_papauschek_puzzle_PuzzleConfig$;
-function $m_Lcom_papauschek_puzzle_PuzzleConfig$() {
-  if ((!$n_Lcom_papauschek_puzzle_PuzzleConfig$)) {
-    $n_Lcom_papauschek_puzzle_PuzzleConfig$ = new $c_Lcom_papauschek_puzzle_PuzzleConfig$()
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$;
+var $n_Lcom_crosswordmaker_puzzle_PuzzleConfig$;
+function $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$() {
+  if ((!$n_Lcom_crosswordmaker_puzzle_PuzzleConfig$)) {
+    $n_Lcom_crosswordmaker_puzzle_PuzzleConfig$ = new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$()
   };
-  return $n_Lcom_papauschek_puzzle_PuzzleConfig$
+  return $n_Lcom_crosswordmaker_puzzle_PuzzleConfig$
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2(valuesArray$2) {
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1 = valuesArray$2
+function $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2(valuesArray$2) {
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1 = valuesArray$2
 }
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.constructor = $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2() {
+function $h_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype = $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype;
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.productPrefix__T = (function() {
   return ""
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.productArity__I = (function() {
-  return this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1.u.length
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.productArity__I = (function() {
+  return this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1.u.length
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.productElement__I__O = (function(i) {
-  return this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1.get(i)
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.productElement__I__O = (function(i) {
+  return this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2__f_valuesArray$1.get(i)
 });
-var $d_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2 = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_PuzzleConfig$$anon$2: 0
-}, false, "com.papauschek.puzzle.PuzzleConfig$$anon$2", {
-  Lcom_papauschek_puzzle_PuzzleConfig$$anon$2: 1,
+var $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2 = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2: 0
+}, false, "com.crosswordmaker.puzzle.PuzzleConfig$$anon$2", {
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2.prototype.$classData = $d_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2;
-function $p_Lcom_papauschek_ui_NewPuzzleMessage$__elemsInfo$1__Lcom_papauschek_ui_NewPuzzleMessage__sci_List($thiz, v) {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2;
+function $p_Lcom_crosswordmaker_ui_NewPuzzleMessage$__elemsInfo$1__Lcom_crosswordmaker_ui_NewPuzzleMessage__sci_List($thiz, v) {
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["puzzleConfig", "words"]));
   var labels = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
-  var elem$1 = $m_Lcom_papauschek_puzzle_PuzzleConfig$().Lcom_papauschek_puzzle_PuzzleConfig$__f_rw;
+  var elem$1 = $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$().Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw;
   var this$2 = $m_Lupickle_default$();
   var r = $m_Lupickle_default$().Lupickle_default$__f_StringWriter;
   var elem$1$2 = new $c_Lupickle_implicits_LowPriWriters$$anon$1(r, this$2);
@@ -17760,16 +17736,16 @@ function $p_Lcom_papauschek_ui_NewPuzzleMessage$__elemsInfo$1__Lcom_papauschek_u
   }))))
 }
 /** @constructor */
-function $c_Lcom_papauschek_ui_NewPuzzleMessage$() {
-  this.Lcom_papauschek_ui_NewPuzzleMessage$__f_rw = null;
-  $n_Lcom_papauschek_ui_NewPuzzleMessage$ = this;
+function $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$() {
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$__f_rw = null;
+  $n_Lcom_crosswordmaker_ui_NewPuzzleMessage$ = this;
   var MacroImplicits_this = $m_Lupickle_default$();
-  var x$1$proxy1 = $m_Lcom_papauschek_ui_NewPuzzleMessage$();
+  var x$1$proxy1 = $m_Lcom_crosswordmaker_ui_NewPuzzleMessage$();
   var $$x4 = MacroImplicits_this.ReadWriter__Lupickle_core_Types$ReadWriter$();
   $m_s_package$();
   var elems = $m_sr_ScalaRunTime$().wrapRefArray__AO__sci_ArraySeq(new ($d_T.getArrayOf().constr)(["puzzleConfig", "words"]));
   var labels = $m_sci_Nil$().prependedAll__sc_IterableOnce__sci_List(elems);
-  var elem$1 = $m_Lcom_papauschek_puzzle_PuzzleConfig$().Lcom_papauschek_puzzle_PuzzleConfig$__f_rw;
+  var elem$1 = $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$().Lcom_crosswordmaker_puzzle_PuzzleConfig$__f_rw;
   var this$5 = $m_Lupickle_default$();
   var r = $m_Lupickle_default$().Lupickle_default$__f_StringReader;
   var this$3 = $m_sci_Seq$();
@@ -17788,10 +17764,10 @@ function $c_Lcom_papauschek_ui_NewPuzzleMessage$() {
   var $$x3 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$9, that));
   var this$10 = $m_s_$less$colon$less$();
   var defaultParams = $$x3.toMap__s_$less$colon$less__sci_Map(this$10.s_$less$colon$less$__f_singleton);
-  var reader = new $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
+  var reader = new $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1(MacroImplicits_this, labels, visitors, defaultParams, x$1$proxy1);
   var $$x2 = new $c_sjsr_AnonFunction1(((v) => {
-    var v$1 = $as_Lcom_papauschek_ui_NewPuzzleMessage(v);
-    return $p_Lcom_papauschek_ui_NewPuzzleMessage$__elemsInfo$1__Lcom_papauschek_ui_NewPuzzleMessage__sci_List(this, v$1)
+    var v$1 = $as_Lcom_crosswordmaker_ui_NewPuzzleMessage(v);
+    return $p_Lcom_crosswordmaker_ui_NewPuzzleMessage$__elemsInfo$1__Lcom_crosswordmaker_ui_NewPuzzleMessage__sci_List(this, v$1)
   }));
   var this$12 = $m_s_package$().s_package$__f_Nil;
   var this$11 = $m_s_package$().s_package$__f_Nil;
@@ -17803,73 +17779,73 @@ function $c_Lcom_papauschek_ui_NewPuzzleMessage$() {
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$12, that$1));
   var this$13 = $m_s_$less$colon$less$();
   var writer = new $c_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter(MacroImplicits_this, $$x2, $$x1.toMap__s_$less$colon$less__sci_Map(this$13.s_$less$colon$less$__f_singleton));
-  this.Lcom_papauschek_ui_NewPuzzleMessage$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$__f_rw = $$x4.join__Lupickle_core_Types$Reader__Lupickle_core_Types$Writer__Lupickle_core_Types$ReadWriter(reader, writer)
 }
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype = new $h_O();
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype.constructor = $c_Lcom_papauschek_ui_NewPuzzleMessage$;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype.constructor = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$;
 /** @constructor */
-function $h_Lcom_papauschek_ui_NewPuzzleMessage$() {
+function $h_Lcom_crosswordmaker_ui_NewPuzzleMessage$() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_NewPuzzleMessage$.prototype = $c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype;
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype.toString__T = (function() {
+$h_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype.toString__T = (function() {
   return "NewPuzzleMessage"
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype.fromProduct__s_Product__Lcom_papauschek_ui_NewPuzzleMessage = (function(x$0) {
-  return new $c_Lcom_papauschek_ui_NewPuzzleMessage($as_Lcom_papauschek_puzzle_PuzzleConfig(x$0.productElement__I__O(0)), $as_sci_Seq(x$0.productElement__I__O(1)))
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype.fromProduct__s_Product__Lcom_crosswordmaker_ui_NewPuzzleMessage = (function(x$0) {
+  return new $c_Lcom_crosswordmaker_ui_NewPuzzleMessage($as_Lcom_crosswordmaker_puzzle_PuzzleConfig(x$0.productElement__I__O(0)), $as_sci_Seq(x$0.productElement__I__O(1)))
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype.fromProduct__s_Product__O = (function(p) {
-  return this.fromProduct__s_Product__Lcom_papauschek_ui_NewPuzzleMessage(p)
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype.fromProduct__s_Product__O = (function(p) {
+  return this.fromProduct__s_Product__Lcom_crosswordmaker_ui_NewPuzzleMessage(p)
 });
-var $d_Lcom_papauschek_ui_NewPuzzleMessage$ = new $TypeData().initClass({
-  Lcom_papauschek_ui_NewPuzzleMessage$: 0
-}, false, "com.papauschek.ui.NewPuzzleMessage$", {
-  Lcom_papauschek_ui_NewPuzzleMessage$: 1,
+var $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$ = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$: 0
+}, false, "com.crosswordmaker.ui.NewPuzzleMessage$", {
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$: 1,
   O: 1,
   s_deriving_Mirror: 1,
   s_deriving_Mirror$Product: 1
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$.prototype.$classData = $d_Lcom_papauschek_ui_NewPuzzleMessage$;
-var $n_Lcom_papauschek_ui_NewPuzzleMessage$;
-function $m_Lcom_papauschek_ui_NewPuzzleMessage$() {
-  if ((!$n_Lcom_papauschek_ui_NewPuzzleMessage$)) {
-    $n_Lcom_papauschek_ui_NewPuzzleMessage$ = new $c_Lcom_papauschek_ui_NewPuzzleMessage$()
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$.prototype.$classData = $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$;
+var $n_Lcom_crosswordmaker_ui_NewPuzzleMessage$;
+function $m_Lcom_crosswordmaker_ui_NewPuzzleMessage$() {
+  if ((!$n_Lcom_crosswordmaker_ui_NewPuzzleMessage$)) {
+    $n_Lcom_crosswordmaker_ui_NewPuzzleMessage$ = new $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$()
   };
-  return $n_Lcom_papauschek_ui_NewPuzzleMessage$
+  return $n_Lcom_crosswordmaker_ui_NewPuzzleMessage$
 }
 /** @constructor */
-function $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2(valuesArray$2) {
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1 = valuesArray$2
+function $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2(valuesArray$2) {
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1 = valuesArray$2
 }
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype = new $h_O();
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.constructor = $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.constructor = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2;
 /** @constructor */
-function $h_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2() {
+function $h_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype = $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype;
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.productPrefix__T = (function() {
   return ""
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.productArity__I = (function() {
-  return this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1.u.length
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.productArity__I = (function() {
+  return this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1.u.length
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.productElement__I__O = (function(i) {
-  return this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1.get(i)
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.productElement__I__O = (function(i) {
+  return this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2__f_valuesArray$1.get(i)
 });
-var $d_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2 = new $TypeData().initClass({
-  Lcom_papauschek_ui_NewPuzzleMessage$$anon$2: 0
-}, false, "com.papauschek.ui.NewPuzzleMessage$$anon$2", {
-  Lcom_papauschek_ui_NewPuzzleMessage$$anon$2: 1,
+var $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2 = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2: 0
+}, false, "com.crosswordmaker.ui.NewPuzzleMessage$$anon$2", {
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2.prototype.$classData = $d_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2.prototype.$classData = $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2;
 function $ct_jl_Enum__T__I__($thiz, _name, _ordinal) {
   $thiz.jl_Enum__f__name = _name;
   $thiz.jl_Enum__f__ordinal = _ordinal;
@@ -22534,73 +22510,73 @@ var $d_Lupickle_implicits_Writers$$anon$15 = new $TypeData().initClass({
 });
 $c_Lupickle_implicits_Writers$$anon$15.prototype.$classData = $d_Lupickle_implicits_Writers$$anon$15;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_AnnotatedPoint(index, vertical, word) {
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_index = 0;
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical = false;
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_word = null;
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_index = index;
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical = vertical;
-  this.Lcom_papauschek_puzzle_AnnotatedPoint__f_word = word
+function $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint(index, vertical, word) {
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index = 0;
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical = false;
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word = null;
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index = index;
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical = vertical;
+  this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word = word
 }
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.constructor = $c_Lcom_papauschek_puzzle_AnnotatedPoint;
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_AnnotatedPoint() {
+function $h_Lcom_crosswordmaker_puzzle_AnnotatedPoint() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_AnnotatedPoint.prototype = $c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype;
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype = $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype;
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.hashCode__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.hashCode__I = (function() {
   var acc = (-889275714);
   var hash = acc;
   var data = $f_T__hashCode__I("AnnotatedPoint");
   acc = $m_sr_Statics$().mix__I__I__I(hash, data);
   var hash$1 = acc;
-  var data$1 = this.Lcom_papauschek_puzzle_AnnotatedPoint__f_index;
+  var data$1 = this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index;
   acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
   var hash$2 = acc;
-  var data$2 = (this.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical ? 1231 : 1237);
+  var data$2 = (this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical ? 1231 : 1237);
   acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
   var hash$3 = acc;
-  var x = this.Lcom_papauschek_puzzle_AnnotatedPoint__f_word;
+  var x = this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word;
   var data$3 = $m_sr_Statics$().anyHash__O__I(x);
   acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
   var hash$4 = acc;
   return $m_sr_Statics$().finalizeHash__I__I__I(hash$4, 3)
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true
-  } else if ((x$0 instanceof $c_Lcom_papauschek_puzzle_AnnotatedPoint)) {
-    var x$0$2 = $as_Lcom_papauschek_puzzle_AnnotatedPoint(x$0);
-    return (((this.Lcom_papauschek_puzzle_AnnotatedPoint__f_index === x$0$2.Lcom_papauschek_puzzle_AnnotatedPoint__f_index) && (this.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical === x$0$2.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical)) && (this.Lcom_papauschek_puzzle_AnnotatedPoint__f_word === x$0$2.Lcom_papauschek_puzzle_AnnotatedPoint__f_word))
+  } else if ((x$0 instanceof $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint)) {
+    var x$0$2 = $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(x$0);
+    return (((this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index === x$0$2.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index) && (this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical === x$0$2.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical)) && (this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word === x$0$2.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word))
   } else {
     return false
   }
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.toString__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this)
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.productArity__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.productArity__I = (function() {
   return 3
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.productPrefix__T = (function() {
   return "AnnotatedPoint"
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.productElement__I__O = (function(n) {
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return this.Lcom_papauschek_puzzle_AnnotatedPoint__f_index;
+      return this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index;
       break
     }
     case 1: {
-      return this.Lcom_papauschek_puzzle_AnnotatedPoint__f_vertical;
+      return this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_vertical;
       break
     }
     case 2: {
-      return this.Lcom_papauschek_puzzle_AnnotatedPoint__f_word;
+      return this.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_word;
       break
     }
     default: {
@@ -22608,101 +22584,101 @@ $c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.productElement__I__O = (funct
     }
   }
 });
-function $as_Lcom_papauschek_puzzle_AnnotatedPoint(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_puzzle_AnnotatedPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.puzzle.AnnotatedPoint"))
+function $as_Lcom_crosswordmaker_puzzle_AnnotatedPoint(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.puzzle.AnnotatedPoint"))
 }
-function $isArrayOf_Lcom_papauschek_puzzle_AnnotatedPoint(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_puzzle_AnnotatedPoint)))
+function $isArrayOf_Lcom_crosswordmaker_puzzle_AnnotatedPoint(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_puzzle_AnnotatedPoint)))
 }
-function $asArrayOf_Lcom_papauschek_puzzle_AnnotatedPoint(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_puzzle_AnnotatedPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.puzzle.AnnotatedPoint;", depth))
+function $asArrayOf_Lcom_crosswordmaker_puzzle_AnnotatedPoint(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_puzzle_AnnotatedPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.puzzle.AnnotatedPoint;", depth))
 }
-var $d_Lcom_papauschek_puzzle_AnnotatedPoint = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_AnnotatedPoint: 0
-}, false, "com.papauschek.puzzle.AnnotatedPoint", {
-  Lcom_papauschek_puzzle_AnnotatedPoint: 1,
+var $d_Lcom_crosswordmaker_puzzle_AnnotatedPoint = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_AnnotatedPoint: 0
+}, false, "com.crosswordmaker.puzzle.AnnotatedPoint", {
+  Lcom_crosswordmaker_puzzle_AnnotatedPoint: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lcom_papauschek_puzzle_AnnotatedPoint.prototype.$classData = $d_Lcom_papauschek_puzzle_AnnotatedPoint;
+$c_Lcom_crosswordmaker_puzzle_AnnotatedPoint.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_AnnotatedPoint;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_CharPoint(char, x, y, vertical) {
-  this.Lcom_papauschek_puzzle_CharPoint__f_char = 0;
-  this.Lcom_papauschek_puzzle_CharPoint__f_x = 0;
-  this.Lcom_papauschek_puzzle_CharPoint__f_y = 0;
-  this.Lcom_papauschek_puzzle_CharPoint__f_vertical = false;
-  this.Lcom_papauschek_puzzle_CharPoint__f_char = char;
-  this.Lcom_papauschek_puzzle_CharPoint__f_x = x;
-  this.Lcom_papauschek_puzzle_CharPoint__f_y = y;
-  this.Lcom_papauschek_puzzle_CharPoint__f_vertical = vertical
+function $c_Lcom_crosswordmaker_puzzle_CharPoint(char, x, y, vertical) {
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_char = 0;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_x = 0;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_y = 0;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical = false;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_char = char;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_x = x;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_y = y;
+  this.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical = vertical
 }
-$c_Lcom_papauschek_puzzle_CharPoint.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.constructor = $c_Lcom_papauschek_puzzle_CharPoint;
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_CharPoint;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_CharPoint() {
+function $h_Lcom_crosswordmaker_puzzle_CharPoint() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_CharPoint.prototype = $c_Lcom_papauschek_puzzle_CharPoint.prototype;
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_CharPoint.prototype = $c_Lcom_crosswordmaker_puzzle_CharPoint.prototype;
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.hashCode__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.hashCode__I = (function() {
   var acc = (-889275714);
   var hash = acc;
   var data = $f_T__hashCode__I("CharPoint");
   acc = $m_sr_Statics$().mix__I__I__I(hash, data);
   var hash$1 = acc;
-  var data$1 = this.Lcom_papauschek_puzzle_CharPoint__f_char;
+  var data$1 = this.Lcom_crosswordmaker_puzzle_CharPoint__f_char;
   acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
   var hash$2 = acc;
-  var data$2 = this.Lcom_papauschek_puzzle_CharPoint__f_x;
+  var data$2 = this.Lcom_crosswordmaker_puzzle_CharPoint__f_x;
   acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
   var hash$3 = acc;
-  var data$3 = this.Lcom_papauschek_puzzle_CharPoint__f_y;
+  var data$3 = this.Lcom_crosswordmaker_puzzle_CharPoint__f_y;
   acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
   var hash$4 = acc;
-  var data$4 = (this.Lcom_papauschek_puzzle_CharPoint__f_vertical ? 1231 : 1237);
+  var data$4 = (this.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical ? 1231 : 1237);
   acc = $m_sr_Statics$().mix__I__I__I(hash$4, data$4);
   var hash$5 = acc;
   return $m_sr_Statics$().finalizeHash__I__I__I(hash$5, 4)
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true
-  } else if ((x$0 instanceof $c_Lcom_papauschek_puzzle_CharPoint)) {
-    var x$0$2 = $as_Lcom_papauschek_puzzle_CharPoint(x$0);
-    return ((((this.Lcom_papauschek_puzzle_CharPoint__f_char === x$0$2.Lcom_papauschek_puzzle_CharPoint__f_char) && (this.Lcom_papauschek_puzzle_CharPoint__f_x === x$0$2.Lcom_papauschek_puzzle_CharPoint__f_x)) && (this.Lcom_papauschek_puzzle_CharPoint__f_y === x$0$2.Lcom_papauschek_puzzle_CharPoint__f_y)) && (this.Lcom_papauschek_puzzle_CharPoint__f_vertical === x$0$2.Lcom_papauschek_puzzle_CharPoint__f_vertical))
+  } else if ((x$0 instanceof $c_Lcom_crosswordmaker_puzzle_CharPoint)) {
+    var x$0$2 = $as_Lcom_crosswordmaker_puzzle_CharPoint(x$0);
+    return ((((this.Lcom_crosswordmaker_puzzle_CharPoint__f_char === x$0$2.Lcom_crosswordmaker_puzzle_CharPoint__f_char) && (this.Lcom_crosswordmaker_puzzle_CharPoint__f_x === x$0$2.Lcom_crosswordmaker_puzzle_CharPoint__f_x)) && (this.Lcom_crosswordmaker_puzzle_CharPoint__f_y === x$0$2.Lcom_crosswordmaker_puzzle_CharPoint__f_y)) && (this.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical === x$0$2.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical))
   } else {
     return false
   }
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.toString__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this)
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.productArity__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.productArity__I = (function() {
   return 4
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.productPrefix__T = (function() {
   return "CharPoint"
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.productElement__I__O = (function(n) {
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return $bC(this.Lcom_papauschek_puzzle_CharPoint__f_char);
+      return $bC(this.Lcom_crosswordmaker_puzzle_CharPoint__f_char);
       break
     }
     case 1: {
-      return this.Lcom_papauschek_puzzle_CharPoint__f_x;
+      return this.Lcom_crosswordmaker_puzzle_CharPoint__f_x;
       break
     }
     case 2: {
-      return this.Lcom_papauschek_puzzle_CharPoint__f_y;
+      return this.Lcom_crosswordmaker_puzzle_CharPoint__f_y;
       break
     }
     case 3: {
-      return this.Lcom_papauschek_puzzle_CharPoint__f_vertical;
+      return this.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical;
       break
     }
     default: {
@@ -22710,35 +22686,35 @@ $c_Lcom_papauschek_puzzle_CharPoint.prototype.productElement__I__O = (function(n
     }
   }
 });
-function $as_Lcom_papauschek_puzzle_CharPoint(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_puzzle_CharPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.puzzle.CharPoint"))
+function $as_Lcom_crosswordmaker_puzzle_CharPoint(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_puzzle_CharPoint) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.puzzle.CharPoint"))
 }
-function $isArrayOf_Lcom_papauschek_puzzle_CharPoint(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_puzzle_CharPoint)))
+function $isArrayOf_Lcom_crosswordmaker_puzzle_CharPoint(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_puzzle_CharPoint)))
 }
-function $asArrayOf_Lcom_papauschek_puzzle_CharPoint(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_puzzle_CharPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.puzzle.CharPoint;", depth))
+function $asArrayOf_Lcom_crosswordmaker_puzzle_CharPoint(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_puzzle_CharPoint(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.puzzle.CharPoint;", depth))
 }
-var $d_Lcom_papauschek_puzzle_CharPoint = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_CharPoint: 0
-}, false, "com.papauschek.puzzle.CharPoint", {
-  Lcom_papauschek_puzzle_CharPoint: 1,
+var $d_Lcom_crosswordmaker_puzzle_CharPoint = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_CharPoint: 0
+}, false, "com.crosswordmaker.puzzle.CharPoint", {
+  Lcom_crosswordmaker_puzzle_CharPoint: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lcom_papauschek_puzzle_CharPoint.prototype.$classData = $d_Lcom_papauschek_puzzle_CharPoint;
-function $p_Lcom_papauschek_puzzle_Puzzle__toIndex__I__I__I($thiz, x, y) {
-  return ((Math.imul(y, $thiz.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) + $intMod(x, $thiz.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width)) | 0)
+$c_Lcom_crosswordmaker_puzzle_CharPoint.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_CharPoint;
+function $p_Lcom_crosswordmaker_puzzle_Puzzle__toIndex__I__I__I($thiz, x, y) {
+  return ((Math.imul(y, $thiz.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) + $intMod(x, $thiz.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width)) | 0)
 }
-function $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z($thiz, x, y) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z($thiz, x, y) {
   return ($thiz.getChar__I__I__C(x, y) === 32)
 }
-function $p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, y) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, y) {
   return ($thiz.getChar__I__I__C(x, y) !== 32)
 }
-function $p_Lcom_papauschek_puzzle_Puzzle__fits__T__Z__I__I__Z($thiz, word, vertical, x, y) {
+function $p_Lcom_crosswordmaker_puzzle_Puzzle__fits__T__Z__I__I__Z($thiz, word, vertical, x, y) {
   var elem = false;
   elem = false;
   var end = word.length;
@@ -22766,17 +22742,17 @@ function $p_Lcom_papauschek_puzzle_Puzzle__fits__T__Z__I__I__Z($thiz, word, vert
       var ev$5 = true;
       elem = ev$5
     };
-    res = ((same || isEmpty$1) && ((!isEmpty$1) || (vertical ? ((!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, (((-1) + locX) | 0), locY)) && (!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, ((1 + locX) | 0), locY))) : ((!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, locX, (((-1) + locY) | 0))) && (!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, locX, ((1 + locY) | 0)))))))
+    res = ((same || isEmpty$1) && ((!isEmpty$1) || (vertical ? ((!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, (((-1) + locX) | 0), locY)) && (!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, ((1 + locX) | 0), locY))) : ((!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, locX, (((-1) + locY) | 0))) && (!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, locX, ((1 + locY) | 0)))))))
   };
   if ((res && elem)) {
-    return (vertical ? ((!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, (((-1) + y) | 0))) && (!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, ((y + word.length) | 0)))) : ((!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, (((-1) + x) | 0), y)) && (!$p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z($thiz, ((x + word.length) | 0), y))))
+    return (vertical ? ((!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, (((-1) + y) | 0))) && (!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, x, ((y + word.length) | 0)))) : ((!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, (((-1) + x) | 0), y)) && (!$p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z($thiz, ((x + word.length) | 0), y))))
   } else {
     return false
   }
 }
-function $p_Lcom_papauschek_puzzle_Puzzle__getWord__I__Z__T($thiz, point, vertical) {
-  var x = $thiz.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
-  var that = $thiz.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+function $p_Lcom_crosswordmaker_puzzle_Puzzle__getWord__I__Z__T($thiz, point, vertical) {
+  var x = $thiz.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
+  var that = $thiz.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var end = ((x > that) ? x : that);
   var isEmpty = (end <= 0);
   if (isEmpty) {
@@ -22793,7 +22769,7 @@ function $p_Lcom_papauschek_puzzle_Puzzle__getWord__I__Z__T($thiz, point, vertic
   var it = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement, isEmpty);
   while (it.sci_RangeIterator__f__hasNext) {
     var arg1 = it.next__I();
-    var elem = (vertical ? $thiz.getChar__I__I__C($m_Lcom_papauschek_puzzle_Point$().x$extension__I__I(point), (($m_Lcom_papauschek_puzzle_Point$().y$extension__I__I(point) + arg1) | 0)) : $thiz.getChar__I__I__C((($m_Lcom_papauschek_puzzle_Point$().x$extension__I__I(point) + arg1) | 0), $m_Lcom_papauschek_puzzle_Point$().y$extension__I__I(point)));
+    var elem = (vertical ? $thiz.getChar__I__I__C($m_Lcom_crosswordmaker_puzzle_Point$().x$extension__I__I(point), (($m_Lcom_crosswordmaker_puzzle_Point$().y$extension__I__I(point) + arg1) | 0)) : $thiz.getChar__I__I__C((($m_Lcom_crosswordmaker_puzzle_Point$().x$extension__I__I(point) + arg1) | 0), $m_Lcom_crosswordmaker_puzzle_Point$().y$extension__I__I(point)));
     b.addOne__O__scm_Growable($bC(elem))
   };
   var this$13 = $as_sc_IterableOnceOps($as_sci_IndexedSeq(b.result__O()).takeWhile__F1__O(new $c_sjsr_AnonFunction1(((_$3) => {
@@ -22804,55 +22780,55 @@ function $p_Lcom_papauschek_puzzle_Puzzle__getWord__I__Z__T($thiz, point, vertic
   return $f_sc_IterableOnceOps__mkString__T__T__T__T(this$13, "", "", "")
 }
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Puzzle(chars, config, words) {
-  this.Lcom_papauschek_puzzle_Puzzle__f_chars = null;
-  this.Lcom_papauschek_puzzle_Puzzle__f_config = null;
-  this.Lcom_papauschek_puzzle_Puzzle__f_words = null;
-  this.Lcom_papauschek_puzzle_Puzzle__f_density = 0.0;
-  this.Lcom_papauschek_puzzle_Puzzle__f_positions$lzy1 = null;
-  this.Lcom_papauschek_puzzle_Puzzle__f_positionsbitmap$1 = false;
-  this.Lcom_papauschek_puzzle_Puzzle__f_chars = chars;
-  this.Lcom_papauschek_puzzle_Puzzle__f_config = config;
-  this.Lcom_papauschek_puzzle_Puzzle__f_words = words;
+function $c_Lcom_crosswordmaker_puzzle_Puzzle(chars, config, words) {
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_config = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_words = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_density = 0.0;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_positions$lzy1 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_positionsbitmap$1 = false;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars = chars;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_config = config;
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_words = words;
   var letters = new $c_sr_IntRef(0);
   words.foreach__F1__V(new $c_sjsr_AnonFunction1(((word) => {
     var word$1 = $as_T(word);
     var ev$4 = ((letters.sr_IntRef__f_elem + word$1.length) | 0);
     letters.sr_IntRef__f_elem = ev$4
   })));
-  this.Lcom_papauschek_puzzle_Puzzle__f_density = (letters.sr_IntRef__f_elem / chars.u.length)
+  this.Lcom_crosswordmaker_puzzle_Puzzle__f_density = (letters.sr_IntRef__f_elem / chars.u.length)
 }
-$c_Lcom_papauschek_puzzle_Puzzle.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.constructor = $c_Lcom_papauschek_puzzle_Puzzle;
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Puzzle;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Puzzle() {
+function $h_Lcom_crosswordmaker_puzzle_Puzzle() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Puzzle.prototype = $c_Lcom_papauschek_puzzle_Puzzle.prototype;
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_Puzzle.prototype = $c_Lcom_crosswordmaker_puzzle_Puzzle.prototype;
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.hashCode__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false)
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true
-  } else if ((x$0 instanceof $c_Lcom_papauschek_puzzle_Puzzle)) {
-    var x$0$2 = $as_Lcom_papauschek_puzzle_Puzzle(x$0);
-    var x = this.Lcom_papauschek_puzzle_Puzzle__f_chars;
-    var x$2 = x$0$2.Lcom_papauschek_puzzle_Puzzle__f_chars;
+  } else if ((x$0 instanceof $c_Lcom_crosswordmaker_puzzle_Puzzle)) {
+    var x$0$2 = $as_Lcom_crosswordmaker_puzzle_Puzzle(x$0);
+    var x = this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars;
+    var x$2 = x$0$2.Lcom_crosswordmaker_puzzle_Puzzle__f_chars;
     if ((x === x$2)) {
-      var x$3 = this.Lcom_papauschek_puzzle_Puzzle__f_config;
-      var x$4 = x$0$2.Lcom_papauschek_puzzle_Puzzle__f_config;
+      var x$3 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config;
+      var x$4 = x$0$2.Lcom_crosswordmaker_puzzle_Puzzle__f_config;
       var $$x1 = ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
     } else {
       var $$x1 = false
     };
     if ($$x1) {
-      var x$5 = this.Lcom_papauschek_puzzle_Puzzle__f_words;
-      var x$6 = x$0$2.Lcom_papauschek_puzzle_Puzzle__f_words;
+      var x$5 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
+      var x$6 = x$0$2.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
       return ((x$5 === null) ? (x$6 === null) : x$5.equals__O__Z(x$6))
     } else {
       return false
@@ -22861,24 +22837,24 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.equals__O__Z = (function(x$0) {
     return false
   }
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.productArity__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.productArity__I = (function() {
   return 3
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.productPrefix__T = (function() {
   return "Puzzle"
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.productElement__I__O = (function(n) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return this.Lcom_papauschek_puzzle_Puzzle__f_chars;
+      return this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars;
       break
     }
     case 1: {
-      return this.Lcom_papauschek_puzzle_Puzzle__f_config;
+      return this.Lcom_crosswordmaker_puzzle_Puzzle__f_config;
       break
     }
     case 2: {
-      return this.Lcom_papauschek_puzzle_Puzzle__f_words;
+      return this.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
       break
     }
     default: {
@@ -22886,25 +22862,25 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.productElement__I__O = (function(n) {
     }
   }
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.positions__sci_Map = (function() {
-  if ((!this.Lcom_papauschek_puzzle_Puzzle__f_positionsbitmap$1)) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.positions__sci_Map = (function() {
+  if ((!this.Lcom_crosswordmaker_puzzle_Puzzle__f_positionsbitmap$1)) {
     var list = new $c_scm_ListBuffer();
-    var end = this.Lcom_papauschek_puzzle_Puzzle__f_chars.u.length;
+    var end = this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars.u.length;
     var isEmpty = (end <= 0);
     var scala$collection$immutable$Range$$lastElement = (((-1) + end) | 0);
     if ((!isEmpty)) {
       var i = 0;
       while (true) {
         var arg1 = i;
-        var char = this.Lcom_papauschek_puzzle_Puzzle__f_chars.get(arg1);
+        var char = this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars.get(arg1);
         if ((char !== 32)) {
-          var x = $intMod(arg1, this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width);
-          var y = $intDiv(arg1, this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width);
-          if ((($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), y) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), y)) && ((($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), ((1 + y) | 0)) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), (((-1) + y) | 0))) && (x < (((-1) + this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) | 0))) || (($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), ((1 + y) | 0)) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), (((-1) + y) | 0))) && (x > 0))))) {
-            var elem = new $c_Lcom_papauschek_puzzle_CharPoint(char, x, y, false);
+          var x = $intMod(arg1, this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width);
+          var y = $intDiv(arg1, this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width);
+          if ((($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), y) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), y)) && ((($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), ((1 + y) | 0)) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), (((-1) + y) | 0))) && (x < (((-1) + this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) | 0))) || (($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), ((1 + y) | 0)) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), (((-1) + y) | 0))) && (x > 0))))) {
+            var elem = new $c_Lcom_crosswordmaker_puzzle_CharPoint(char, x, y, false);
             list.addOne__O__scm_ListBuffer(elem)
-          } else if ((($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, x, ((1 + y) | 0)) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, x, (((-1) + y) | 0))) && ((($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), ((1 + y) | 0)) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), ((1 + y) | 0))) && (y < (((-1) + this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height) | 0))) || (($p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), (((-1) + y) | 0)) && $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), (((-1) + y) | 0))) && (y > 0))))) {
-            var elem$1 = new $c_Lcom_papauschek_puzzle_CharPoint(char, x, y, true);
+          } else if ((($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, x, ((1 + y) | 0)) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, x, (((-1) + y) | 0))) && ((($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), ((1 + y) | 0)) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), ((1 + y) | 0))) && (y < (((-1) + this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height) | 0))) || (($p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, ((1 + x) | 0), (((-1) + y) | 0)) && $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + x) | 0), (((-1) + y) | 0))) && (y > 0))))) {
+            var elem$1 = new $c_Lcom_crosswordmaker_puzzle_CharPoint(char, x, y, true);
             list.addOne__O__scm_ListBuffer(elem$1)
           }
         };
@@ -22916,7 +22892,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.positions__sci_Map = (function() {
     };
     if ((list.scm_ListBuffer__f_len >= 0)) {
       var len = list.scm_ListBuffer__f_len;
-      var destination = new ($d_Lcom_papauschek_puzzle_CharPoint.getArrayOf().constr)(len);
+      var destination = new ($d_Lcom_crosswordmaker_puzzle_CharPoint.getArrayOf().constr)(len);
       $f_sc_IterableOnceOps__copyToArray__O__I__I__I(list, destination, 0, 2147483647);
       var xs = destination
     } else {
@@ -22930,15 +22906,15 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.positions__sci_Map = (function() {
         var unboxedElem = ((elem$2 === null) ? null : elem$2);
         jsElems.push(unboxedElem)
       };
-      var xs = new ($d_Lcom_papauschek_puzzle_CharPoint.getArrayOf().constr)(jsElems)
+      var xs = new ($d_Lcom_crosswordmaker_puzzle_CharPoint.getArrayOf().constr)(jsElems)
     };
     var m = $as_scm_Map($m_scm_Map$().empty__O());
     var len$1 = xs.u.length;
     var i$1 = 0;
     while ((i$1 < len$1)) {
       var elem$3 = xs.get(i$1);
-      var _$1 = $as_Lcom_papauschek_puzzle_CharPoint(elem$3);
-      var key = _$1.Lcom_papauschek_puzzle_CharPoint__f_char;
+      var _$1 = $as_Lcom_crosswordmaker_puzzle_CharPoint(elem$3);
+      var key = _$1.Lcom_crosswordmaker_puzzle_CharPoint__f_char;
       var bldr = $as_scm_ArrayBuilder(m.getOrElseUpdate__O__F0__O($bC(key), new $c_sjsr_AnonFunction0(((xs) => (() => {
         var evidence$1 = $m_s_reflect_ClassTag$().apply__jl_Class__s_reflect_ClassTag($objectGetClass(xs).getComponentType__jl_Class());
         return new $c_scm_ArrayBuilder$generic(evidence$1.runtimeClass__jl_Class())
@@ -22953,15 +22929,15 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.positions__sci_Map = (function() {
     }));
     var this$19 = new $c_sc_MapView$MapValues(this$17, f);
     $m_s_$less$colon$less$();
-    this.Lcom_papauschek_puzzle_Puzzle__f_positions$lzy1 = $m_sci_Map$().from__sc_IterableOnce__sci_Map(this$19);
-    this.Lcom_papauschek_puzzle_Puzzle__f_positionsbitmap$1 = true
+    this.Lcom_crosswordmaker_puzzle_Puzzle__f_positions$lzy1 = $m_sci_Map$().from__sc_IterableOnce__sci_Map(this$19);
+    this.Lcom_crosswordmaker_puzzle_Puzzle__f_positionsbitmap$1 = true
   };
-  return this.Lcom_papauschek_puzzle_Puzzle__f_positions$lzy1
+  return this.Lcom_crosswordmaker_puzzle_Puzzle__f_positions$lzy1
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle = (function(x, y, vertical, word) {
-  var dimensions = new $ac_I(new Int32Array([this.Lcom_papauschek_puzzle_Puzzle__f_chars.u.length]));
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle = (function(x, y, vertical, word) {
+  var dimensions = new $ac_I(new Int32Array([this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars.u.length]));
   var newChars = $asArrayOf_C($m_jl_reflect_Array$().newInstance__jl_Class__AI__O($d_C.getClassOf(), dimensions), 1);
-  $m_s_Array$().copy__O__I__O__I__I__V(this.Lcom_papauschek_puzzle_Puzzle__f_chars, 0, newChars, 0, this.Lcom_papauschek_puzzle_Puzzle__f_chars.u.length);
+  $m_s_Array$().copy__O__I__O__I__I__V(this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars, 0, newChars, 0, this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars.u.length);
   if (vertical) {
     var end = word.length;
     var isEmpty = (end <= 0);
@@ -22970,7 +22946,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.copyWithWord__I__I__Z__T__Lcom_papaus
       var i = 0;
       while (true) {
         var arg1 = i;
-        newChars.set($p_Lcom_papauschek_puzzle_Puzzle__toIndex__I__I__I(this, x, ((y + arg1) | 0)), $charAt(word, arg1));
+        newChars.set($p_Lcom_crosswordmaker_puzzle_Puzzle__toIndex__I__I__I(this, x, ((y + arg1) | 0)), $charAt(word, arg1));
         if ((i === scala$collection$immutable$Range$$lastElement)) {
           break
         };
@@ -22985,7 +22961,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.copyWithWord__I__I__Z__T__Lcom_papaus
       var i$1 = 0;
       while (true) {
         var arg1$1 = i$1;
-        newChars.set($p_Lcom_papauschek_puzzle_Puzzle__toIndex__I__I__I(this, ((x + arg1$1) | 0), y), $charAt(word, arg1$1));
+        newChars.set($p_Lcom_crosswordmaker_puzzle_Puzzle__toIndex__I__I__I(this, ((x + arg1$1) | 0), y), $charAt(word, arg1$1));
         if ((i$1 === scala$collection$immutable$Range$$lastElement$1)) {
           break
         };
@@ -22993,15 +22969,15 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.copyWithWord__I__I__Z__T__Lcom_papaus
       }
     }
   };
-  var this$16 = this.Lcom_papauschek_puzzle_Puzzle__f_words;
+  var this$16 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_words;
   var words$1 = $as_sci_Set(this$16.incl__O__sci_SetOps(word));
-  var config$1 = this.Lcom_papauschek_puzzle_Puzzle__f_config;
-  return new $c_Lcom_papauschek_puzzle_Puzzle(newChars, config$1, words$1)
+  var config$1 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config;
+  return new $c_Lcom_crosswordmaker_puzzle_Puzzle(newChars, config$1, words$1)
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.getChar__I__I__C = (function(x, y) {
-  return ((((y < 0) || (y >= this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height)) || (((x < 0) || (x >= this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width)) && (!this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping))) ? 32 : this.Lcom_papauschek_puzzle_Puzzle__f_chars.get((($intMod(((x + this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) | 0), this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) + Math.imul(y, this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width)) | 0)))
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.getChar__I__I__C = (function(x, y) {
+  return ((((y < 0) || (y >= this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height)) || (((x < 0) || (x >= this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width)) && (!this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping))) ? 32 : this.Lcom_crosswordmaker_puzzle_Puzzle__f_chars.get((($intMod(((x + this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) | 0), this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) + Math.imul(y, this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width)) | 0)))
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_Puzzle = (function(word) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.addWord__T__ALcom_crosswordmaker_puzzle_Puzzle = (function(word) {
   var this$1 = $m_s_Predef$().wrapString__T__sci_WrappedString(word);
   var this$2 = $as_sc_IterableOps($f_sc_IterableOps__zipWithIndex__O(this$1));
   var m = $as_scm_Map($m_scm_Map$().empty__O());
@@ -23038,7 +23014,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
       var char$1 = $uC(x$1$3.T2__f__1);
       var indicesList$1 = $as_sci_IndexedSeq(x$1$3.T2__f__2);
       var $$x1 = $m_s_Predef$();
-      var xs = $asArrayOf_O(this.positions__sci_Map().getOrElse__O__F0__O($bC(char$1), new $c_sjsr_AnonFunction0((() => new ($d_Lcom_papauschek_puzzle_CharPoint.getArrayOf().constr)(0)))), 1);
+      var xs = $asArrayOf_O(this.positions__sci_Map().getOrElse__O__F0__O($bC(char$1), new $c_sjsr_AnonFunction0((() => new ($d_Lcom_crosswordmaker_puzzle_CharPoint.getArrayOf().constr)(0)))), 1);
       var capacity = 0;
       var jsElems = null;
       capacity = 0;
@@ -23046,7 +23022,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
       var i = 0;
       while ((i < xs.u.length)) {
         var arg1 = xs.get(i);
-        var point = $as_Lcom_papauschek_puzzle_CharPoint(arg1);
+        var point = $as_Lcom_crosswordmaker_puzzle_CharPoint(arg1);
         var p$1 = new $c_sjsr_AnonFunction1(((x$1$4) => {
           var x$1$5 = $as_T2(x$1$4);
           return ((x$1$5 !== null) && ($uI(x$1$5.T2__f__2), true))
@@ -23061,17 +23037,17 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
               var \u03b43$___3;
               var \u03b43$___4;
               var \u03b43$___5;
-              if (point.Lcom_papauschek_puzzle_CharPoint__f_vertical) {
-                var _1 = point.Lcom_papauschek_puzzle_CharPoint__f_x;
-                var _2 = ((point.Lcom_papauschek_puzzle_CharPoint__f_y - index$1) | 0);
-                var _3 = point.Lcom_papauschek_puzzle_CharPoint__f_x;
-                var _4 = (((-1) + ((((point.Lcom_papauschek_puzzle_CharPoint__f_y - index$1) | 0) + word.length) | 0)) | 0);
+              if (point.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical) {
+                var _1 = point.Lcom_crosswordmaker_puzzle_CharPoint__f_x;
+                var _2 = ((point.Lcom_crosswordmaker_puzzle_CharPoint__f_y - index$1) | 0);
+                var _3 = point.Lcom_crosswordmaker_puzzle_CharPoint__f_x;
+                var _4 = (((-1) + ((((point.Lcom_crosswordmaker_puzzle_CharPoint__f_y - index$1) | 0) + word.length) | 0)) | 0);
                 var x11 = new $c_T4(_1, _2, _3, _4)
               } else {
-                var _1$1 = ((point.Lcom_papauschek_puzzle_CharPoint__f_x - index$1) | 0);
-                var _2$1 = point.Lcom_papauschek_puzzle_CharPoint__f_y;
-                var _3$1 = (((-1) + ((((point.Lcom_papauschek_puzzle_CharPoint__f_x - index$1) | 0) + word.length) | 0)) | 0);
-                var _4$1 = point.Lcom_papauschek_puzzle_CharPoint__f_y;
+                var _1$1 = ((point.Lcom_crosswordmaker_puzzle_CharPoint__f_x - index$1) | 0);
+                var _2$1 = point.Lcom_crosswordmaker_puzzle_CharPoint__f_y;
+                var _3$1 = (((-1) + ((((point.Lcom_crosswordmaker_puzzle_CharPoint__f_x - index$1) | 0) + word.length) | 0)) | 0);
+                var _4$1 = point.Lcom_crosswordmaker_puzzle_CharPoint__f_y;
                 var x11 = new $c_T4(_1$1, _2$1, _3$1, _4$1)
               };
               if ((x11 !== null)) {
@@ -23108,7 +23084,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
                 var y$1 = $uI(x21.T4__f__2);
                 var r$1 = $uI(x21.T4__f__3);
                 var b$1 = $uI(x21.T4__f__4);
-                return (((((x$3 >= 0) && (y$1 >= 0)) && (b$1 < this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height)) && ((r$1 < this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) || (this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping && (x$3 < this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width)))) && $p_Lcom_papauschek_puzzle_Puzzle__fits__T__Z__I__I__Z(this, word, point.Lcom_papauschek_puzzle_CharPoint__f_vertical, x$3, y$1))
+                return (((((x$3 >= 0) && (y$1 >= 0)) && (b$1 < this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height)) && ((r$1 < this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) || (this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping && (x$3 < this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width)))) && $p_Lcom_crosswordmaker_puzzle_Puzzle__fits__T__Z__I__I__Z(this, word, point.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical, x$3, y$1))
               }
             }
           };
@@ -23125,7 +23101,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
                 var y$3 = $uI(x30.T4__f__2);
                 $uI(x30.T4__f__3);
                 $uI(x30.T4__f__4);
-                return this.copyWithWord__I__I__Z__T__Lcom_papauschek_puzzle_Puzzle(x$4, y$3, point.Lcom_papauschek_puzzle_CharPoint__f_vertical, word)
+                return this.copyWithWord__I__I__Z__T__Lcom_crosswordmaker_puzzle_Puzzle(x$4, y$3, point.Lcom_crosswordmaker_puzzle_CharPoint__f_vertical, word)
               }
             }
           };
@@ -23139,13 +23115,13 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
         };
         i = ((1 + i) | 0)
       };
-      return $$x1.wrapRefArray__AO__scm_ArraySeq$ofRef(new ($d_Lcom_papauschek_puzzle_Puzzle.getArrayOf().constr)(jsElems))
+      return $$x1.wrapRefArray__AO__scm_ArraySeq$ofRef(new ($d_Lcom_crosswordmaker_puzzle_Puzzle.getArrayOf().constr)(jsElems))
     };
     throw new $c_s_MatchError(x$1$3)
   }))));
   if ((puzzles.knownSize__I() >= 0)) {
     var len = puzzles.knownSize__I();
-    var destination = new ($d_Lcom_papauschek_puzzle_Puzzle.getArrayOf().constr)(len);
+    var destination = new ($d_Lcom_crosswordmaker_puzzle_Puzzle.getArrayOf().constr)(len);
     $f_sc_IterableOnceOps__copyToArray__O__I__I__I(puzzles, destination, 0, 2147483647);
     return destination
   } else {
@@ -23159,11 +23135,11 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.addWord__T__ALcom_papauschek_puzzle_P
       var unboxedElem$1 = ((elem$2 === null) ? null : elem$2);
       jsElems$1.push(unboxedElem$1)
     };
-    return new ($d_Lcom_papauschek_puzzle_Puzzle.getArrayOf().constr)(jsElems$1)
+    return new ($d_Lcom_crosswordmaker_puzzle_Puzzle.getArrayOf().constr)(jsElems$1)
   }
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.toString__T = (function() {
-  var end = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.toString__T = (function() {
+  var end = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var isEmpty = (end <= 0);
   if (isEmpty) {
     var scala$collection$immutable$Range$$numRangeElements = 0
@@ -23172,7 +23148,7 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.toString__T = (function() {
     var scala$collection$immutable$Range$$numRangeElements = (((hi === 0) ? (((-2147483648) ^ end) > (-1)) : (hi > 0)) ? (-1) : end)
   };
   var scala$collection$immutable$Range$$lastElement = (((-1) + end) | 0);
-  var end$1 = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+  var end$1 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
   var isEmpty$1 = (end$1 <= 0);
   if (isEmpty$1) {
     var scala$collection$immutable$Range$$numRangeElements$1 = 0
@@ -23204,28 +23180,28 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.toString__T = (function() {
   };
   var this$16 = $as_sci_IndexedSeq(b.result__O());
   var this$12 = $m_s_package$().s_package$__f_Seq;
-  var n = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var n = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var elem$2 = new $c_sjsr_AnonFunction0((() => $bC(35)));
   var this$13 = $as_sc_IterableOnceOps($f_sc_IterableFactory__fill__I__F0__O(this$12, n, elem$2));
   var start = ($f_sc_IterableOnceOps__mkString__T__T__T__T(this$13, "", "", "") + "##\r\n#");
   var this$14 = $m_s_package$().s_package$__f_Seq;
-  var n$1 = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var n$1 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var elem$3 = new $c_sjsr_AnonFunction0((() => $bC(35)));
   var this$15 = $as_sc_IterableOnceOps($f_sc_IterableFactory__fill__I__F0__O(this$14, n$1, elem$3));
   var end$2 = ("#\r\n##" + $f_sc_IterableOnceOps__mkString__T__T__T__T(this$15, "", "", ""));
   var board = $f_sc_IterableOnceOps__mkString__T__T__T__T(this$16, start, "#\r\n#", end$2);
-  return ((((((((("Density: " + $doubleToInt((100.0 * this.Lcom_papauschek_puzzle_Puzzle__f_density))) + "%, Words: ") + this.Lcom_papauschek_puzzle_Puzzle__f_words.size__I()) + ", ") + this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width) + "x") + this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height) + "\r\n") + board)
+  return ((((((((("Density: " + $doubleToInt((100.0 * this.Lcom_crosswordmaker_puzzle_Puzzle__f_density))) + "%, Words: ") + this.Lcom_crosswordmaker_puzzle_Puzzle__f_words.size__I()) + ", ") + this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) + "x") + this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height) + "\r\n") + board)
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() {
   var index = new $c_sr_IntRef(0);
-  var end = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var end = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var isEmpty = (end <= 0);
   var scala$collection$immutable$Range$$lastElement = (((-1) + end) | 0);
   var b = $m_sci_IndexedSeq$().newBuilder__scm_Builder();
   var it = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement, isEmpty);
   while (it.sci_RangeIterator__f__hasNext) {
     var arg1 = it.next__I();
-    var end$1 = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+    var end$1 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
     var isEmpty$1 = (end$1 <= 0);
     if (isEmpty$1) {
       var scala$collection$immutable$Range$$numRangeElements$1 = 0
@@ -23241,9 +23217,9 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() 
     var it$1 = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement$1, isEmpty$1);
     while (it$1.sci_RangeIterator__f__hasNext) {
       var arg1$1 = it$1.next__I();
-      var nonEmpty = (!$p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, arg1, arg1$1));
-      var vertical = $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, arg1, (((-1) + arg1$1) | 0));
-      var horizontal = $p_Lcom_papauschek_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + arg1) | 0), arg1$1);
+      var nonEmpty = (!$p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, arg1, arg1$1));
+      var vertical = $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, arg1, (((-1) + arg1$1) | 0));
+      var horizontal = $p_Lcom_crosswordmaker_puzzle_Puzzle__isEmpty__I__I__Z(this, (((-1) + arg1) | 0), arg1$1);
       var elem = new $c_T4(arg1$1, nonEmpty, vertical, horizontal);
       b$1.addOne__O__scm_Growable(elem)
     };
@@ -23266,16 +23242,16 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() 
         $uZ(x$1$3.T4__f__2);
         var vertical$2 = $uZ(x$1$3.T4__f__3);
         var horizontal$2 = $uZ(x$1$3.T4__f__4);
-        var point = $m_Lcom_papauschek_puzzle_Point$().apply__I__I__I(arg1, y$1);
-        var vWord = $p_Lcom_papauschek_puzzle_Puzzle__getWord__I__Z__T(this, point, true);
-        var hWord = $p_Lcom_papauschek_puzzle_Puzzle__getWord__I__Z__T(this, point, false);
+        var point = $m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I(arg1, y$1);
+        var vWord = $p_Lcom_crosswordmaker_puzzle_Puzzle__getWord__I__Z__T(this, point, true);
+        var hWord = $p_Lcom_crosswordmaker_puzzle_Puzzle__getWord__I__Z__T(this, point, false);
         if ((vertical$2 && (vWord.length > 1))) {
           var ev$6 = ((1 + index.sr_IntRef__f_elem) | 0);
           index.sr_IntRef__f_elem = ev$6;
           var $$x2 = $m_s_package$().s_package$__f_Seq;
           var $$x1 = $m_sr_ScalaRunTime$();
           var index$1 = index.sr_IntRef__f_elem;
-          var vert = $as_sci_Seq($$x2.apply__sci_Seq__sc_SeqOps($$x1.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_papauschek_puzzle_AnnotatedPoint.getArrayOf().constr)([new $c_Lcom_papauschek_puzzle_AnnotatedPoint(index$1, true, vWord)]))))
+          var vert = $as_sci_Seq($$x2.apply__sci_Seq__sc_SeqOps($$x1.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_crosswordmaker_puzzle_AnnotatedPoint.getArrayOf().constr)([new $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint(index$1, true, vWord)]))))
         } else {
           var vert = $m_s_package$().s_package$__f_Nil
         };
@@ -23285,11 +23261,11 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() 
           var $$x4 = $m_s_package$().s_package$__f_Seq;
           var $$x3 = $m_sr_ScalaRunTime$();
           var index$2 = index.sr_IntRef__f_elem;
-          var horiz = $as_sci_Seq($$x4.apply__sci_Seq__sc_SeqOps($$x3.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_papauschek_puzzle_AnnotatedPoint.getArrayOf().constr)([new $c_Lcom_papauschek_puzzle_AnnotatedPoint(index$2, false, hWord)]))))
+          var horiz = $as_sci_Seq($$x4.apply__sci_Seq__sc_SeqOps($$x3.wrapRefArray__AO__sci_ArraySeq(new ($d_Lcom_crosswordmaker_puzzle_AnnotatedPoint.getArrayOf().constr)([new $c_Lcom_crosswordmaker_puzzle_AnnotatedPoint(index$2, false, hWord)]))))
         } else {
           var horiz = $m_s_package$().s_package$__f_Nil
         };
-        var _1 = new $c_Lcom_papauschek_puzzle_Point(point);
+        var _1 = new $c_Lcom_crosswordmaker_puzzle_Point(point);
         var _2 = vert.appendedAll__sc_IterableOnce__O(horiz);
         return new $c_T2(_1, _2)
       };
@@ -23301,31 +23277,31 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.getAnnotation__sci_Map = (function() 
   $m_s_$less$colon$less$();
   return $m_sci_Map$().from__sc_IterableOnce__sci_Map(points)
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.getCharsShownInPartialSolution__s_util_Random__D__sci_Set = (function(random, solvedFraction) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.getCharsShownInPartialSolution__s_util_Random__D__sci_Set = (function(random, solvedFraction) {
   var elem = $m_sci_Set$EmptySet$();
   var resultSet = new $c_sr_ObjectRef(elem);
-  var end = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var end = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   var isEmpty = (end <= 0);
   var scala$collection$immutable$Range$$lastElement = (((-1) + end) | 0);
   var b = $m_sci_IndexedSeq$().newBuilder__scm_Builder();
   var it = new $c_sci_RangeIterator(0, 1, scala$collection$immutable$Range$$lastElement, isEmpty);
   while (it.sci_RangeIterator__f__hasNext) {
     var arg1 = it.next__I();
-    var end$1 = this.Lcom_papauschek_puzzle_Puzzle__f_config.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+    var end$1 = this.Lcom_crosswordmaker_puzzle_Puzzle__f_config.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
     var this$12 = new $c_sci_Range$Exclusive(0, end$1, 1);
     var p = new $c_sjsr_AnonFunction1(((arg1) => ((y) => {
       var y$1 = $uI(y);
-      return $p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, y$1)
+      return $p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, y$1)
     }))(arg1));
     var xs = $as_sc_IterableOnce($ct_sc_IterableOps$WithFilter__sc_IterableOps__F1__(new $c_sc_IterableOps$WithFilter(), this$12, p).map__F1__O(new $c_sjsr_AnonFunction1(((random, solvedFraction, resultSet, arg1) => ((v1) => {
       var y$2 = $uI(v1);
-      var point = $m_Lcom_papauschek_puzzle_Point$().apply__I__I__I(arg1, y$2);
-      var hasVerticalNeighbor = ($p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, (((-1) + y$2) | 0)) || $p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, ((1 + y$2) | 0)));
-      var hasHorizontalNeighbor = ($p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z(this, (((-1) + arg1) | 0), y$2) || $p_Lcom_papauschek_puzzle_Puzzle__hasChar__I__I__Z(this, ((1 + arg1) | 0), y$2));
+      var point = $m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I(arg1, y$2);
+      var hasVerticalNeighbor = ($p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, (((-1) + y$2) | 0)) || $p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z(this, arg1, ((1 + y$2) | 0)));
+      var hasHorizontalNeighbor = ($p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z(this, (((-1) + arg1) | 0), y$2) || $p_Lcom_crosswordmaker_puzzle_Puzzle__hasChar__I__I__Z(this, ((1 + arg1) | 0), y$2));
       var isIntersection = (hasVerticalNeighbor && hasHorizontalNeighbor);
-      if (((((!isIntersection) && (random.s_util_Random__f_self.nextDouble__D() < solvedFraction)) && (!$as_sci_Set(resultSet.sr_ObjectRef__f_elem).contains__O__Z(new $c_Lcom_papauschek_puzzle_Point($m_Lcom_papauschek_puzzle_Point$().apply__I__I__I((((-1) + $m_Lcom_papauschek_puzzle_Point$().x$extension__I__I(point)) | 0), $m_Lcom_papauschek_puzzle_Point$().y$extension__I__I(point)))))) && (!$as_sci_Set(resultSet.sr_ObjectRef__f_elem).contains__O__Z(new $c_Lcom_papauschek_puzzle_Point($m_Lcom_papauschek_puzzle_Point$().apply__I__I__I($m_Lcom_papauschek_puzzle_Point$().x$extension__I__I(point), (((-1) + $m_Lcom_papauschek_puzzle_Point$().y$extension__I__I(point)) | 0))))))) {
+      if (((((!isIntersection) && (random.s_util_Random__f_self.nextDouble__D() < solvedFraction)) && (!$as_sci_Set(resultSet.sr_ObjectRef__f_elem).contains__O__Z(new $c_Lcom_crosswordmaker_puzzle_Point($m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I((((-1) + $m_Lcom_crosswordmaker_puzzle_Point$().x$extension__I__I(point)) | 0), $m_Lcom_crosswordmaker_puzzle_Point$().y$extension__I__I(point)))))) && (!$as_sci_Set(resultSet.sr_ObjectRef__f_elem).contains__O__Z(new $c_Lcom_crosswordmaker_puzzle_Point($m_Lcom_crosswordmaker_puzzle_Point$().apply__I__I__I($m_Lcom_crosswordmaker_puzzle_Point$().x$extension__I__I(point), (((-1) + $m_Lcom_crosswordmaker_puzzle_Point$().y$extension__I__I(point)) | 0))))))) {
         var this$13 = $as_sci_Set(resultSet.sr_ObjectRef__f_elem);
-        var elem$1 = new $c_Lcom_papauschek_puzzle_Point(point);
+        var elem$1 = new $c_Lcom_crosswordmaker_puzzle_Point(point);
         var ev$8 = $as_sci_Set(this$13.incl__O__sci_SetOps(elem$1));
         resultSet.sr_ObjectRef__f_elem = ev$8;
         ev$8 = null
@@ -23336,92 +23312,92 @@ $c_Lcom_papauschek_puzzle_Puzzle.prototype.getCharsShownInPartialSolution__s_uti
   b.result__O();
   return $as_sci_Set(resultSet.sr_ObjectRef__f_elem)
 });
-function $as_Lcom_papauschek_puzzle_Puzzle(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_puzzle_Puzzle) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.puzzle.Puzzle"))
+function $as_Lcom_crosswordmaker_puzzle_Puzzle(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_puzzle_Puzzle) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.puzzle.Puzzle"))
 }
-function $isArrayOf_Lcom_papauschek_puzzle_Puzzle(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_puzzle_Puzzle)))
+function $isArrayOf_Lcom_crosswordmaker_puzzle_Puzzle(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_puzzle_Puzzle)))
 }
-function $asArrayOf_Lcom_papauschek_puzzle_Puzzle(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_puzzle_Puzzle(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.puzzle.Puzzle;", depth))
+function $asArrayOf_Lcom_crosswordmaker_puzzle_Puzzle(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_puzzle_Puzzle(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.puzzle.Puzzle;", depth))
 }
-var $d_Lcom_papauschek_puzzle_Puzzle = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Puzzle: 0
-}, false, "com.papauschek.puzzle.Puzzle", {
-  Lcom_papauschek_puzzle_Puzzle: 1,
+var $d_Lcom_crosswordmaker_puzzle_Puzzle = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Puzzle: 0
+}, false, "com.crosswordmaker.puzzle.Puzzle", {
+  Lcom_crosswordmaker_puzzle_Puzzle: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lcom_papauschek_puzzle_Puzzle.prototype.$classData = $d_Lcom_papauschek_puzzle_Puzzle;
+$c_Lcom_crosswordmaker_puzzle_Puzzle.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Puzzle;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_PuzzleConfig(width, height, wrapping) {
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_width = 0;
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_height = 0;
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping = false;
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_width = width;
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_height = height;
-  this.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping = wrapping
+function $c_Lcom_crosswordmaker_puzzle_PuzzleConfig(width, height, wrapping) {
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width = 0;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height = 0;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping = false;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width = width;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height = height;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping = wrapping
 }
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype = new $h_O();
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.constructor = $c_Lcom_papauschek_puzzle_PuzzleConfig;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype = new $h_O();
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_PuzzleConfig() {
+function $h_Lcom_crosswordmaker_puzzle_PuzzleConfig() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_PuzzleConfig.prototype = $c_Lcom_papauschek_puzzle_PuzzleConfig.prototype;
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.hashCode__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.hashCode__I = (function() {
   var acc = (-889275714);
   var hash = acc;
   var data = $f_T__hashCode__I("PuzzleConfig");
   acc = $m_sr_Statics$().mix__I__I__I(hash, data);
   var hash$1 = acc;
-  var data$1 = this.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+  var data$1 = this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
   acc = $m_sr_Statics$().mix__I__I__I(hash$1, data$1);
   var hash$2 = acc;
-  var data$2 = this.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+  var data$2 = this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
   acc = $m_sr_Statics$().mix__I__I__I(hash$2, data$2);
   var hash$3 = acc;
-  var data$3 = (this.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping ? 1231 : 1237);
+  var data$3 = (this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping ? 1231 : 1237);
   acc = $m_sr_Statics$().mix__I__I__I(hash$3, data$3);
   var hash$4 = acc;
   return $m_sr_Statics$().finalizeHash__I__I__I(hash$4, 3)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true
-  } else if ((x$0 instanceof $c_Lcom_papauschek_puzzle_PuzzleConfig)) {
-    var x$0$2 = $as_Lcom_papauschek_puzzle_PuzzleConfig(x$0);
-    return (((this.Lcom_papauschek_puzzle_PuzzleConfig__f_width === x$0$2.Lcom_papauschek_puzzle_PuzzleConfig__f_width) && (this.Lcom_papauschek_puzzle_PuzzleConfig__f_height === x$0$2.Lcom_papauschek_puzzle_PuzzleConfig__f_height)) && (this.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping === x$0$2.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping))
+  } else if ((x$0 instanceof $c_Lcom_crosswordmaker_puzzle_PuzzleConfig)) {
+    var x$0$2 = $as_Lcom_crosswordmaker_puzzle_PuzzleConfig(x$0);
+    return (((this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width === x$0$2.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width) && (this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height === x$0$2.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height)) && (this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping === x$0$2.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping))
   } else {
     return false
   }
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.toString__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.productArity__I = (function() {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.productArity__I = (function() {
   return 3
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.productPrefix__T = (function() {
   return "PuzzleConfig"
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.productElement__I__O = (function(n) {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.productElement__I__O = (function(n) {
   switch (n) {
     case 0: {
-      return this.Lcom_papauschek_puzzle_PuzzleConfig__f_width;
+      return this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_width;
       break
     }
     case 1: {
-      return this.Lcom_papauschek_puzzle_PuzzleConfig__f_height;
+      return this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_height;
       break
     }
     case 2: {
-      return this.Lcom_papauschek_puzzle_PuzzleConfig__f_wrapping;
+      return this.Lcom_crosswordmaker_puzzle_PuzzleConfig__f_wrapping;
       break
     }
     default: {
@@ -23429,56 +23405,56 @@ $c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.productElement__I__O = (functio
     }
   }
 });
-function $as_Lcom_papauschek_puzzle_PuzzleConfig(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_puzzle_PuzzleConfig) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.puzzle.PuzzleConfig"))
+function $as_Lcom_crosswordmaker_puzzle_PuzzleConfig(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_puzzle_PuzzleConfig) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.puzzle.PuzzleConfig"))
 }
-function $isArrayOf_Lcom_papauschek_puzzle_PuzzleConfig(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_puzzle_PuzzleConfig)))
+function $isArrayOf_Lcom_crosswordmaker_puzzle_PuzzleConfig(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_puzzle_PuzzleConfig)))
 }
-function $asArrayOf_Lcom_papauschek_puzzle_PuzzleConfig(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_puzzle_PuzzleConfig(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.puzzle.PuzzleConfig;", depth))
+function $asArrayOf_Lcom_crosswordmaker_puzzle_PuzzleConfig(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_puzzle_PuzzleConfig(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.puzzle.PuzzleConfig;", depth))
 }
-var $d_Lcom_papauschek_puzzle_PuzzleConfig = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_PuzzleConfig: 0
-}, false, "com.papauschek.puzzle.PuzzleConfig", {
-  Lcom_papauschek_puzzle_PuzzleConfig: 1,
+var $d_Lcom_crosswordmaker_puzzle_PuzzleConfig = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_PuzzleConfig: 0
+}, false, "com.crosswordmaker.puzzle.PuzzleConfig", {
+  Lcom_crosswordmaker_puzzle_PuzzleConfig: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig.prototype.$classData = $d_Lcom_papauschek_puzzle_PuzzleConfig;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleConfig;
 /** @constructor */
-function $c_Lcom_papauschek_ui_NewPuzzleMessage(puzzleConfig, words) {
-  this.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage__f_words = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig = puzzleConfig;
-  this.Lcom_papauschek_ui_NewPuzzleMessage__f_words = words
+function $c_Lcom_crosswordmaker_ui_NewPuzzleMessage(puzzleConfig, words) {
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig = puzzleConfig;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words = words
 }
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype = new $h_O();
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.constructor = $c_Lcom_papauschek_ui_NewPuzzleMessage;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype = new $h_O();
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.constructor = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage;
 /** @constructor */
-function $h_Lcom_papauschek_ui_NewPuzzleMessage() {
+function $h_Lcom_crosswordmaker_ui_NewPuzzleMessage() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_NewPuzzleMessage.prototype = $c_Lcom_papauschek_ui_NewPuzzleMessage.prototype;
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.productIterator__sc_Iterator = (function() {
+$h_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.productIterator__sc_Iterator = (function() {
   return new $c_s_Product$$anon$1(this)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.hashCode__I = (function() {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
   return this$2.productHash__s_Product__I__Z__I(this, (-889275714), false)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.equals__O__Z = (function(x$0) {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.equals__O__Z = (function(x$0) {
   if ((this === x$0)) {
     return true
-  } else if ((x$0 instanceof $c_Lcom_papauschek_ui_NewPuzzleMessage)) {
-    var x$0$2 = $as_Lcom_papauschek_ui_NewPuzzleMessage(x$0);
-    var x = this.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig;
-    var x$2 = x$0$2.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig;
+  } else if ((x$0 instanceof $c_Lcom_crosswordmaker_ui_NewPuzzleMessage)) {
+    var x$0$2 = $as_Lcom_crosswordmaker_ui_NewPuzzleMessage(x$0);
+    var x = this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig;
+    var x$2 = x$0$2.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig;
     if (((x === null) ? (x$2 === null) : x.equals__O__Z(x$2))) {
-      var x$3 = this.Lcom_papauschek_ui_NewPuzzleMessage__f_words;
-      var x$4 = x$0$2.Lcom_papauschek_ui_NewPuzzleMessage__f_words;
+      var x$3 = this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words;
+      var x$4 = x$0$2.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words;
       return ((x$3 === null) ? (x$4 === null) : x$3.equals__O__Z(x$4))
     } else {
       return false
@@ -23487,43 +23463,43 @@ $c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.equals__O__Z = (function(x$0) {
     return false
   }
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.toString__T = (function() {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$()._toString__s_Product__T(this)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.productArity__I = (function() {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.productArity__I = (function() {
   return 2
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.productPrefix__T = (function() {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.productPrefix__T = (function() {
   return "NewPuzzleMessage"
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.productElement__I__O = (function(n) {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.productElement__I__O = (function(n) {
   if ((n === 0)) {
-    return this.Lcom_papauschek_ui_NewPuzzleMessage__f_puzzleConfig
+    return this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_puzzleConfig
   };
   if ((n === 1)) {
-    return this.Lcom_papauschek_ui_NewPuzzleMessage__f_words
+    return this.Lcom_crosswordmaker_ui_NewPuzzleMessage__f_words
   };
   throw $ct_jl_IndexOutOfBoundsException__T__(new $c_jl_IndexOutOfBoundsException(), ("" + n))
 });
-function $as_Lcom_papauschek_ui_NewPuzzleMessage(obj) {
-  return (((obj instanceof $c_Lcom_papauschek_ui_NewPuzzleMessage) || (obj === null)) ? obj : $throwClassCastException(obj, "com.papauschek.ui.NewPuzzleMessage"))
+function $as_Lcom_crosswordmaker_ui_NewPuzzleMessage(obj) {
+  return (((obj instanceof $c_Lcom_crosswordmaker_ui_NewPuzzleMessage) || (obj === null)) ? obj : $throwClassCastException(obj, "com.crosswordmaker.ui.NewPuzzleMessage"))
 }
-function $isArrayOf_Lcom_papauschek_ui_NewPuzzleMessage(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_papauschek_ui_NewPuzzleMessage)))
+function $isArrayOf_Lcom_crosswordmaker_ui_NewPuzzleMessage(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lcom_crosswordmaker_ui_NewPuzzleMessage)))
 }
-function $asArrayOf_Lcom_papauschek_ui_NewPuzzleMessage(obj, depth) {
-  return (($isArrayOf_Lcom_papauschek_ui_NewPuzzleMessage(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.papauschek.ui.NewPuzzleMessage;", depth))
+function $asArrayOf_Lcom_crosswordmaker_ui_NewPuzzleMessage(obj, depth) {
+  return (($isArrayOf_Lcom_crosswordmaker_ui_NewPuzzleMessage(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lcom.crosswordmaker.ui.NewPuzzleMessage;", depth))
 }
-var $d_Lcom_papauschek_ui_NewPuzzleMessage = new $TypeData().initClass({
-  Lcom_papauschek_ui_NewPuzzleMessage: 0
-}, false, "com.papauschek.ui.NewPuzzleMessage", {
-  Lcom_papauschek_ui_NewPuzzleMessage: 1,
+var $d_Lcom_crosswordmaker_ui_NewPuzzleMessage = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_NewPuzzleMessage: 0
+}, false, "com.crosswordmaker.ui.NewPuzzleMessage", {
+  Lcom_crosswordmaker_ui_NewPuzzleMessage: 1,
   O: 1,
   s_Equals: 1,
   s_Product: 1,
   Ljava_io_Serializable: 1
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage.prototype.$classData = $d_Lcom_papauschek_ui_NewPuzzleMessage;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage.prototype.$classData = $d_Lcom_crosswordmaker_ui_NewPuzzleMessage;
 function $as_Ljava_io_IOException(obj) {
   return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.IOException"))
 }
@@ -37401,35 +37377,35 @@ var $d_Lupickle_implicits_Readers$$anon$9 = new $TypeData().initClass({
 });
 $c_Lupickle_implicits_Readers$$anon$9.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$9;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_Puzzle$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_labels$2 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_visitors$2 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_defaultParams$2 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_m$2 = null;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_labels$2 = labels$1;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_visitors$2 = visitors$1;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_defaultParams$2 = defaultParams$1;
-  this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_m$2 = m$1;
+function $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_labels$2 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_visitors$2 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_defaultParams$2 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_m$2 = null;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_labels$2 = labels$1;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_visitors$2 = visitors$1;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_defaultParams$2 = defaultParams$1;
+  this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_m$2 = m$1;
   $ct_Lupickle_core_Types$CaseR__Lupickle_core_Types__(this, CaseClassReaderPiece_this$1)
 }
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.constructor = $c_Lcom_papauschek_puzzle_Puzzle$$anon$1;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_Puzzle$$anon$1() {
+function $h_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype = $c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype;
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+$h_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype = $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
   return new $c_Lupickle_implicits_CaseClassReaderPiece$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
   return $f_Lupickle_implicits_CaseClassReaderPiece$CaseClassReader__visitString__jl_CharSequence__I__O(this, v, index)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
-  var this$1 = this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_visitors$2;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
+  var this$1 = this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_visitors$2;
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$1, that));
   var this$2 = $m_s_$less$colon$less$();
   var x50 = $$x1.toMap__s_$less$colon$less__sci_Map(this$2.s_$less$colon$less$__f_singleton).get__O__s_Option(key);
@@ -37443,11 +37419,11 @@ $c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.visitorForKey__T__Lupickle_co
   };
   throw new $c_s_MatchError(x50)
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__Lcom_papauschek_puzzle_Puzzle = (function(params) {
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__Lcom_crosswordmaker_puzzle_Puzzle = (function(params) {
   var values = new $c_scm_ListBuffer();
   var missingKeys = new $c_scm_ListBuffer();
-  var this$3 = this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_visitors$2;
+  var this$3 = this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_visitors$2;
   var this$5 = $as_sci_List($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$3, that));
   var f = ((x$1) => {
     var x$1$1 = $as_T2(x$1);
@@ -37460,7 +37436,7 @@ $c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__Lcom_papausche
       };
       var x = $m_s_None$();
       if ((x === x56)) {
-        var x53 = this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
+        var x53 = this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
         if ((x53 instanceof $c_s_Some)) {
           var fallback = $as_s_Some(x53).s_Some__f_value;
           return values.addOne__O__scm_ListBuffer(fallback)
@@ -37512,18 +37488,18 @@ $c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__Lcom_papausche
     };
     var valuesArray = new $ac_O(jsElems)
   };
-  return $as_Lcom_papauschek_puzzle_Puzzle(this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_papauschek_puzzle_Puzzle$$anon$2(valuesArray)))
+  return $as_Lcom_crosswordmaker_puzzle_Puzzle(this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$2(valuesArray)))
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
-  return this.Lcom_papauschek_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
+  return this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
-  return this.make__sci_Map__Lcom_papauschek_puzzle_Puzzle(bldr)
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
+  return this.make__sci_Map__Lcom_crosswordmaker_puzzle_Puzzle(bldr)
 });
-var $d_Lcom_papauschek_puzzle_Puzzle$$anon$1 = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_Puzzle$$anon$1: 0
-}, false, "com.papauschek.puzzle.Puzzle$$anon$1", {
-  Lcom_papauschek_puzzle_Puzzle$$anon$1: 1,
+var $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1 = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_Puzzle$$anon$1: 0
+}, false, "com.crosswordmaker.puzzle.Puzzle$$anon$1", {
+  Lcom_crosswordmaker_puzzle_Puzzle$$anon$1: 1,
   Lupickle_core_Types$CaseR: 1,
   O: 1,
   Lupickle_core_Visitor: 1,
@@ -37532,37 +37508,37 @@ var $d_Lcom_papauschek_puzzle_Puzzle$$anon$1 = new $TypeData().initClass({
   Lupickle_core_Types$SimpleReader: 1,
   Lupickle_implicits_CaseClassReaderPiece$CaseClassReader: 1
 });
-$c_Lcom_papauschek_puzzle_Puzzle$$anon$1.prototype.$classData = $d_Lcom_papauschek_puzzle_Puzzle$$anon$1;
+$c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1;
 /** @constructor */
-function $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_labels$2 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_visitors$2 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_m$2 = null;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_labels$2 = labels$1;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_visitors$2 = visitors$1;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2 = defaultParams$1;
-  this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_m$2 = m$1;
+function $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_labels$2 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_visitors$2 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_m$2 = null;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_labels$2 = labels$1;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_visitors$2 = visitors$1;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2 = defaultParams$1;
+  this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_m$2 = m$1;
   $ct_Lupickle_core_Types$CaseR__Lupickle_core_Types__(this, CaseClassReaderPiece_this$1)
 }
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.constructor = $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.constructor = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1;
 /** @constructor */
-function $h_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1() {
+function $h_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype = $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype;
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+$h_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype = $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
   return new $c_Lupickle_implicits_CaseClassReaderPiece$$anon$1(this)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
   return $f_Lupickle_implicits_CaseClassReaderPiece$CaseClassReader__visitString__jl_CharSequence__I__O(this, v, index)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
-  var this$1 = this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_visitors$2;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
+  var this$1 = this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_visitors$2;
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$1, that));
   var this$2 = $m_s_$less$colon$less$();
   var x5 = $$x1.toMap__s_$less$colon$less__sci_Map(this$2.s_$less$colon$less$__f_singleton).get__O__s_Option(key);
@@ -37576,11 +37552,11 @@ $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.visitorForKey__T__Lupic
   };
   throw new $c_s_MatchError(x5)
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__Lcom_papauschek_puzzle_PuzzleConfig = (function(params) {
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__Lcom_crosswordmaker_puzzle_PuzzleConfig = (function(params) {
   var values = new $c_scm_ListBuffer();
   var missingKeys = new $c_scm_ListBuffer();
-  var this$3 = this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_visitors$2;
+  var this$3 = this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_visitors$2;
   var this$5 = $as_sci_List($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$3, that));
   var f = ((x$1) => {
     var x$1$1 = $as_T2(x$1);
@@ -37593,7 +37569,7 @@ $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__Lcom_pap
       };
       var x = $m_s_None$();
       if ((x === x11)) {
-        var x8 = this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
+        var x8 = this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
         if ((x8 instanceof $c_s_Some)) {
           var fallback = $as_s_Some(x8).s_Some__f_value;
           return values.addOne__O__scm_ListBuffer(fallback)
@@ -37645,18 +37621,18 @@ $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__Lcom_pap
     };
     var valuesArray = new $ac_O(jsElems)
   };
-  return $as_Lcom_papauschek_puzzle_PuzzleConfig(this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$2(valuesArray)))
+  return $as_Lcom_crosswordmaker_puzzle_PuzzleConfig(this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$2(valuesArray)))
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
-  return this.Lcom_papauschek_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
+  return this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
-  return this.make__sci_Map__Lcom_papauschek_puzzle_PuzzleConfig(bldr)
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
+  return this.make__sci_Map__Lcom_crosswordmaker_puzzle_PuzzleConfig(bldr)
 });
-var $d_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1 = new $TypeData().initClass({
-  Lcom_papauschek_puzzle_PuzzleConfig$$anon$1: 0
-}, false, "com.papauschek.puzzle.PuzzleConfig$$anon$1", {
-  Lcom_papauschek_puzzle_PuzzleConfig$$anon$1: 1,
+var $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1 = new $TypeData().initClass({
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1: 0
+}, false, "com.crosswordmaker.puzzle.PuzzleConfig$$anon$1", {
+  Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1: 1,
   Lupickle_core_Types$CaseR: 1,
   O: 1,
   Lupickle_core_Visitor: 1,
@@ -37665,37 +37641,37 @@ var $d_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1 = new $TypeData().initClass({
   Lupickle_core_Types$SimpleReader: 1,
   Lupickle_implicits_CaseClassReaderPiece$CaseClassReader: 1
 });
-$c_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1.prototype.$classData = $d_Lcom_papauschek_puzzle_PuzzleConfig$$anon$1;
+$c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1;
 /** @constructor */
-function $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_labels$2 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_visitors$2 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_m$2 = null;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_labels$2 = labels$1;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_visitors$2 = visitors$1;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2 = defaultParams$1;
-  this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_m$2 = m$1;
+function $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_labels$2 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_visitors$2 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_m$2 = null;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2 = CaseClassReaderPiece_this$1;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_labels$2 = labels$1;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_visitors$2 = visitors$1;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2 = defaultParams$1;
+  this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_m$2 = m$1;
   $ct_Lupickle_core_Types$CaseR__Lupickle_core_Types__(this, CaseClassReaderPiece_this$1)
 }
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.constructor = $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype = new $h_Lupickle_core_Types$CaseR();
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.constructor = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1;
 /** @constructor */
-function $h_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1() {
+function $h_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1() {
   /*<skip>*/
 }
-$h_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype = $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype;
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+$h_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype = $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
   return new $c_Lupickle_implicits_CaseClassReaderPiece$$anon$1(this)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.visitString__jl_CharSequence__I__O = (function(v, index) {
   return $f_Lupickle_implicits_CaseClassReaderPiece$CaseClassReader__visitString__jl_CharSequence__I__O(this, v, index)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
-  var this$1 = this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_visitors$2;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.visitorForKey__T__Lupickle_core_Visitor = (function(key) {
+  var this$1 = this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_visitors$2;
   var $$x1 = $as_sc_IterableOnceOps($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$1, that));
   var this$2 = $m_s_$less$colon$less$();
   var x5 = $$x1.toMap__s_$less$colon$less__sci_Map(this$2.s_$less$colon$less$__f_singleton).get__O__s_Option(key);
@@ -37709,11 +37685,11 @@ $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.visitorForKey__T__Lupic
   };
   throw new $c_s_MatchError(x5)
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__Lcom_papauschek_ui_NewPuzzleMessage = (function(params) {
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__Lcom_crosswordmaker_ui_NewPuzzleMessage = (function(params) {
   var values = new $c_scm_ListBuffer();
   var missingKeys = new $c_scm_ListBuffer();
-  var this$3 = this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_labels$2;
-  var that = this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_visitors$2;
+  var this$3 = this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_labels$2;
+  var that = this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_visitors$2;
   var this$5 = $as_sci_List($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$3, that));
   var f = ((x$1) => {
     var x$1$1 = $as_T2(x$1);
@@ -37726,7 +37702,7 @@ $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__Lcom_pap
       };
       var x = $m_s_None$();
       if ((x === x11)) {
-        var x8 = this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
+        var x8 = this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_defaultParams$2.get__O__s_Option(fieldName);
         if ((x8 instanceof $c_s_Some)) {
           var fallback = $as_s_Some(x8).s_Some__f_value;
           return values.addOne__O__scm_ListBuffer(fallback)
@@ -37778,18 +37754,18 @@ $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__Lcom_pap
     };
     var valuesArray = new $ac_O(jsElems)
   };
-  return $as_Lcom_papauschek_ui_NewPuzzleMessage(this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$2(valuesArray)))
+  return $as_Lcom_crosswordmaker_ui_NewPuzzleMessage(this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_m$2.fromProduct__s_Product__O(new $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$2(valuesArray)))
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
-  return this.Lcom_papauschek_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.upickle$implicits$CaseClassReaderPiece$CaseClassReader$$$outer__Lupickle_default$ = (function() {
+  return this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
-  return this.make__sci_Map__Lcom_papauschek_ui_NewPuzzleMessage(bldr)
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.make__sci_Map__O = (function(bldr) {
+  return this.make__sci_Map__Lcom_crosswordmaker_ui_NewPuzzleMessage(bldr)
 });
-var $d_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1 = new $TypeData().initClass({
-  Lcom_papauschek_ui_NewPuzzleMessage$$anon$1: 0
-}, false, "com.papauschek.ui.NewPuzzleMessage$$anon$1", {
-  Lcom_papauschek_ui_NewPuzzleMessage$$anon$1: 1,
+var $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1 = new $TypeData().initClass({
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1: 0
+}, false, "com.crosswordmaker.ui.NewPuzzleMessage$$anon$1", {
+  Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1: 1,
   Lupickle_core_Types$CaseR: 1,
   O: 1,
   Lupickle_core_Visitor: 1,
@@ -37798,7 +37774,7 @@ var $d_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1 = new $TypeData().initClass({
   Lupickle_core_Types$SimpleReader: 1,
   Lupickle_implicits_CaseClassReaderPiece$CaseClassReader: 1
 });
-$c_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1.prototype.$classData = $d_Lcom_papauschek_ui_NewPuzzleMessage$$anon$1;
+$c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1.prototype.$classData = $d_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1;
 function $ct_Ljava_io_PrintStream__Ljava_io_OutputStream__Z__Ljava_nio_charset_Charset__($thiz, _out, autoFlush, charset) {
   $ct_Ljava_io_FilterOutputStream__Ljava_io_OutputStream__($thiz, _out);
   return $thiz
@@ -37825,15 +37801,6 @@ $c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__Ljava_io_PrintStream 
 $c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__jl_Appendable = (function(csq) {
   return this.append__jl_CharSequence__Ljava_io_PrintStream(csq)
 });
-function $as_Ljava_io_PrintStream(obj) {
-  return (((obj instanceof $c_Ljava_io_PrintStream) || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.PrintStream"))
-}
-function $isArrayOf_Ljava_io_PrintStream(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_io_PrintStream)))
-}
-function $asArrayOf_Ljava_io_PrintStream(obj, depth) {
-  return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
-}
 class $c_ju_DuplicateFormatFlagsException extends $c_ju_IllegalFormatException {
   constructor(f) {
     super();
@@ -45224,6 +45191,9 @@ $c_sci_Set$Set1.prototype.iterator__sc_Iterator = (function() {
 $c_sci_Set$Set1.prototype.foreach__F1__V = (function(f) {
   f.apply__O__O(this.sci_Set$Set1__f_elem1)
 });
+$c_sci_Set$Set1.prototype.exists__F1__Z = (function(p) {
+  return $uZ(p.apply__O__O(this.sci_Set$Set1__f_elem1))
+});
 $c_sci_Set$Set1.prototype.forall__F1__Z = (function(p) {
   return $uZ(p.apply__O__O(this.sci_Set$Set1__f_elem1))
 });
@@ -45322,6 +45292,9 @@ $c_sci_Set$Set2.prototype.scala$collection$immutable$Set$Set2$$getElem__I__O = (
 $c_sci_Set$Set2.prototype.foreach__F1__V = (function(f) {
   f.apply__O__O(this.sci_Set$Set2__f_elem1);
   f.apply__O__O(this.sci_Set$Set2__f_elem2)
+});
+$c_sci_Set$Set2.prototype.exists__F1__Z = (function(p) {
+  return ($uZ(p.apply__O__O(this.sci_Set$Set2__f_elem1)) || $uZ(p.apply__O__O(this.sci_Set$Set2__f_elem2)))
 });
 $c_sci_Set$Set2.prototype.forall__F1__Z = (function(p) {
   return ($uZ(p.apply__O__O(this.sci_Set$Set2__f_elem1)) && $uZ(p.apply__O__O(this.sci_Set$Set2__f_elem2)))
@@ -45428,6 +45401,9 @@ $c_sci_Set$Set3.prototype.foreach__F1__V = (function(f) {
   f.apply__O__O(this.sci_Set$Set3__f_elem1);
   f.apply__O__O(this.sci_Set$Set3__f_elem2);
   f.apply__O__O(this.sci_Set$Set3__f_elem3)
+});
+$c_sci_Set$Set3.prototype.exists__F1__Z = (function(p) {
+  return (($uZ(p.apply__O__O(this.sci_Set$Set3__f_elem1)) || $uZ(p.apply__O__O(this.sci_Set$Set3__f_elem2))) || $uZ(p.apply__O__O(this.sci_Set$Set3__f_elem3)))
 });
 $c_sci_Set$Set3.prototype.forall__F1__Z = (function(p) {
   return (($uZ(p.apply__O__O(this.sci_Set$Set3__f_elem1)) && $uZ(p.apply__O__O(this.sci_Set$Set3__f_elem2))) && $uZ(p.apply__O__O(this.sci_Set$Set3__f_elem3)))
@@ -45555,6 +45531,9 @@ $c_sci_Set$Set4.prototype.foreach__F1__V = (function(f) {
   f.apply__O__O(this.sci_Set$Set4__f_elem2);
   f.apply__O__O(this.sci_Set$Set4__f_elem3);
   f.apply__O__O(this.sci_Set$Set4__f_elem4)
+});
+$c_sci_Set$Set4.prototype.exists__F1__Z = (function(p) {
+  return ((($uZ(p.apply__O__O(this.sci_Set$Set4__f_elem1)) || $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem2))) || $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem3))) || $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem4)))
 });
 $c_sci_Set$Set4.prototype.forall__F1__Z = (function(p) {
   return ((($uZ(p.apply__O__O(this.sci_Set$Set4__f_elem1)) && $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem2))) && $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem3))) && $uZ(p.apply__O__O(this.sci_Set$Set4__f_elem4)))
@@ -56211,7 +56190,7 @@ var $d_scm_Queue = new $TypeData().initClass({
 $c_scm_Queue.prototype.$classData = $d_scm_Queue;
 $L0 = new $c_RTLong(0, 0);
 $d_J.zero = $L0;
-UIMain = $m_Lcom_papauschek_ui_UIMain$();
-WorkerMain = $m_Lcom_papauschek_worker_WorkerMain$();
+WorkerMain = $m_Lcom_crosswordmaker_worker_WorkerMain$();
+UIMain = $m_Lcom_crosswordmaker_ui_UIMain$();
 }).call(this);
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=crosswordmaker-fastopt.js.map

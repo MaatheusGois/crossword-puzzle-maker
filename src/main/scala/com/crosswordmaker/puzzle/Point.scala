@@ -1,4 +1,4 @@
-package com.papauschek.puzzle
+package com.crosswordmaker.puzzle
 
 /** a point with x and y coordinates.
  * - The coordinates can be up to 16 bit in size:

@@ -1,8 +1,8 @@
-package com.papauschek.worker
+package com.crosswordmaker.worker
 
-import com.papauschek.puzzle.{Puzzle, PuzzleConfig}
-import com.papauschek.ui.NewPuzzleMessage
-import com.papauschek.worker.WorkerGlobal
+import com.crosswordmaker.puzzle.{Puzzle, PuzzleConfig}
+import com.crosswordmaker.ui.NewPuzzleMessage
+import com.crosswordmaker.worker.WorkerGlobal
 import org.scalajs.dom
 import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel, JSGlobalScope}
@@ -45,8 +45,8 @@ object WorkerMain:
     val end = System.currentTimeMillis()
     val bestPuzzle = puzzles.head
 
-    println(s"Words: ${bestPuzzle.words}")
-    println(s"Best density: ${bestPuzzle.density}% - $count - ms: ${end - start}")
+    // println(s"Words: ${bestPuzzle.words}")
+    // println(s"Best density: ${bestPuzzle.density}% - $count - ms: ${end - start}")
     bestPuzzle
 
 

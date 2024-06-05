@@ -1,3 +1,2 @@
-//importScripts("../target/scala-3.2.0/crossword-puzzle-maker-fastopt.js");
-importScripts("main.js");
+importScripts("crosswordmaker-fastopt.js");
 WorkerMain.main();

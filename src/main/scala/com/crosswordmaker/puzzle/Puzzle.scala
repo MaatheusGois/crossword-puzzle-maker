@@ -1,6 +1,6 @@
-package com.papauschek.puzzle
+package com.crosswordmaker.puzzle
 
-import com.papauschek.*
+import com.crosswordmaker.*
 import upickle.default.*
 import java.nio.file.{Files, Paths}
 import scala.annotation.tailrec
