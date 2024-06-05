@@ -1,178 +1,226 @@
 <!doctype html>
 <html lang="pt">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Criador de Palavras Cruzadas por Matheus Gois</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <style media="print">
-        .print-hidden { display: none; }
-        .pagebreak { page-break-before: always; }
-        .container { margin: 0 !important; max-width: 2000px !important; }
-        #output-puzzle {
-            max-width: 60%;
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Criador de Palavras Cruzadas por Matheus Gois</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-        #output-questions div div {
-            font-size: smaller;
-        }
-    </style>
+  <style media="print">
+    .print-hidden {
+      display: none;
+    }
+
+    .pagebreak {
+      page-break-before: always;
+    }
+
+    .container {
+      margin: 0 !important;
+      max-width: 2000px !important;
+    }
+
+    #output-puzzle {
+      max-width: 55%;
+    }
+
+    #output-questions div div {
+      font-size: smaller;
+    }
+
+    h1 {
+      font-size: 1.5em;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div id="title"><h1>Gerador de Palavras Cruzadas</h1></div>
-
-        <div class="row print-hidden">
-            <div class="col-lg-6">
-                <h2><i class="bi bi-1-circle"></i> Insira suas Palavras</h2>
-                    <div class="form-group">
-                    <label for="input" class="form-label">
-                        Escolha um tema, a partir dele serão escolhidos os versículos para criar suas palavras cruzadas.
-                    </label>
-                    <select class="form-control" id="input">
-                        <option value="criacao_mundo">Criação do Mundo</option>
-                        <option value="amor_deus">Amor de Deus</option>
-                        <option value="vida_jesus_cristo">Vida de Jesus Cristo</option>
-                        <option value="perdao">Perdão</option>
-                        <option value="salvacao">Salvação</option>
-                        <option value="fe">Fé</option>
-                        <option value="oracao">Oração</option>
-                        <option value="espirito_santo">Espírito Santo</option>
-                        <option value="justica">Justiça</option>
-                        <option value="esperanca">Esperança</option>
-                        <option value="graca">Graça</option>
-                        <option value="misericordia">Misericórdia</option>
-                        <option value="proposito_vida">Propósito da Vida</option>
-                        <option value="reino_deus">Reino de Deus</option>
-                        <option value="ressurreicao">Ressurreição</option>
-                        <option value="amor_proximo">Amor ao Próximo</option>
-                        <option value="pacienca">Paciência</option>
-                        <option value="humildade">Humildade</option>
-                        <option value="fidelidade">Fidelidade</option>
-                        <option value="cuidado_necessitados">Cuidado com os Necessitados</option>
-                        <option value="sabedoria">Sabedoria</option>
-                        <option value="unidade">Unidade</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <h2><i class="bi bi-2-circle"></i> Escolha o Tamanho</h2>
-                <label for="width" class="form-label">Especifique largura e altura (máximo = 30x30):</label>
-                <div class="input-group mb-3">
-                    <input id="width" type="number" class="form-control" aria-label="Largura" value="12">
-                    <span class="input-group-text">x</span>
-                    <input id="height" type="number" class="form-control" aria-label="Altura" value="12">
-                </div>
-
-                <button type="button" class="btn btn-primary" id="generate-button">Gerar Palavras Cruzadas</button>
-                <div class="spinner-border text-primary invisible" id="generate-spinner" role="status">
-                    <span class="visually-hidden">Carregando...</span>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row invisible" id="result-row">
-            <div class="col">
-
-                <h2 class="print-hidden"><i class="bi bi-3-circle"></i> Resultado</h2>
-                <p class="print-hidden">
-                    Aqui está a primeira versão do seu novo quebra-cabeça. Nem todas as palavras da sua lista podem ser
-                    usadas.
-                    Isso é intencional: a ferramenta tenta criar o quebra-cabeça com o maior número possível de letras
-                    (ou menos espaços em branco).
-                    O tamanho disponível que você especificou pode não ser suficiente para acomodar todas as palavras.
-                    Se quiser incluir mais palavras, você pode aumentar o tamanho.
-                </p>
-
-                <div class="alert alert-info print-hidden" role="alert" id="result-info">
-                    Informações
-                </div>
-
-                <div class="row print-hidden">
-                    <div class="col-lg-6">
-                        <div class="btn-group mb-3" role="group"
-                            aria-label="Grupo de botões de alternância de rádio básico">
-                            <input type="radio" class="btn-check" name="btnradio" id="result-without"
-                                autocomplete="off">
-                            <label class="btn btn-outline-primary" for="result-without">Sem Solução</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="result-partial" autocomplete="off"
-                                checked>
-                            <label class="btn btn-outline-primary" for="result-partial">Solução Parcial</label>
-
-                            <input type="radio" class="btn-check" name="btnradio" id="result-full" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="result-full">Solução Completa</label>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" style="text-align: right">
-                        <button type="button" class="btn btn-secondary" id="print-button"><i
-                                class="bi bi-printer-fill"></i> Imprimir</button>
-                    </div>
-                </div>
-
-                <div id="output-puzzle" class="mb-3"></div>
-                <div id="output-questions"></div>
-            </div>
-        </div>
-
-        <div class="row print-hidden invisible" id="refine-row">
-            <div class="col">
-
-                <h2><i class="bi bi-4-circle"></i> Adicionar palavras adicionais de um dicionário <span
-                        class="text-muted">(Opcional)</span></h2>
-                <p>Você pode adicionar mais palavras de um dicionário ao seu quebra-cabeça para preencher quaisquer
-                    lacunas. Escolha de um dos dicionários disponíveis:</p>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="form-group">
-                            <select class="form-control mb-3" id="language-select">
-                                <option value="pt">Português</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <button type="button" class="btn btn-primary" id="refine-button">Refinar Quebra-Cabeça</button>
-                    </div>
-                </div>
-                <div class="alert alert-info print-hidden mt-3" role="alert" id="result-info">
-                    Lembrando que essas palavras adicionais eles tem que descobrir sozinhos (clique várias vezes para resultados diferentes)
-                </div>
-                <p></p>
-
-            </div>
-        </div>
-        <div class="pagebreak"> </div>
-
-        <div class="row invisible" id="clues-row">
-            <div class="col">
-                <h2><i class="bi bi-5-circle print-hidden"></i> Solução</h2>
-                <div id="output-clues"></div>
-            </div>
-        </div>
-
+  <div class="container">
+    <div id="title">
+      <h1>Gerador de Palavras Cruzadas</h1>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <script src="./data/croisee/portuguese.js"></script>
-    <script src="./data/croisee/versicles-pt.js"></script>
-    
-    <script src="./js/crosswordmaker-fastopt.js"></script>
-    <script type="text/javascript">UIMain.main();</script>
+    <div class="row print-hidden">
+      <div class="col-lg-6">
+        <h2><i class="bi bi-1-circle"></i> Insira suas Palavras</h2>
+        <div class="form-group">
+          <label for="input" class="form-label">
+            Escolha um tema, a partir dele serão escolhidos os versículos para
+            criar suas palavras cruzadas.
+          </label>
+          <div class="dropdown-wrapper">
+            <select class="form-control" id="input">
+              <option value="criacao_mundo">Criação do Mundo</option>
+              <option value="amor_deus">Amor de Deus</option>
+              <option value="vida_jesus_cristo">Vida de Jesus Cristo</option>
+              <option value="perdao">Perdão</option>
+              <option value="salvacao">Salvação</option>
+              <option value="fe">Fé</option>
+              <option value="oracao">Oração</option>
+              <option value="espirito_santo">Espírito Santo</option>
+              <option value="justica">Justiça</option>
+              <option value="esperanca">Esperança</option>
+              <option value="graca">Graça</option>
+              <option value="misericordia">Misericórdia</option>
+              <option value="proposito_vida">Propósito da Vida</option>
+              <option value="reino_deus">Reino de Deus</option>
+              <option value="ressurreicao">Ressurreição</option>
+              <option value="amor_proximo">Amor ao Próximo</option>
+              <option value="pacienca">Paciência</option>
+              <option value="humildade">Humildade</option>
+              <option value="fidelidade">Fidelidade</option>
+              <option value="cuidado_necessitados">Cuidado com os Necessitados</option>
+              <option value="sabedoria">Sabedoria</option>
+              <option value="unidade">Unidade</option>
+            </select>
+            <i class="fas fa-chevron-down dropdown-icon"></i>
+          </div>          
+        </div>
+      </div>
 
+      <div class="col-lg-6">
+        <h2><i class="bi bi-2-circle"></i> Escolha o Tamanho</h2>
+        <label for="width" class="form-label">Especifique largura e altura (máximo = 30x30):</label>
+        <div class="input-group mb-3">
+          <input id="width" type="number" class="form-control" aria-label="Largura" value="12" />
+          <span class="input-group-text">x</span>
+          <input id="height" type="number" class="form-control" aria-label="Altura" value="12" />
+        </div>
+
+        <button type="button" class="btn btn-primary" id="generate-button">
+          Gerar Palavras Cruzadas
+        </button>
+        <div class="spinner-border text-primary invisible" id="generate-spinner" role="status">
+          <span class="visually-hidden">Carregando...</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row invisible" id="result-row">
+      <div class="col">
+        <h2 class="print-hidden"><i class="bi bi-3-circle"></i> Resultado</h2>
+        <p class="print-hidden">
+          Aqui está a primeira versão do seu novo quebra-cabeça. Nem todas as
+          palavras da sua lista podem ser usadas. Isso é intencional: a
+          ferramenta tenta criar o quebra-cabeça com o maior número possível
+          de letras (ou menos espaços em branco). O tamanho disponível que
+          você especificou pode não ser suficiente para acomodar todas as
+          palavras. Se quiser incluir mais palavras, você pode aumentar o
+          tamanho.
+        </p>
+
+        <div class="alert alert-info print-hidden" role="alert" id="result-info">
+          Informações
+        </div>
+
+        <div class="row print-hidden">
+          <div class="col-lg-6">
+            <div class="btn-group mb-3" role="group" aria-label="Grupo de botões de alternância de rádio básico">
+              <input type="radio" class="btn-check" name="btnradio" id="result-without" autocomplete="off" />
+              <label class="btn btn-outline-primary" for="result-without">Sem Solução</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="result-partial" autocomplete="off" checked />
+              <label class="btn btn-outline-primary" for="result-partial">Solução Parcial</label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="result-full" autocomplete="off" />
+              <label class="btn btn-outline-primary" for="result-full">Solução Completa</label>
+            </div>
+          </div>
+          <div class="col-lg-6" style="text-align: right">
+            <button type="button" class="btn btn-secondary" id="print-button">
+              <i class="bi bi-printer-fill"></i> Imprimir
+            </button>
+          </div>
+        </div>
+
+        <div id="output-puzzle" class="mb-3"></div>
+        <div id="output-questions"></div>
+      </div>
+    </div>
+
+    <div class="row print-hidden invisible" id="refine-row">
+      <div class="col">
+        <h2>
+          <i class="bi bi-4-circle"></i> Adicionar palavras adicionais de um
+          dicionário <span class="text-muted">(Opcional)</span>
+        </h2>
+        <p>
+          Você pode adicionar mais palavras de um dicionário ao seu
+          quebra-cabeça para preencher quaisquer lacunas. Escolha de um dos
+          dicionários disponíveis:
+        </p>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="form-group">
+              <select class="form-control mb-3" id="language-select">
+                <option value="pt">Português</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <button type="button" class="btn btn-primary" id="refine-button">
+              Refinar Quebra-Cabeça
+            </button>
+          </div>
+        </div>
+        <div class="alert alert-info print-hidden mt-3" role="alert" id="result-info">
+          Lembrando que essas palavras adicionais eles tem que descobrir
+          sozinhos (clique várias vezes para resultados diferentes)
+        </div>
+        <p></p>
+      </div>
+    </div>
+    <div class="pagebreak"></div>
+
+    <div class="row invisible" id="clues-row">
+      <div class="col">
+        <h2><i class="bi bi-5-circle print-hidden"></i> Solução</h2>
+        <div id="output-clues"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="./data/croisee/portuguese.js"></script>
+  <script src="./data/croisee/versicles-pt.js"></script>
+
+  <script src="./js/crosswordmaker-fastopt.js"></script>
+  <script type="text/javascript">
+    UIMain.main();
+  </script>
 </body>
 
 <style>
-    .col-lg-6, .col {
-        margin-bottom: 20px;
-    }
+  .col-lg-6,
+  .col {
+    margin-bottom: 20px;
+  }
+
+  .dropdown-wrapper {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px; /* Espaço para o ícone */
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
 </style>
 
 </html>
