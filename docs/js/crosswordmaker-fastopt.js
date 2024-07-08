@@ -1308,7 +1308,7 @@ function $p_Lcom_crosswordmaker_ui_HtmlRenderer$__renderDescriptions$1__sci_Seq_
       var ev$1 = $as_sci_Set(this$11.incl__O__sci_SetOps(elem));
       usedWords$1.sr_ObjectRef__f_elem = ev$1;
       ev$1 = null;
-      return ((firstQuestionFinded !== "") ? (((("<div  class=\"mb-4\">" + p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index) + ") ") + firstQuestionFinded) + "</div>") : "")
+      return ((firstQuestionFinded !== "") ? (((("<div  class=\"mb-1\">" + p$1.Lcom_crosswordmaker_puzzle_AnnotatedPoint__f_index) + ") ") + firstQuestionFinded) + "</div>") : "")
     } else {
       return ""
     }

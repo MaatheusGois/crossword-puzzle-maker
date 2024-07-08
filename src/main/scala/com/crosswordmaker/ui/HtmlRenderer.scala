@@ -93,7 +93,7 @@ object HtmlRenderer:
 
             // Retorna a descrição da pista apenas se a palavra não foi usada em outra pista
             if (!firstQuestionFinded.isEmpty) {
-              s"""<div  class="mb-4">${p.index}) $firstQuestionFinded</div>"""
+              s"""<div  class="mb-1">${p.index}) $firstQuestionFinded</div>"""
             } else ""
           } else ""
       }.mkString("\r\n")
