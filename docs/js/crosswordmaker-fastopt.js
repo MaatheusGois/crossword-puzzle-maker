@@ -1544,7 +1544,8 @@ function $c_Lcom_crosswordmaker_ui_MainPage() {
   this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_titleElement = null;
-  this.Lcom_crosswordmaker_ui_MainPage__f_inputElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputThemeElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputVersionElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_outputPuzzleElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_outputCluesElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_outputQuestionsElement = null;
@@ -1554,7 +1555,7 @@ function $c_Lcom_crosswordmaker_ui_MainPage() {
   this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement = null;
-  this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement = null;
+  this.Lcom_crosswordmaker_ui_MainPage__f_heighInputElement = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_languageSelect = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_resultRow = null;
   this.Lcom_crosswordmaker_ui_MainPage__f_refineRow = null;
@@ -1572,7 +1573,8 @@ function $c_Lcom_crosswordmaker_ui_MainPage() {
   this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = $m_s_package$().s_package$__f_Nil;
   this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = $m_s_package$().s_package$__f_Nil;
   this.Lcom_crosswordmaker_ui_MainPage__f_titleElement = document.getElementById("title");
-  this.Lcom_crosswordmaker_ui_MainPage__f_inputElement = document.getElementById("input");
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputThemeElement = document.getElementById("input");
+  this.Lcom_crosswordmaker_ui_MainPage__f_inputVersionElement = document.getElementById("input-version");
   this.Lcom_crosswordmaker_ui_MainPage__f_outputPuzzleElement = document.getElementById("output-puzzle");
   this.Lcom_crosswordmaker_ui_MainPage__f_outputCluesElement = document.getElementById("output-clues");
   this.Lcom_crosswordmaker_ui_MainPage__f_outputQuestionsElement = document.getElementById("output-questions");
@@ -1583,7 +1585,7 @@ function $c_Lcom_crosswordmaker_ui_MainPage() {
   this.Lcom_crosswordmaker_ui_MainPage__f_resultPartialElement = document.getElementById("result-partial");
   this.Lcom_crosswordmaker_ui_MainPage__f_resultFullElement = document.getElementById("result-full");
   this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement = document.getElementById("width");
-  this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement = document.getElementById("height");
+  this.Lcom_crosswordmaker_ui_MainPage__f_heighInputElement = document.getElementById("height");
   this.Lcom_crosswordmaker_ui_MainPage__f_languageSelect = document.getElementById("language-select");
   var refineButton = document.getElementById("refine-button");
   var printButton = document.getElementById("print-button");
@@ -1616,19 +1618,67 @@ function $h_Lcom_crosswordmaker_ui_MainPage() {
   /*<skip>*/
 }
 $h_Lcom_crosswordmaker_ui_MainPage.prototype = $c_Lcom_crosswordmaker_ui_MainPage.prototype;
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.readJsonFileSync__T__T = (function(filePath) {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", filePath, false);
+  try {
+    xhr.send();
+    if (($uI(xhr.status) === 200)) {
+      return $as_T(xhr.responseText)
+    } else {
+      throw $ct_jl_Exception__T__(new $c_jl_Exception(), ("Erro ao carregar o arquivo: " + $as_T(xhr.statusText)))
+    }
+  } catch (e) {
+    var e$1 = e;
+    var e$2 = ((e$1 instanceof $c_jl_Throwable) ? e$1 : new $c_sjs_js_JavaScriptException(e$1));
+    if ((e$2 instanceof $c_jl_Exception)) {
+      var e$3 = $as_jl_Exception(e$2);
+      throw $ct_jl_Exception__T__(new $c_jl_Exception(), ("Erro na requisi\u00e7\u00e3o: " + e$3.getMessage__T()))
+    } else {
+      throw e
+    }
+  }
+});
+$c_Lcom_crosswordmaker_ui_MainPage.prototype.getBiblicalThemeWords__T__T__sci_Seq = (function(theme, filePath) {
+  var rawInputWordsTest = this.readJsonFileSync__T__T(filePath);
+  var this$7 = $m_Lupickle_default$();
+  var s = new $c_Lujson_Readable$fromTransformer(rawInputWordsTest, $m_Lujson_StringParser$());
+  $m_Lupickle_default$();
+  var trace = false;
+  var this$6 = $m_Lupickle_default$();
+  var k = $m_Lupickle_default$().Lupickle_default$__f_StringReader;
+  var this$5 = $m_Lupickle_default$();
+  var r = $m_Lupickle_default$().Lupickle_default$__f_StringReader;
+  var this$3 = $m_sci_Seq$();
+  var factory = new $c_sc_IterableFactory$ToFactory(this$3);
+  var v = new $c_Lupickle_implicits_Readers$$anon$20(r, factory, this$5);
+  var evidence$2 = $f_Lupickle_implicits_Readers__MapReader2__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader(this$6, k, v);
+  var parsedJson = $as_sci_Map($f_Lupickle_Api__read__Lujson_Readable__Z__Lupickle_core_Types$Reader__O(this$7, s, trace, evidence$2));
+  var x1 = parsedJson.get__O__s_Option(theme);
+  if ((x1 instanceof $c_s_Some)) {
+    var words = $as_sci_Seq($as_s_Some(x1).s_Some__f_value);
+    return words
+  };
+  var x = $m_s_None$();
+  if ((x === x1)) {
+    return $as_sci_Seq($m_s_package$().s_package$__f_Seq.empty__sc_SeqOps())
+  };
+  throw new $c_s_MatchError(x1)
+});
 $c_Lcom_crosswordmaker_ui_MainPage.prototype.generateSolution__V = (function() {
-  var domList = this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.options;
+  var domList = this.Lcom_crosswordmaker_ui_MainPage__f_inputThemeElement.options;
   var this$2 = new $c_Lorg_scalajs_dom_DOMList$DOMListSeq(domList);
-  var $$x1 = $m_sci_Seq$().from__sc_IterableOnce__sci_Seq(this$2).apply__I__O($uI(this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.selectedIndex)).innerHTML;
+  var $$x1 = $m_sci_Seq$().from__sc_IterableOnce__sci_Seq(this$2).apply__I__O($uI(this.Lcom_crosswordmaker_ui_MainPage__f_inputThemeElement.selectedIndex)).innerHTML;
   var newTitle = $as_T($$x1);
   this.Lcom_crosswordmaker_ui_MainPage__f_titleElement.innerHTML = (("<h1>" + newTitle) + "</h1>");
-  var dict = BiblicalThemesPT;
-  var key = $as_T(this.Lcom_crosswordmaker_ui_MainPage__f_inputElement.value);
-  if ((!$uZ($m_sjs_js_WrappedDictionary$Cache$().sjs_js_WrappedDictionary$Cache$__f_safeHasOwnProperty.call(dict, key)))) {
-    throw $ct_ju_NoSuchElementException__T__(new $c_ju_NoSuchElementException(), ("key not found: " + key))
-  };
-  var array = dict[key];
-  var rawInputWords = $m_sci_IndexedSeq$().from__sc_IterableOnce__sci_IndexedSeq($ct_sjs_js_WrappedArray__sjs_js_Array__(new $c_sjs_js_WrappedArray(), array));
+  var theme = $as_T(this.Lcom_crosswordmaker_ui_MainPage__f_inputThemeElement.value);
+  var version = $as_T(this.Lcom_crosswordmaker_ui_MainPage__f_inputVersionElement.value);
+  var filePath = (("./data/croisee/versicles-" + version) + ".json");
+  var rawInputWords = this.getBiblicalThemeWords__T__T__sci_Seq(theme, filePath);
+  var x = ("rawInputWords: " + rawInputWords);
+  var this$4 = $m_s_Console$();
+  var this$5 = this$4.out__Ljava_io_PrintStream();
+  this$5.java$lang$JSConsoleBasedPrintStream$$printString__T__V((x + "\n"));
   this.Lcom_crosswordmaker_ui_MainPage__f_mainInputQuestions = rawInputWords;
   var randomWords = $as_sci_Seq(rawInputWords.flatMap__F1__O(new $c_sjsr_AnonFunction1(((sentence) => {
     var sentence$1 = $as_T(sentence);
@@ -1642,7 +1692,7 @@ $c_Lcom_crosswordmaker_ui_MainPage.prototype.generateSolution__V = (function() {
     this.Lcom_crosswordmaker_ui_MainPage__f_mainInputWords = $m_Lcom_crosswordmaker_puzzle_PuzzleWords$().sortByBest__sci_Seq__sci_Seq(inputWords);
     $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
     var width = $doubleToInt($uD(this.Lcom_crosswordmaker_ui_MainPage__f_widthInputElement.valueAsNumber));
-    var height = $doubleToInt($uD(this.Lcom_crosswordmaker_ui_MainPage__f_heightInputElement.valueAsNumber));
+    var height = $doubleToInt($uD(this.Lcom_crosswordmaker_ui_MainPage__f_heighInputElement.valueAsNumber));
     $m_Lcom_crosswordmaker_puzzle_PuzzleConfig$();
     var wrapping = false;
     var puzzleConfig = new $c_Lcom_crosswordmaker_puzzle_PuzzleConfig(width, height, wrapping);
@@ -2515,9 +2565,10 @@ function $m_jl_StackTrace$StringRE$() {
 }
 /** @constructor */
 function $c_jl_System$Streams$() {
+  this.jl_System$Streams$__f_out = null;
   this.jl_System$Streams$__f_err = null;
   $n_jl_System$Streams$ = this;
-  new $c_jl_JSConsoleBasedPrintStream(false);
+  this.jl_System$Streams$__f_out = new $c_jl_JSConsoleBasedPrintStream(false);
   this.jl_System$Streams$__f_err = new $c_jl_JSConsoleBasedPrintStream(true)
 }
 $c_jl_System$Streams$.prototype = new $h_O();
@@ -9914,6 +9965,28 @@ function $m_sjs_js_WrappedDictionary$Cache$() {
   return $n_sjs_js_WrappedDictionary$Cache$
 }
 /** @constructor */
+function $c_s_util_DynamicVariable(init) {
+  this.s_util_DynamicVariable__f_v = null;
+  this.s_util_DynamicVariable__f_v = init
+}
+$c_s_util_DynamicVariable.prototype = new $h_O();
+$c_s_util_DynamicVariable.prototype.constructor = $c_s_util_DynamicVariable;
+/** @constructor */
+function $h_s_util_DynamicVariable() {
+  /*<skip>*/
+}
+$h_s_util_DynamicVariable.prototype = $c_s_util_DynamicVariable.prototype;
+$c_s_util_DynamicVariable.prototype.toString__T = (function() {
+  return (("DynamicVariable(" + this.s_util_DynamicVariable__f_v) + ")")
+});
+var $d_s_util_DynamicVariable = new $TypeData().initClass({
+  s_util_DynamicVariable: 0
+}, false, "scala.util.DynamicVariable", {
+  s_util_DynamicVariable: 1,
+  O: 1
+});
+$c_s_util_DynamicVariable.prototype.$classData = $d_s_util_DynamicVariable;
+/** @constructor */
 function $c_s_util_Sorting$() {
   /*<skip>*/
 }
@@ -11365,9 +11438,11 @@ var $d_Lupickle_core_Types$ReadWriter$ = new $TypeData().initClass({
 $c_Lupickle_core_Types$ReadWriter$.prototype.$classData = $d_Lupickle_core_Types$ReadWriter$;
 /** @constructor */
 function $c_Lupickle_core_Types$Reader$(outer) {
+  this.Lupickle_core_Types$Reader$__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_core_Types$Reader$__f_$outer = outer
 }
 $c_Lupickle_core_Types$Reader$.prototype = new $h_O();
 $c_Lupickle_core_Types$Reader$.prototype.constructor = $c_Lupickle_core_Types$Reader$;
@@ -14033,6 +14108,39 @@ function $m_s_Array$() {
     $n_s_Array$ = new $c_s_Array$()
   };
   return $n_s_Array$
+}
+/** @constructor */
+function $c_s_Console$() {
+  this.s_Console$__f_outVar = null;
+  $n_s_Console$ = this;
+  this.s_Console$__f_outVar = new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_out);
+  new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_err);
+  new $c_s_util_DynamicVariable(null)
+}
+$c_s_Console$.prototype = new $h_O();
+$c_s_Console$.prototype.constructor = $c_s_Console$;
+/** @constructor */
+function $h_s_Console$() {
+  /*<skip>*/
+}
+$h_s_Console$.prototype = $c_s_Console$.prototype;
+$c_s_Console$.prototype.out__Ljava_io_PrintStream = (function() {
+  return $as_Ljava_io_PrintStream(this.s_Console$__f_outVar.s_util_DynamicVariable__f_v)
+});
+var $d_s_Console$ = new $TypeData().initClass({
+  s_Console$: 0
+}, false, "scala.Console$", {
+  s_Console$: 1,
+  O: 1,
+  s_io_AnsiColor: 1
+});
+$c_s_Console$.prototype.$classData = $d_s_Console$;
+var $n_s_Console$;
+function $m_s_Console$() {
+  if ((!$n_s_Console$)) {
+    $n_s_Console$ = new $c_s_Console$()
+  };
+  return $n_s_Console$
 }
 /** @constructor */
 function $c_s_LowPriorityImplicits() {
@@ -16747,6 +16855,13 @@ function $isArrayOf_Lupickle_core_Types$CaseW(obj, depth) {
 function $asArrayOf_Lupickle_core_Types$CaseW(obj, depth) {
   return (($isArrayOf_Lupickle_core_Types$CaseW(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lupickle.core.Types$CaseW;", depth))
 }
+var $d_Lupickle_core_Types$Reader = new $TypeData().initClass({
+  Lupickle_core_Types$Reader: 0
+}, true, "upickle.core.Types$Reader", {
+  Lupickle_core_Types$Reader: 1,
+  O: 1,
+  Lupickle_core_Visitor: 1
+});
 function $f_Lupickle_core_Types$TaggedWriter__write0__Lupickle_core_Visitor__O__O($thiz, out, v) {
   matchResult2: {
     var \u03b43$___1;
@@ -16838,6 +16953,69 @@ $c_Lupickle_core_Visitor$Delegate.prototype.visitBinary__AB__I__I__I__O = (funct
 $c_Lupickle_core_Visitor$Delegate.prototype.visitExt__B__AB__I__I__I__O = (function(tag, bytes, offset, len, index) {
   return this.Lupickle_core_Visitor$Delegate__f_delegatedReader.visitExt__B__AB__I__I__I__O(tag, bytes, offset, len, index)
 });
+function $ct_Lupickle_core_Visitor$MapReader__Lupickle_core_Visitor__($thiz, delegatedReader) {
+  $thiz.Lupickle_core_Visitor$MapReader__f_delegatedReader = delegatedReader;
+  return $thiz
+}
+/** @constructor */
+function $c_Lupickle_core_Visitor$MapReader() {
+  this.Lupickle_core_Visitor$MapReader__f_delegatedReader = null
+}
+$c_Lupickle_core_Visitor$MapReader.prototype = new $h_O();
+$c_Lupickle_core_Visitor$MapReader.prototype.constructor = $c_Lupickle_core_Visitor$MapReader;
+/** @constructor */
+function $h_Lupickle_core_Visitor$MapReader() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Visitor$MapReader.prototype = $c_Lupickle_core_Visitor$MapReader.prototype;
+$c_Lupickle_core_Visitor$MapReader.prototype.mapFunction__O__O = (function(v) {
+  return ((v === null) ? null : this.mapNonNullsFunction__O__O(v))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitFalse__I__O = (function(index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitFalse__I__O(index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitNull__I__O = (function(index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitNull__I__O(index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitFloat64StringParts__jl_CharSequence__I__I__I__O = (function(s, decIndex, expIndex, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitFloat64StringParts__jl_CharSequence__I__I__I__O(s, decIndex, expIndex, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitFloat64__D__I__O = (function(d, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitFloat64__D__I__O(d, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitString__jl_CharSequence__I__O(s, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitTrue__I__O = (function(index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitTrue__I__O(index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+  return new $c_Lupickle_core_Visitor$MapObjContext(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitObject__I__Z__I__Lupickle_core_ObjVisitor(length, jsonableKeys, index), new $c_sjsr_AnonFunction1(((t) => this.mapNonNullsFunction__O__O(t))))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
+  return new $c_Lupickle_core_Visitor$MapArrContext(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitArray__I__I__Lupickle_core_ArrVisitor(length, index), new $c_sjsr_AnonFunction1(((t) => this.mapNonNullsFunction__O__O(t))))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitFloat32__F__I__O = (function(d, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitFloat32__F__I__O(d, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitInt32__I__I__O = (function(i, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitInt32__I__I__O(i, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitInt64__J__I__O = (function(i, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitInt64__J__I__O(i, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitUInt64__J__I__O = (function(i, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitUInt64__J__I__O(i, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitChar__C__I__O = (function(s, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitChar__C__I__O(s, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitBinary__AB__I__I__I__O = (function(bytes, offset, len, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitBinary__AB__I__I__I__O(bytes, offset, len, index))
+});
+$c_Lupickle_core_Visitor$MapReader.prototype.visitExt__B__AB__I__I__I__O = (function(tag, bytes, offset, len, index) {
+  return this.mapFunction__O__O(this.Lupickle_core_Visitor$MapReader__f_delegatedReader.visitExt__B__AB__I__I__I__O(tag, bytes, offset, len, index))
+});
 /** @constructor */
 function $c_Lupickle_core_WrapCharArrayCharSeq(arr, start, length0) {
   this.Lupickle_core_WrapCharArrayCharSeq__f_arr = null;
@@ -16882,6 +17060,14 @@ var $d_Lupickle_core_WrapCharArrayCharSeq = new $TypeData().initClass({
   jl_CharSequence: 1
 });
 $c_Lupickle_core_WrapCharArrayCharSeq.prototype.$classData = $d_Lupickle_core_WrapCharArrayCharSeq;
+function $f_Lupickle_implicits_Generated__Tuple2Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$TupleNReader($thiz, evidence$5, evidence$6) {
+  return new $c_Lupickle_core_Types$TupleNReader($thiz, new ($d_Lupickle_core_Types$Reader.getArrayOf().constr)([evidence$5, evidence$6]), new $c_sjsr_AnonFunction1(((x) => {
+    var x$1 = $asArrayOf_O(x, 1);
+    var _1 = x$1.get(0);
+    var _2 = x$1.get(1);
+    return new $c_T2(_1, _2)
+  })))
+}
 /** @constructor */
 function $c_Lupickle_implicits_LowPriWriters$$anon$1(r$4, outer) {
   this.Lupickle_implicits_LowPriWriters$$anon$1__f_r$1 = null;
@@ -17906,6 +18092,15 @@ function $ct_jl_Exception__T__($thiz, s) {
 }
 class $c_jl_Exception extends $c_jl_Throwable {
 }
+function $as_jl_Exception(obj) {
+  return (((obj instanceof $c_jl_Exception) || (obj === null)) ? obj : $throwClassCastException(obj, "java.lang.Exception"))
+}
+function $isArrayOf_jl_Exception(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.jl_Exception)))
+}
+function $asArrayOf_jl_Exception(obj, depth) {
+  return (($isArrayOf_jl_Exception(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.lang.Exception;", depth))
+}
 var $d_jl_Exception = new $TypeData().initClass({
   jl_Exception: 0
 }, false, "java.lang.Exception", {
@@ -18239,6 +18434,31 @@ $c_sc_ClassTagIterableFactory$AnyIterableDelegate.prototype.apply__sci_Seq__O = 
   var evidence$7 = $m_s_reflect_ManifestFactory$AnyManifest$();
   return this$3.from__sc_IterableOnce__O__O(elems, evidence$7)
 });
+/** @constructor */
+function $c_sc_Factory$ArrayFactory(evidence$2) {
+  this.sc_Factory$ArrayFactory__f_evidence$2 = null;
+  this.sc_Factory$ArrayFactory__f_evidence$2 = evidence$2
+}
+$c_sc_Factory$ArrayFactory.prototype = new $h_O();
+$c_sc_Factory$ArrayFactory.prototype.constructor = $c_sc_Factory$ArrayFactory;
+/** @constructor */
+function $h_sc_Factory$ArrayFactory() {
+  /*<skip>*/
+}
+$h_sc_Factory$ArrayFactory.prototype = $c_sc_Factory$ArrayFactory.prototype;
+$c_sc_Factory$ArrayFactory.prototype.newBuilder__scm_Builder = (function() {
+  var evidence$1 = this.sc_Factory$ArrayFactory__f_evidence$2;
+  return new $c_scm_ArrayBuilder$generic(evidence$1.runtimeClass__jl_Class())
+});
+var $d_sc_Factory$ArrayFactory = new $TypeData().initClass({
+  sc_Factory$ArrayFactory: 0
+}, false, "scala.collection.Factory$ArrayFactory", {
+  sc_Factory$ArrayFactory: 1,
+  O: 1,
+  sc_Factory: 1,
+  Ljava_io_Serializable: 1
+});
+$c_sc_Factory$ArrayFactory.prototype.$classData = $d_sc_Factory$ArrayFactory;
 /** @constructor */
 function $c_sc_Factory$StringFactory() {
   /*<skip>*/
@@ -21933,6 +22153,58 @@ var $d_Lupickle_core_TraceVisitor = new $TypeData().initClass({
   Lupickle_core_Visitor: 1
 });
 $c_Lupickle_core_TraceVisitor.prototype.$classData = $d_Lupickle_core_TraceVisitor;
+/** @constructor */
+function $c_Lupickle_core_Types$$anon$6(outer) {
+  this.Lupickle_core_Types$$anon$6__f_b = null;
+  this.Lupickle_core_Types$$anon$6__f_facadesIndex = 0;
+  this.Lupickle_core_Types$$anon$6__f_start = 0;
+  this.Lupickle_core_Types$$anon$6__f_$outer = null;
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  this.Lupickle_core_Types$$anon$6__f_$outer = outer;
+  var dimensions = new $ac_I(new Int32Array([outer.Lupickle_core_Types$TupleNReader__f_readers.u.length]));
+  this.Lupickle_core_Types$$anon$6__f_b = $asArrayOf_O($m_jl_reflect_Array$().newInstance__jl_Class__AI__O($d_O.getClassOf(), dimensions), 1);
+  this.Lupickle_core_Types$$anon$6__f_facadesIndex = 0;
+  this.Lupickle_core_Types$$anon$6__f_start = this.Lupickle_core_Types$$anon$6__f_facadesIndex
+}
+$c_Lupickle_core_Types$$anon$6.prototype = new $h_O();
+$c_Lupickle_core_Types$$anon$6.prototype.constructor = $c_Lupickle_core_Types$$anon$6;
+/** @constructor */
+function $h_Lupickle_core_Types$$anon$6() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Types$$anon$6.prototype = $c_Lupickle_core_Types$$anon$6.prototype;
+$c_Lupickle_core_Types$$anon$6.prototype.isObj__Z = (function() {
+  return false
+});
+$c_Lupickle_core_Types$$anon$6.prototype.narrow__Lupickle_core_ObjArrVisitor = (function() {
+  return this
+});
+$c_Lupickle_core_Types$$anon$6.prototype.visitValue__O__I__V = (function(v, index) {
+  this.Lupickle_core_Types$$anon$6__f_b.set($intMod(this.Lupickle_core_Types$$anon$6__f_facadesIndex, this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_readers.u.length), v);
+  this.Lupickle_core_Types$$anon$6__f_facadesIndex = ((1 + this.Lupickle_core_Types$$anon$6__f_facadesIndex) | 0)
+});
+$c_Lupickle_core_Types$$anon$6.prototype.visitEnd__I__O = (function(index) {
+  var lengthSoFar = ((this.Lupickle_core_Types$$anon$6__f_facadesIndex - this.Lupickle_core_Types$$anon$6__f_start) | 0);
+  if ((lengthSoFar !== this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_readers.u.length)) {
+    throw new $c_Lupickle_core_Abort(((("expected " + this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_readers.u.length) + " items in sequence, found ") + lengthSoFar))
+  };
+  this.Lupickle_core_Types$$anon$6__f_start = this.Lupickle_core_Types$$anon$6__f_facadesIndex;
+  return this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_f.apply__O__O(this.Lupickle_core_Types$$anon$6__f_b)
+});
+$c_Lupickle_core_Types$$anon$6.prototype.subVisitor__Lupickle_core_Visitor = (function() {
+  return this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_readers.get($intMod(this.Lupickle_core_Types$$anon$6__f_facadesIndex, this.Lupickle_core_Types$$anon$6__f_$outer.Lupickle_core_Types$TupleNReader__f_readers.u.length))
+});
+var $d_Lupickle_core_Types$$anon$6 = new $TypeData().initClass({
+  Lupickle_core_Types$$anon$6: 0
+}, false, "upickle.core.Types$$anon$6", {
+  Lupickle_core_Types$$anon$6: 1,
+  O: 1,
+  Lupickle_core_ObjArrVisitor: 1,
+  Lupickle_core_ArrVisitor: 1
+});
+$c_Lupickle_core_Types$$anon$6.prototype.$classData = $d_Lupickle_core_Types$$anon$6;
 function $as_Lupickle_core_Types$SingletonW(obj) {
   return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "upickle.core.Types$SingletonW"))
 }
@@ -21942,6 +22214,88 @@ function $isArrayOf_Lupickle_core_Types$SingletonW(obj, depth) {
 function $asArrayOf_Lupickle_core_Types$SingletonW(obj, depth) {
   return (($isArrayOf_Lupickle_core_Types$SingletonW(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lupickle.core.Types$SingletonW;", depth))
 }
+/** @constructor */
+function $c_Lupickle_core_Visitor$MapArrContext(src, f) {
+  this.Lupickle_core_Visitor$MapArrContext__f_src = null;
+  this.Lupickle_core_Visitor$MapArrContext__f_f = null;
+  this.Lupickle_core_Visitor$MapArrContext__f_src = src;
+  this.Lupickle_core_Visitor$MapArrContext__f_f = f
+}
+$c_Lupickle_core_Visitor$MapArrContext.prototype = new $h_O();
+$c_Lupickle_core_Visitor$MapArrContext.prototype.constructor = $c_Lupickle_core_Visitor$MapArrContext;
+/** @constructor */
+function $h_Lupickle_core_Visitor$MapArrContext() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Visitor$MapArrContext.prototype = $c_Lupickle_core_Visitor$MapArrContext.prototype;
+$c_Lupickle_core_Visitor$MapArrContext.prototype.isObj__Z = (function() {
+  return false
+});
+$c_Lupickle_core_Visitor$MapArrContext.prototype.narrow__Lupickle_core_ObjArrVisitor = (function() {
+  return this
+});
+$c_Lupickle_core_Visitor$MapArrContext.prototype.subVisitor__Lupickle_core_Visitor = (function() {
+  return this.Lupickle_core_Visitor$MapArrContext__f_src.subVisitor__Lupickle_core_Visitor()
+});
+$c_Lupickle_core_Visitor$MapArrContext.prototype.visitValue__O__I__V = (function(v, index) {
+  this.Lupickle_core_Visitor$MapArrContext__f_src.visitValue__O__I__V(v, index)
+});
+$c_Lupickle_core_Visitor$MapArrContext.prototype.visitEnd__I__O = (function(index) {
+  return this.Lupickle_core_Visitor$MapArrContext__f_f.apply__O__O(this.Lupickle_core_Visitor$MapArrContext__f_src.visitEnd__I__O(index))
+});
+var $d_Lupickle_core_Visitor$MapArrContext = new $TypeData().initClass({
+  Lupickle_core_Visitor$MapArrContext: 0
+}, false, "upickle.core.Visitor$MapArrContext", {
+  Lupickle_core_Visitor$MapArrContext: 1,
+  O: 1,
+  Lupickle_core_ObjArrVisitor: 1,
+  Lupickle_core_ArrVisitor: 1
+});
+$c_Lupickle_core_Visitor$MapArrContext.prototype.$classData = $d_Lupickle_core_Visitor$MapArrContext;
+/** @constructor */
+function $c_Lupickle_core_Visitor$MapObjContext(src, f) {
+  this.Lupickle_core_Visitor$MapObjContext__f_src = null;
+  this.Lupickle_core_Visitor$MapObjContext__f_f = null;
+  this.Lupickle_core_Visitor$MapObjContext__f_src = src;
+  this.Lupickle_core_Visitor$MapObjContext__f_f = f
+}
+$c_Lupickle_core_Visitor$MapObjContext.prototype = new $h_O();
+$c_Lupickle_core_Visitor$MapObjContext.prototype.constructor = $c_Lupickle_core_Visitor$MapObjContext;
+/** @constructor */
+function $h_Lupickle_core_Visitor$MapObjContext() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Visitor$MapObjContext.prototype = $c_Lupickle_core_Visitor$MapObjContext.prototype;
+$c_Lupickle_core_Visitor$MapObjContext.prototype.isObj__Z = (function() {
+  return true
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.subVisitor__Lupickle_core_Visitor = (function() {
+  return this.Lupickle_core_Visitor$MapObjContext__f_src.subVisitor__Lupickle_core_Visitor()
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.visitKey__I__Lupickle_core_Visitor = (function(index) {
+  return this.Lupickle_core_Visitor$MapObjContext__f_src.visitKey__I__Lupickle_core_Visitor(index)
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.visitKeyValue__O__V = (function(s) {
+  this.Lupickle_core_Visitor$MapObjContext__f_src.visitKeyValue__O__V(s)
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.visitValue__O__I__V = (function(v, index) {
+  this.Lupickle_core_Visitor$MapObjContext__f_src.visitValue__O__I__V(v, index)
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.visitEnd__I__O = (function(index) {
+  return this.Lupickle_core_Visitor$MapObjContext__f_f.apply__O__O(this.Lupickle_core_Visitor$MapObjContext__f_src.visitEnd__I__O(index))
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.narrow__Lupickle_core_ObjArrVisitor = (function() {
+  return this
+});
+var $d_Lupickle_core_Visitor$MapObjContext = new $TypeData().initClass({
+  Lupickle_core_Visitor$MapObjContext: 0
+}, false, "upickle.core.Visitor$MapObjContext", {
+  Lupickle_core_Visitor$MapObjContext: 1,
+  O: 1,
+  Lupickle_core_ObjArrVisitor: 1,
+  Lupickle_core_ObjVisitor: 1
+});
+$c_Lupickle_core_Visitor$MapObjContext.prototype.$classData = $d_Lupickle_core_Visitor$MapObjContext;
 /** @constructor */
 function $c_Lupickle_implicits_CaseClassReaderPiece$$anon$1(outer) {
   this.Lupickle_implicits_CaseClassReaderPiece$$anon$1__f_builder = null;
@@ -22133,6 +22487,63 @@ var $d_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter = new $TypeData()
   Lupickle_core_Types$CaseW: 1
 });
 $c_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter.prototype.$classData = $d_Lupickle_implicits_CaseClassWriterPiece$CaseClassWriter;
+/** @constructor */
+function $c_Lupickle_implicits_Readers$$anon$17$$anon$1(outer) {
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_keys = null;
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_values = null;
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_$outer = null;
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_$outer = outer;
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_keys = $as_scm_Buffer($m_scm_Buffer$().empty__sc_SeqOps());
+  this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_values = $as_scm_Buffer($m_scm_Buffer$().empty__sc_SeqOps())
+}
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype = new $h_O();
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$17$$anon$1;
+/** @constructor */
+function $h_Lupickle_implicits_Readers$$anon$17$$anon$1() {
+  /*<skip>*/
+}
+$h_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype = $c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype;
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.isObj__Z = (function() {
+  return true
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.subVisitor__Lupickle_core_Visitor = (function() {
+  return this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_$outer.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$v$1
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.visitKey__I__Lupickle_core_Visitor = (function(index) {
+  return this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_$outer.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$k$1
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.visitKeyValue__O__V = (function(s) {
+  var this$1 = this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_keys;
+  $as_scm_Buffer(this$1.addOne__O__scm_Growable(s))
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.visitValue__O__I__V = (function(v, index) {
+  var this$1 = this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_values;
+  $as_scm_Buffer(this$1.addOne__O__scm_Growable(v))
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.visitEnd__I__sc_Map = (function(index) {
+  var $$x1 = this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_$outer.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$make$1;
+  var this$1 = this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_keys;
+  var that = this.Lupickle_implicits_Readers$$anon$17$$anon$1__f_values;
+  return $as_sc_Map($$x1.apply__O__O($f_sc_StrictOptimizedIterableOps__zip__sc_IterableOnce__O(this$1, that)))
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.visitEnd__I__O = (function(index) {
+  return this.visitEnd__I__sc_Map(index)
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.narrow__Lupickle_core_ObjArrVisitor = (function() {
+  return this
+});
+var $d_Lupickle_implicits_Readers$$anon$17$$anon$1 = new $TypeData().initClass({
+  Lupickle_implicits_Readers$$anon$17$$anon$1: 0
+}, false, "upickle.implicits.Readers$$anon$17$$anon$1", {
+  Lupickle_implicits_Readers$$anon$17$$anon$1: 1,
+  O: 1,
+  Lupickle_core_ObjArrVisitor: 1,
+  Lupickle_core_ObjVisitor: 1
+});
+$c_Lupickle_implicits_Readers$$anon$17$$anon$1.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$17$$anon$1;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$21$$anon$1(evidence$4$2, outer) {
   this.Lupickle_implicits_Readers$$anon$21$$anon$1__f_b = null;
@@ -27423,9 +27834,11 @@ function $asArrayOf_Lupickle_core_Types$ReadWriter(obj, depth) {
 /** @constructor */
 function $c_Lupickle_core_Types$Reader$Delegate(outer, delegatedReader) {
   this.Lupickle_core_Visitor$Delegate__f_delegatedReader = null;
+  this.Lupickle_core_Types$Reader$Delegate__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
   };
+  this.Lupickle_core_Types$Reader$Delegate__f_$outer = outer;
   $ct_Lupickle_core_Visitor$Delegate__Lupickle_core_Visitor__(this, delegatedReader)
 }
 $c_Lupickle_core_Types$Reader$Delegate.prototype = new $h_Lupickle_core_Visitor$Delegate();
@@ -27444,6 +27857,9 @@ $c_Lupickle_core_Types$Reader$Delegate.prototype.visitObject__I__Z__I__Lupickle_
 $c_Lupickle_core_Types$Reader$Delegate.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
   return $c_Lupickle_core_Visitor$Delegate.prototype.visitArray__I__I__Lupickle_core_ArrVisitor.call(this, length, index)
 });
+$c_Lupickle_core_Types$Reader$Delegate.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$Reader$Delegate__f_$outer.Lupickle_core_Types$Reader$__f_$outer
+});
 var $d_Lupickle_core_Types$Reader$Delegate = new $TypeData().initClass({
   Lupickle_core_Types$Reader$Delegate: 0
 }, false, "upickle.core.Types$Reader$Delegate", {
@@ -27454,6 +27870,38 @@ var $d_Lupickle_core_Types$Reader$Delegate = new $TypeData().initClass({
   Lupickle_core_Types$Reader: 1
 });
 $c_Lupickle_core_Types$Reader$Delegate.prototype.$classData = $d_Lupickle_core_Types$Reader$Delegate;
+function $ct_Lupickle_core_Types$Reader$MapReader__Lupickle_core_Types$Reader$__Lupickle_core_Visitor__($thiz, outer, delegatedReader) {
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  $thiz.Lupickle_core_Types$Reader$MapReader__f_$outer = outer;
+  $ct_Lupickle_core_Visitor$MapReader__Lupickle_core_Visitor__($thiz, delegatedReader);
+  return $thiz
+}
+/** @constructor */
+function $c_Lupickle_core_Types$Reader$MapReader() {
+  this.Lupickle_core_Visitor$MapReader__f_delegatedReader = null;
+  this.Lupickle_core_Types$Reader$MapReader__f_$outer = null
+}
+$c_Lupickle_core_Types$Reader$MapReader.prototype = new $h_Lupickle_core_Visitor$MapReader();
+$c_Lupickle_core_Types$Reader$MapReader.prototype.constructor = $c_Lupickle_core_Types$Reader$MapReader;
+/** @constructor */
+function $h_Lupickle_core_Types$Reader$MapReader() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Types$Reader$MapReader.prototype = $c_Lupickle_core_Types$Reader$MapReader.prototype;
+$c_Lupickle_core_Types$Reader$MapReader.prototype.narrow__Lupickle_core_Types$Reader = (function() {
+  return this
+});
+$c_Lupickle_core_Types$Reader$MapReader.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+  return $c_Lupickle_core_Visitor$MapReader.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor.call(this, length, jsonableKeys, index)
+});
+$c_Lupickle_core_Types$Reader$MapReader.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
+  return $c_Lupickle_core_Visitor$MapReader.prototype.visitArray__I__I__Lupickle_core_ArrVisitor.call(this, length, index)
+});
+$c_Lupickle_core_Types$Reader$MapReader.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$Reader$MapReader__f_$outer.Lupickle_core_Types$Reader$__f_$outer
+});
 function $ct_Ljava_io_FilterOutputStream__Ljava_io_OutputStream__($thiz, out) {
   return $thiz
 }
@@ -33555,15 +34003,48 @@ var $d_Lupickle_core_TraceVisitor$TraceException = new $TypeData().initClass({
   s_util_control_NoStackTrace: 1
 });
 $c_Lupickle_core_TraceVisitor$TraceException.prototype.$classData = $d_Lupickle_core_TraceVisitor$TraceException;
+/** @constructor */
+function $c_Lupickle_core_Types$$anon$4(f$5, outer) {
+  this.Lupickle_core_Visitor$MapReader__f_delegatedReader = null;
+  this.Lupickle_core_Types$Reader$MapReader__f_$outer = null;
+  this.Lupickle_core_Types$$anon$4__f_f$1 = null;
+  this.Lupickle_core_Types$$anon$4__f_f$1 = f$5;
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  $ct_Lupickle_core_Types$Reader$MapReader__Lupickle_core_Types$Reader$__Lupickle_core_Visitor__(this, outer.upickle$core$Types$Reader$$$outer__Lupickle_core_Types().Reader__Lupickle_core_Types$Reader$(), outer)
+}
+$c_Lupickle_core_Types$$anon$4.prototype = new $h_Lupickle_core_Types$Reader$MapReader();
+$c_Lupickle_core_Types$$anon$4.prototype.constructor = $c_Lupickle_core_Types$$anon$4;
+/** @constructor */
+function $h_Lupickle_core_Types$$anon$4() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Types$$anon$4.prototype = $c_Lupickle_core_Types$$anon$4.prototype;
+$c_Lupickle_core_Types$$anon$4.prototype.mapNonNullsFunction__O__O = (function(v) {
+  return this.Lupickle_core_Types$$anon$4__f_f$1.apply__O__O(v)
+});
+var $d_Lupickle_core_Types$$anon$4 = new $TypeData().initClass({
+  Lupickle_core_Types$$anon$4: 0
+}, false, "upickle.core.Types$$anon$4", {
+  Lupickle_core_Types$$anon$4: 1,
+  Lupickle_core_Types$Reader$MapReader: 1,
+  Lupickle_core_Visitor$MapReader: 1,
+  O: 1,
+  Lupickle_core_Visitor: 1,
+  Lupickle_core_Types$Reader: 1
+});
+$c_Lupickle_core_Types$$anon$4.prototype.$classData = $d_Lupickle_core_Types$$anon$4;
 function $ct_Lupickle_core_Types$CaseR__Lupickle_core_Types__($thiz, outer) {
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
   };
+  $thiz.Lupickle_core_Types$CaseR__f_$outer = outer;
   return $thiz
 }
 /** @constructor */
 function $c_Lupickle_core_Types$CaseR() {
-  /*<skip>*/
+  this.Lupickle_core_Types$CaseR__f_$outer = null
 }
 $c_Lupickle_core_Types$CaseR.prototype = new $h_O();
 $c_Lupickle_core_Types$CaseR.prototype.constructor = $c_Lupickle_core_Types$CaseR;
@@ -33617,6 +34098,9 @@ $c_Lupickle_core_Types$CaseR.prototype.visitExt__B__AB__I__I__I__O = (function(t
 $c_Lupickle_core_Types$CaseR.prototype.expectedMsg__T = (function() {
   return "expected dictionary"
 });
+$c_Lupickle_core_Types$CaseR.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$CaseR__f_$outer
+});
 function $f_Lupickle_core_Types$TaggedReader__visitString__jl_CharSequence__I__O($thiz, s, index) {
   return $thiz.findReader__T__Lupickle_core_Types$Reader($dp_toString__T(s)).visitString__jl_CharSequence__I__O(s, index)
 }
@@ -33632,6 +34116,90 @@ function $isArrayOf_Lupickle_core_Types$TaggedReader(obj, depth) {
 function $asArrayOf_Lupickle_core_Types$TaggedReader(obj, depth) {
   return (($isArrayOf_Lupickle_core_Types$TaggedReader(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lupickle.core.Types$TaggedReader;", depth))
 }
+/** @constructor */
+function $c_Lupickle_core_Types$TupleNReader(outer, readers, f) {
+  this.Lupickle_core_Types$TupleNReader__f_readers = null;
+  this.Lupickle_core_Types$TupleNReader__f_f = null;
+  this.Lupickle_core_Types$TupleNReader__f_$outer = null;
+  this.Lupickle_core_Types$TupleNReader__f_readers = readers;
+  this.Lupickle_core_Types$TupleNReader__f_f = f;
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  this.Lupickle_core_Types$TupleNReader__f_$outer = outer
+}
+$c_Lupickle_core_Types$TupleNReader.prototype = new $h_O();
+$c_Lupickle_core_Types$TupleNReader.prototype.constructor = $c_Lupickle_core_Types$TupleNReader;
+/** @constructor */
+function $h_Lupickle_core_Types$TupleNReader() {
+  /*<skip>*/
+}
+$h_Lupickle_core_Types$TupleNReader.prototype = $c_Lupickle_core_Types$TupleNReader.prototype;
+$c_Lupickle_core_Types$TupleNReader.prototype.narrow__Lupickle_core_Types$Reader = (function() {
+  return this
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitNull__I__O = (function(index) {
+  return null
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitTrue__I__O = (function(index) {
+  return $f_Lupickle_core_SimpleVisitor__visitTrue__I__O(this, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitFalse__I__O = (function(index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFalse__I__O(this, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitString__jl_CharSequence__I__O(this, s, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitFloat64StringParts__jl_CharSequence__I__I__I__O = (function(s, decIndex, expIndex, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat64StringParts__jl_CharSequence__I__I__I__O(this, s, decIndex, expIndex, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitObject__I__Z__I__Lupickle_core_ObjVisitor(this, length, jsonableKeys, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitFloat64__D__I__O = (function(d, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat64__D__I__O(this, d, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitFloat32__F__I__O = (function(d, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat32__F__I__O(this, d, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitInt32__I__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitInt32__I__I__O(this, i, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitInt64__J__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitInt64__J__I__O(this, i, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitUInt64__J__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitUInt64__J__I__O(this, i, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitChar__C__I__O = (function(s, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitChar__C__I__O(this, s, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitBinary__AB__I__I__I__O = (function(bytes, offset, len, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitBinary__AB__I__I__I__O(this, bytes, offset, len, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitExt__B__AB__I__I__I__O = (function(tag, bytes, offset, len, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitExt__B__AB__I__I__I__O(this, tag, bytes, offset, len, index)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.expectedMsg__T = (function() {
+  return "expected sequence"
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
+  return new $c_Lupickle_core_Types$$anon$6(this)
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$TupleNReader__f_$outer
+});
+var $d_Lupickle_core_Types$TupleNReader = new $TypeData().initClass({
+  Lupickle_core_Types$TupleNReader: 0
+}, false, "upickle.core.Types$TupleNReader", {
+  Lupickle_core_Types$TupleNReader: 1,
+  O: 1,
+  Lupickle_core_Visitor: 1,
+  Lupickle_core_Types$Reader: 1,
+  Lupickle_core_SimpleVisitor: 1,
+  Lupickle_core_Types$SimpleReader: 1
+});
+$c_Lupickle_core_Types$TupleNReader.prototype.$classData = $d_Lupickle_core_Types$TupleNReader;
 /** @constructor */
 function $c_Lupickle_core_Util$$anon$1(j$2) {
   this.Lupickle_core_Util$$anon$1__f_j$1 = 0;
@@ -33674,9 +34242,11 @@ var $d_Lupickle_core_Util$$anon$1 = new $TypeData().initClass({
 $c_Lupickle_core_Util$$anon$1.prototype.$classData = $d_Lupickle_core_Util$$anon$1;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$1(outer) {
+  this.Lupickle_implicits_Readers$$anon$1__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$1__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$1.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$1.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$1;
@@ -33733,6 +34303,9 @@ $c_Lupickle_implicits_Readers$$anon$1.prototype.expectedMsg__T = (function() {
 $c_Lupickle_implicits_Readers$$anon$1.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
   return new $c_Lupickle_implicits_Readers$$anon$22()
 });
+$c_Lupickle_implicits_Readers$$anon$1.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$1__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$1.prototype.visitNull__I__O = (function(index) {
   return (void 0)
 });
@@ -33748,14 +34321,116 @@ var $d_Lupickle_implicits_Readers$$anon$1 = new $TypeData().initClass({
 });
 $c_Lupickle_implicits_Readers$$anon$1.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$1;
 /** @constructor */
+function $c_Lupickle_implicits_Readers$$anon$16(make$2, k$2, v$2, outer) {
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$make$1 = null;
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$k$1 = null;
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$v$1 = null;
+  this.Lupickle_implicits_Readers$$anon$16__f_$outer = null;
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$make$1 = make$2;
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$k$1 = k$2;
+  this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$v$1 = v$2;
+  if ((outer === null)) {
+    throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
+  };
+  this.Lupickle_implicits_Readers$$anon$16__f_$outer = outer
+}
+$c_Lupickle_implicits_Readers$$anon$16.prototype = new $h_O();
+$c_Lupickle_implicits_Readers$$anon$16.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$16;
+/** @constructor */
+function $h_Lupickle_implicits_Readers$$anon$16() {
+  /*<skip>*/
+}
+$h_Lupickle_implicits_Readers$$anon$16.prototype = $c_Lupickle_implicits_Readers$$anon$16.prototype;
+$c_Lupickle_implicits_Readers$$anon$16.prototype.narrow__Lupickle_core_Types$Reader = (function() {
+  return this
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitNull__I__O = (function(index) {
+  return null
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitTrue__I__O = (function(index) {
+  return $f_Lupickle_core_SimpleVisitor__visitTrue__I__O(this, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitFalse__I__O = (function(index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFalse__I__O(this, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitString__jl_CharSequence__I__O(this, s, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitFloat64StringParts__jl_CharSequence__I__I__I__O = (function(s, decIndex, expIndex, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat64StringParts__jl_CharSequence__I__I__I__O(this, s, decIndex, expIndex, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitFloat64__D__I__O = (function(d, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat64__D__I__O(this, d, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitFloat32__F__I__O = (function(d, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitFloat32__F__I__O(this, d, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitInt32__I__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitInt32__I__I__O(this, i, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitInt64__J__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitInt64__J__I__O(this, i, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitUInt64__J__I__O = (function(i, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitUInt64__J__I__O(this, i, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitChar__C__I__O = (function(s, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitChar__C__I__O(this, s, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitBinary__AB__I__I__I__O = (function(bytes, offset, len, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitBinary__AB__I__I__I__O(this, bytes, offset, len, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitExt__B__AB__I__I__I__O = (function(tag, bytes, offset, len, index) {
+  return $f_Lupickle_core_SimpleVisitor__visitExt__B__AB__I__I__I__O(this, tag, bytes, offset, len, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitObject__I__Z__I__Lupickle_core_ObjVisitor = (function(length, jsonableKeys, index) {
+  return new $c_Lupickle_implicits_Readers$$anon$17$$anon$1(this)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
+  var this$5 = this.Lupickle_implicits_Readers$$anon$16__f_$outer;
+  var this$1 = this.Lupickle_implicits_Readers$$anon$16__f_$outer;
+  var evidence$5 = this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$k$1;
+  var evidence$6 = this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$v$1;
+  var r = $f_Lupickle_implicits_Generated__Tuple2Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$TupleNReader(this$1, evidence$5, evidence$6);
+  $m_sc_Factory$();
+  var evidence$1 = new $c_s_reflect_ClassTag$GenericClassTag($d_T2.getClassOf());
+  var e = new $c_sc_Factory$ArrayFactory(evidence$1);
+  var this$7 = new $c_Lupickle_implicits_Readers$$anon$20(r, e, this$5);
+  var f = new $c_sjsr_AnonFunction1(((x) => {
+    var x$1 = $asArrayOf_T2(x, 1);
+    return $as_sc_Map(this.Lupickle_implicits_Readers$$anon$16__f_upickle$implicits$Readers$$anon$16$$make$1.apply__O__O($m_s_Predef$().wrapRefArray__AO__scm_ArraySeq$ofRef(x$1)))
+  }));
+  var this$8 = new $c_Lupickle_core_Types$$anon$4(f, this$7);
+  return $c_Lupickle_core_Visitor$MapReader.prototype.visitArray__I__I__Lupickle_core_ArrVisitor.call(this$8, length, index)
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.expectedMsg__T = (function() {
+  return "expected map or sequence"
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$16__f_$outer
+});
+var $d_Lupickle_implicits_Readers$$anon$16 = new $TypeData().initClass({
+  Lupickle_implicits_Readers$$anon$16: 0
+}, false, "upickle.implicits.Readers$$anon$16", {
+  Lupickle_implicits_Readers$$anon$16: 1,
+  O: 1,
+  Lupickle_core_Visitor: 1,
+  Lupickle_core_Types$Reader: 1,
+  Lupickle_core_SimpleVisitor: 1,
+  Lupickle_core_Types$SimpleReader: 1
+});
+$c_Lupickle_implicits_Readers$$anon$16.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$16;
+/** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$18(evidence$3$3, evidence$4$5, outer) {
   this.Lupickle_implicits_Readers$$anon$18__f_upickle$implicits$Readers$$anon$18$$evidence$3$1 = null;
   this.Lupickle_implicits_Readers$$anon$18__f_evidence$4$1 = null;
+  this.Lupickle_implicits_Readers$$anon$18__f_$outer = null;
   this.Lupickle_implicits_Readers$$anon$18__f_upickle$implicits$Readers$$anon$18$$evidence$3$1 = evidence$3$3;
   this.Lupickle_implicits_Readers$$anon$18__f_evidence$4$1 = evidence$4$5;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$18__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$18.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$18.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$18;
@@ -33815,6 +34490,9 @@ $c_Lupickle_implicits_Readers$$anon$18.prototype.visitBinary__AB__I__I__I__O = (
 $c_Lupickle_implicits_Readers$$anon$18.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
   return new $c_Lupickle_implicits_Readers$$anon$21$$anon$1(this.Lupickle_implicits_Readers$$anon$18__f_evidence$4$1, this)
 });
+$c_Lupickle_implicits_Readers$$anon$18.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$18__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$18 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$18: 0
 }, false, "upickle.implicits.Readers$$anon$18", {
@@ -33830,11 +34508,13 @@ $c_Lupickle_implicits_Readers$$anon$18.prototype.$classData = $d_Lupickle_implic
 function $c_Lupickle_implicits_Readers$$anon$19(evidence$3$4, evidence$4$6, outer) {
   this.Lupickle_implicits_Readers$$anon$19__f_upickle$implicits$Readers$$anon$19$$evidence$3$1 = null;
   this.Lupickle_implicits_Readers$$anon$19__f_evidence$4$1 = null;
+  this.Lupickle_implicits_Readers$$anon$19__f_$outer = null;
   this.Lupickle_implicits_Readers$$anon$19__f_upickle$implicits$Readers$$anon$19$$evidence$3$1 = evidence$3$4;
   this.Lupickle_implicits_Readers$$anon$19__f_evidence$4$1 = evidence$4$6;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$19__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$19.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$19.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$19;
@@ -33894,6 +34574,9 @@ $c_Lupickle_implicits_Readers$$anon$19.prototype.expectedMsg__T = (function() {
 $c_Lupickle_implicits_Readers$$anon$19.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
   return new $c_Lupickle_implicits_Readers$$anon$23$$anon$1(this.Lupickle_implicits_Readers$$anon$19__f_evidence$4$1, this)
 });
+$c_Lupickle_implicits_Readers$$anon$19.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$19__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$19 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$19: 0
 }, false, "upickle.implicits.Readers$$anon$19", {
@@ -33907,9 +34590,11 @@ var $d_Lupickle_implicits_Readers$$anon$19 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$19.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$19;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$2(outer) {
+  this.Lupickle_implicits_Readers$$anon$2__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$2__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$2.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$2.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$2;
@@ -33964,6 +34649,9 @@ $c_Lupickle_implicits_Readers$$anon$2.prototype.visitString__jl_CharSequence__I_
   var x = $dp_toString__T(s);
   return $m_sc_StringOps$().toBooleanImpl$extension__T__T__Z(x, x)
 });
+$c_Lupickle_implicits_Readers$$anon$2.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$2__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$2.prototype.visitTrue__I__O = (function(index) {
   return true
 });
@@ -33988,11 +34676,13 @@ $c_Lupickle_implicits_Readers$$anon$2.prototype.$classData = $d_Lupickle_implici
 function $c_Lupickle_implicits_Readers$$anon$20(r$2, factory$3, outer) {
   this.Lupickle_implicits_Readers$$anon$20__f_upickle$implicits$Readers$$anon$20$$r$1 = null;
   this.Lupickle_implicits_Readers$$anon$20__f_factory$1 = null;
+  this.Lupickle_implicits_Readers$$anon$20__f_$outer = null;
   this.Lupickle_implicits_Readers$$anon$20__f_upickle$implicits$Readers$$anon$20$$r$1 = r$2;
   this.Lupickle_implicits_Readers$$anon$20__f_factory$1 = factory$3;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$20__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$20.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$20.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$20;
@@ -34052,6 +34742,9 @@ $c_Lupickle_implicits_Readers$$anon$20.prototype.expectedMsg__T = (function() {
 $c_Lupickle_implicits_Readers$$anon$20.prototype.visitArray__I__I__Lupickle_core_ArrVisitor = (function(length, index) {
   return new $c_Lupickle_implicits_Readers$$anon$25$$anon$1(this.Lupickle_implicits_Readers$$anon$20__f_factory$1, this)
 });
+$c_Lupickle_implicits_Readers$$anon$20.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$20__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$20 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$20: 0
 }, false, "upickle.implicits.Readers$$anon$20", {
@@ -34065,9 +34758,11 @@ var $d_Lupickle_implicits_Readers$$anon$20 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$20.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$20;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$8(outer) {
+  this.Lupickle_implicits_Readers$$anon$8__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$8__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$8.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$8.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$8;
@@ -34123,6 +34818,9 @@ $c_Lupickle_implicits_Readers$$anon$8.prototype.visitExt__B__AB__I__I__I__O = (f
 });
 $c_Lupickle_implicits_Readers$$anon$8.prototype.expectedMsg__T = (function() {
   return "expected string"
+});
+$c_Lupickle_implicits_Readers$$anon$8.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$8__f_$outer
 });
 $c_Lupickle_implicits_Readers$$anon$8.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   return $dp_toString__T(s)
@@ -36351,10 +37049,12 @@ $c_Lupickle_core_AbortException.prototype.$classData = $d_Lupickle_core_AbortExc
 function $c_Lupickle_core_Types$$anon$3(r0$1, w0$2, outer) {
   this.Lupickle_core_Visitor$Delegate__f_delegatedReader = null;
   this.Lupickle_core_Types$$anon$3__f_w0$1 = null;
+  this.Lupickle_core_Types$$anon$3__f_$outer = null;
   this.Lupickle_core_Types$$anon$3__f_w0$1 = w0$2;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
   };
+  this.Lupickle_core_Types$$anon$3__f_$outer = outer;
   $ct_Lupickle_core_Visitor$Delegate__Lupickle_core_Visitor__(this, r0$1)
 }
 $c_Lupickle_core_Types$$anon$3.prototype = new $h_Lupickle_core_Visitor$Delegate();
@@ -36370,6 +37070,9 @@ $c_Lupickle_core_Types$$anon$3.prototype.narrow__Lupickle_core_Types$Reader = (f
 $c_Lupickle_core_Types$$anon$3.prototype.write0__Lupickle_core_Visitor__O__O = (function(out, v) {
   var this$1 = this.Lupickle_core_Types$$anon$3__f_w0$1;
   return $f_Lupickle_core_Types$Writer__write__Lupickle_core_Visitor__O__O(this$1, out, v)
+});
+$c_Lupickle_core_Types$$anon$3.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$$anon$3__f_$outer.Lupickle_core_Types$ReadWriter$__f_$outer
 });
 $c_Lupickle_core_Types$$anon$3.prototype.narrow__Lupickle_core_Types$Writer = (function() {
   return this
@@ -36405,11 +37108,25 @@ function $f_Lupickle_implicits_Readers__$init$__V($thiz) {
   $thiz.Lupickle_default$__f_DurationReader.narrow__Lupickle_core_Types$Reader();
   $thiz.Lupickle_default$__f_DurationReader.narrow__Lupickle_core_Types$Reader()
 }
+function $f_Lupickle_implicits_Readers__MapReader2__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader__Lupickle_core_Types$Reader($thiz, k, v) {
+  var make = new $c_sjsr_AnonFunction1(((seq) => {
+    var seq$1 = $as_sc_Iterable(seq);
+    var b = new $c_sci_MapBuilderImpl();
+    seq$1.foreach__F1__V(new $c_sjsr_AnonFunction1(((_$2) => {
+      var _$2$1 = $as_T2(_$2);
+      return b.addOne__O__O__sci_MapBuilderImpl(_$2$1.T2__f__1, _$2$1.T2__f__2)
+    })));
+    return b.result__sci_Map()
+  }));
+  return new $c_Lupickle_implicits_Readers$$anon$16(make, k, v, $thiz)
+}
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$10(outer) {
+  this.Lupickle_implicits_Readers$$anon$10__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$10__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$10.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$10.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$10;
@@ -36470,6 +37187,9 @@ $c_Lupickle_implicits_Readers$$anon$10.prototype.visitString__jl_CharSequence__I
   var name = $dp_toString__T(s);
   return $m_ju_UUID$().fromString__T__ju_UUID(name)
 });
+$c_Lupickle_implicits_Readers$$anon$10.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$10__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$10 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$10: 0
 }, false, "upickle.implicits.Readers$$anon$10", {
@@ -36484,9 +37204,11 @@ var $d_Lupickle_implicits_Readers$$anon$10 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$10.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$10;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$11(outer) {
+  this.Lupickle_implicits_Readers$$anon$11__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$11__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$11.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$11.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$11;
@@ -36524,6 +37246,9 @@ $c_Lupickle_implicits_Readers$$anon$11.prototype.visitExt__B__AB__I__I__I__O = (
 });
 $c_Lupickle_implicits_Readers$$anon$11.prototype.expectedMsg__T = (function() {
   return "expected number"
+});
+$c_Lupickle_implicits_Readers$$anon$11.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$11__f_$outer
 });
 $c_Lupickle_implicits_Readers$$anon$11.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   return $m_Lupickle_core_Util$().parseLong__jl_CharSequence__I__I__J(s, 0, $dp_length__I(s))
@@ -36568,9 +37293,11 @@ var $d_Lupickle_implicits_Readers$$anon$11 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$11.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$11;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$12(outer) {
+  this.Lupickle_implicits_Readers$$anon$12__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$12__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$12.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$12.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$12;
@@ -36630,6 +37357,9 @@ $c_Lupickle_implicits_Readers$$anon$12.prototype.expectedMsg__T = (function() {
 $c_Lupickle_implicits_Readers$$anon$12.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   return $m_s_package$().BigInt__s_math_BigInt$().apply__T__s_math_BigInt($dp_toString__T(s))
 });
+$c_Lupickle_implicits_Readers$$anon$12.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$12__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$12 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$12: 0
 }, false, "upickle.implicits.Readers$$anon$12", {
@@ -36644,9 +37374,11 @@ var $d_Lupickle_implicits_Readers$$anon$12 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$12.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$12;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$13(outer) {
+  this.Lupickle_implicits_Readers$$anon$13__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$13__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$13.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$13.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$13;
@@ -36708,6 +37440,9 @@ $c_Lupickle_implicits_Readers$$anon$13.prototype.visitString__jl_CharSequence__I
   var x = $dp_toString__T(s);
   return this$1.exact__T__s_math_BigDecimal(x)
 });
+$c_Lupickle_implicits_Readers$$anon$13.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$13__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$13 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$13: 0
 }, false, "upickle.implicits.Readers$$anon$13", {
@@ -36722,9 +37457,11 @@ var $d_Lupickle_implicits_Readers$$anon$13 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$13.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$13;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$14(outer) {
+  this.Lupickle_implicits_Readers$$anon$14__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$14__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$14.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$14.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$14;
@@ -36786,6 +37523,9 @@ $c_Lupickle_implicits_Readers$$anon$14.prototype.visitString__jl_CharSequence__I
   var name = $dp_toString__T(s);
   return $as_s_Symbol($c_s_JSUniquenessCache.prototype.apply__T__O.call(this$1, name))
 });
+$c_Lupickle_implicits_Readers$$anon$14.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$14__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$14 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$14: 0
 }, false, "upickle.implicits.Readers$$anon$14", {
@@ -36800,9 +37540,11 @@ var $d_Lupickle_implicits_Readers$$anon$14 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$14.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$14;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$15(outer) {
+  this.Lupickle_implicits_Readers$$anon$15__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$15__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$15.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$15.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$15;
@@ -36878,6 +37620,9 @@ $c_Lupickle_implicits_Readers$$anon$15.prototype.readString__jl_CharSequence__s_
     return new $c_s_concurrent_duration_FiniteDuration(new $c_RTLong(lo, hi), unit)
   }
 });
+$c_Lupickle_implicits_Readers$$anon$15.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$15__f_$outer
+});
 var $d_Lupickle_implicits_Readers$$anon$15 = new $TypeData().initClass({
   Lupickle_implicits_Readers$$anon$15: 0
 }, false, "upickle.implicits.Readers$$anon$15", {
@@ -36892,9 +37637,11 @@ var $d_Lupickle_implicits_Readers$$anon$15 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$15.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$15;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$3(outer) {
+  this.Lupickle_implicits_Readers$$anon$3__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$3__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$3.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$3.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$3;
@@ -36937,6 +37684,9 @@ $c_Lupickle_implicits_Readers$$anon$3.prototype.visitFloat64StringParts__jl_Char
   var x = $dp_toString__T(s);
   return $m_jl_Double$().parseDouble__T__D(x)
 });
+$c_Lupickle_implicits_Readers$$anon$3.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$3__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$3.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   var s$1 = $dp_toString__T(s);
   return $uD($f_Lupickle_implicits_Readers$NumericReader__visitFloat64String__T__I__O(this, s$1, index))
@@ -36974,9 +37724,11 @@ var $d_Lupickle_implicits_Readers$$anon$3 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$3.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$3;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$4(outer) {
+  this.Lupickle_implicits_Readers$$anon$4__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$4__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$4.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$4.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$4;
@@ -37019,6 +37771,9 @@ $c_Lupickle_implicits_Readers$$anon$4.prototype.visitFloat64StringParts__jl_Char
   var this$1 = $m_Lupickle_core_Util$().parseIntegralNum__jl_CharSequence__I__I__I__J(s, decIndex, expIndex, index);
   return this$1.RTLong__f_lo
 });
+$c_Lupickle_implicits_Readers$$anon$4.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$4__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$4.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   var s$1 = $dp_toString__T(s);
   return $uI($f_Lupickle_implicits_Readers$NumericReader__visitFloat64String__T__I__O(this, s$1, index))
@@ -37055,9 +37810,11 @@ var $d_Lupickle_implicits_Readers$$anon$4 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$4.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$4;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$5(outer) {
+  this.Lupickle_implicits_Readers$$anon$5__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$5__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$5.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$5.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$5;
@@ -37100,6 +37857,9 @@ $c_Lupickle_implicits_Readers$$anon$5.prototype.visitFloat64StringParts__jl_Char
   var x = $dp_toString__T(s);
   return $m_jl_Float$().parseFloat__T__F(x)
 });
+$c_Lupickle_implicits_Readers$$anon$5.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$5__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$5.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   var s$1 = $dp_toString__T(s);
   return $uF($f_Lupickle_implicits_Readers$NumericReader__visitFloat64String__T__I__O(this, s$1, index))
@@ -37136,9 +37896,11 @@ var $d_Lupickle_implicits_Readers$$anon$5 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$5.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$5;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$6(outer) {
+  this.Lupickle_implicits_Readers$$anon$6__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$6__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$6.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$6.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$6;
@@ -37181,6 +37943,9 @@ $c_Lupickle_implicits_Readers$$anon$6.prototype.visitFloat64StringParts__jl_Char
   var this$1 = $m_Lupickle_core_Util$().parseIntegralNum__jl_CharSequence__I__I__I__J(s, decIndex, expIndex, index);
   return ((this$1.RTLong__f_lo << 16) >> 16)
 });
+$c_Lupickle_implicits_Readers$$anon$6.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$6__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$6.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   var s$1 = $dp_toString__T(s);
   return $uS($f_Lupickle_implicits_Readers$NumericReader__visitFloat64String__T__I__O(this, s$1, index))
@@ -37217,9 +37982,11 @@ var $d_Lupickle_implicits_Readers$$anon$6 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$6.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$6;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$7(outer) {
+  this.Lupickle_implicits_Readers$$anon$7__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$7__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$7.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$7.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$7;
@@ -37262,6 +38029,9 @@ $c_Lupickle_implicits_Readers$$anon$7.prototype.visitFloat64StringParts__jl_Char
   var this$1 = $m_Lupickle_core_Util$().parseIntegralNum__jl_CharSequence__I__I__I__J(s, decIndex, expIndex, index);
   return ((this$1.RTLong__f_lo << 24) >> 24)
 });
+$c_Lupickle_implicits_Readers$$anon$7.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$7__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$7.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   var s$1 = $dp_toString__T(s);
   return $uB($f_Lupickle_implicits_Readers$NumericReader__visitFloat64String__T__I__O(this, s$1, index))
@@ -37298,9 +38068,11 @@ var $d_Lupickle_implicits_Readers$$anon$7 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$7.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$7;
 /** @constructor */
 function $c_Lupickle_implicits_Readers$$anon$9(outer) {
+  this.Lupickle_implicits_Readers$$anon$9__f_$outer = null;
   if ((outer === null)) {
     throw $ct_jl_NullPointerException__(new $c_jl_NullPointerException())
-  }
+  };
+  this.Lupickle_implicits_Readers$$anon$9__f_$outer = outer
 }
 $c_Lupickle_implicits_Readers$$anon$9.prototype = new $h_O();
 $c_Lupickle_implicits_Readers$$anon$9.prototype.constructor = $c_Lupickle_implicits_Readers$$anon$9;
@@ -37340,6 +38112,9 @@ $c_Lupickle_implicits_Readers$$anon$9.prototype.visitFloat64StringParts__jl_Char
   var this$1 = $m_Lupickle_core_Util$().parseIntegralNum__jl_CharSequence__I__I__I__J(s, decIndex, expIndex, index);
   return (65535 & this$1.RTLong__f_lo)
 });
+$c_Lupickle_implicits_Readers$$anon$9.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_implicits_Readers$$anon$9__f_$outer
+});
 $c_Lupickle_implicits_Readers$$anon$9.prototype.visitString__jl_CharSequence__I__O = (function(s, index) {
   return $bC($dp_charAt__I__C(s, 0))
 });
@@ -37378,6 +38153,7 @@ var $d_Lupickle_implicits_Readers$$anon$9 = new $TypeData().initClass({
 $c_Lupickle_implicits_Readers$$anon$9.prototype.$classData = $d_Lupickle_implicits_Readers$$anon$9;
 /** @constructor */
 function $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lupickle_core_Types$CaseR__f_$outer = null;
   this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_CaseClassReaderPiece_this$2 = null;
   this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_labels$2 = null;
   this.Lcom_crosswordmaker_puzzle_Puzzle$$anon$1__f_visitors$2 = null;
@@ -37511,6 +38287,7 @@ var $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1 = new $TypeData().initClass({
 $c_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_Puzzle$$anon$1;
 /** @constructor */
 function $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lupickle_core_Types$CaseR__f_$outer = null;
   this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_CaseClassReaderPiece_this$2 = null;
   this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_labels$2 = null;
   this.Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1__f_visitors$2 = null;
@@ -37644,6 +38421,7 @@ var $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1 = new $TypeData().initCla
 $c_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1.prototype.$classData = $d_Lcom_crosswordmaker_puzzle_PuzzleConfig$$anon$1;
 /** @constructor */
 function $c_Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1(CaseClassReaderPiece_this$1, labels$1, visitors$1, defaultParams$1, m$1) {
+  this.Lupickle_core_Types$CaseR__f_$outer = null;
   this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_CaseClassReaderPiece_this$2 = null;
   this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_labels$2 = null;
   this.Lcom_crosswordmaker_ui_NewPuzzleMessage$$anon$1__f_visitors$2 = null;
@@ -37801,6 +38579,15 @@ $c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__Ljava_io_PrintStream 
 $c_Ljava_io_PrintStream.prototype.append__jl_CharSequence__jl_Appendable = (function(csq) {
   return this.append__jl_CharSequence__Ljava_io_PrintStream(csq)
 });
+function $as_Ljava_io_PrintStream(obj) {
+  return (((obj instanceof $c_Ljava_io_PrintStream) || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.PrintStream"))
+}
+function $isArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_io_PrintStream)))
+}
+function $asArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
+}
 class $c_ju_DuplicateFormatFlagsException extends $c_ju_IllegalFormatException {
   constructor(f) {
     super();
@@ -42994,6 +43781,9 @@ $c_Lupickle_core_Types$$anon$2.prototype.findReader__T__Lupickle_core_Types$Read
 });
 $c_Lupickle_core_Types$$anon$2.prototype.findWriter__O__T2 = (function(v) {
   return this.Lupickle_core_Types$$anon$2__f_w1$1.findWriter__O__T2(v)
+});
+$c_Lupickle_core_Types$$anon$2.prototype.upickle$core$Types$Reader$$$outer__Lupickle_core_Types = (function() {
+  return this.Lupickle_core_Types$$anon$2__f_$outer.Lupickle_core_Types$ReadWriter$__f_$outer
 });
 $c_Lupickle_core_Types$$anon$2.prototype.upickle$core$Types$TaggedReader$$$outer__Lupickle_core_Types = (function() {
   return this.Lupickle_core_Types$$anon$2__f_$outer.Lupickle_core_Types$ReadWriter$__f_$outer

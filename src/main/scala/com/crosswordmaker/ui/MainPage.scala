@@ -21,7 +21,9 @@ class MainPage:
   private var mainInputWords: Seq[String] = Nil
 
   private val titleElement = dom.document.getElementById("title").asInstanceOf[Div]
-  private val inputElement = dom.document.getElementById("input").asInstanceOf[Select]
+  private val inputThemeElement = dom.document.getElementById("input").asInstanceOf[Select]
+  private val inputVersionElement = dom.document.getElementById("input-version").asInstanceOf[Select]
+
   private val outputPuzzleElement = dom.document.getElementById("output-puzzle")
   private val outputCluesElement = dom.document.getElementById("output-clues")
   private val outputQuestionsElement = dom.document.getElementById("output-questions")
@@ -36,7 +38,7 @@ class MainPage:
   private val resultFullElement = dom.document.getElementById("result-full").asInstanceOf[Input]
 
   private val widthInputElement = dom.document.getElementById("width").asInstanceOf[Input]
-  private val heightInputElement = dom.document.getElementById("height").asInstanceOf[Input]
+  private val heighInputElement = dom.document.getElementById("height").asInstanceOf[Input]
 
   private val languageSelect = dom.document.getElementById("language-select").asInstanceOf[Select]
   private val refineButton = dom.document.getElementById("refine-button").asInstanceOf[Button]
@@ -54,12 +56,54 @@ class MainPage:
   resultPartialElement.addEventListener("click", { _ => renderSolution() })
   resultFullElement.addEventListener("click", { _ => renderSolution() })
 
+  def readJsonFileSync(filePath: String): String = {
+    val xhr = new dom.XMLHttpRequest()
+
+    // Define que a requisição será síncrona
+    xhr.open("GET", filePath, false) // o "false" aqui significa síncrono
+
+    try {
+      xhr.send()
+      if (xhr.status == 200) {
+        xhr.responseText // Retorna o texto da resposta
+      } else {
+        throw new Exception(s"Erro ao carregar o arquivo: ${xhr.statusText}")
+      }
+    } catch {
+      case e: Exception =>
+        throw new Exception(s"Erro na requisição: ${e.getMessage}")
+    }
+  }
+
+  def getBiblicalThemeWords(theme: String, filePath: String): Seq[String] = {
+    // Ler o arquivo JSON de forma síncrona
+    val rawInputWordsTest = readJsonFileSync(filePath)
+
+    // Usar upickle para parsear o JSON em um objeto Scala
+    val parsedJson = upickle.default.read[Map[String, Seq[String]]](rawInputWordsTest)
+
+    // Obter os dados do tema baseado no valor de inputThemeElement
+    parsedJson.get(theme) match {
+      case Some(words) =>
+        // Se o tema for encontrado, retorna as palavras (frases) associadas a ele
+        words
+      case None =>
+        // Caso o tema não exista, retorna uma sequência vazia
+        Seq.empty
+    }
+  }
+
   /** read the words from the user interface and generate the puzzle in the background using web workers */
   def generateSolution(): Unit =
-    val newTitle = inputElement.options.toSeq(inputElement.selectedIndex).innerHTML
+    val newTitle = inputThemeElement.options.toSeq(inputThemeElement.selectedIndex).innerHTML
     titleElement.innerHTML = s"<h1>${newTitle}</h1>"
 
-    val rawInputWords = js.Dynamic.global.BiblicalThemesPT.asInstanceOf[js.Dictionary[js.Array[String]]](inputElement.value).toSeq
+    val theme = inputThemeElement.value
+    val version = inputVersionElement.value
+    val filePath = s"./data/croisee/versicles-$version.json"
+
+    val rawInputWords = getBiblicalThemeWords(theme, filePath)
+    println(s"rawInputWords: $rawInputWords")
 
     mainInputQuestions = rawInputWords
     val randomWords = rawInputWords.flatMap(selectRandomWord)
@@ -69,7 +113,7 @@ class MainPage:
       mainInputWords = PuzzleWords.sortByBest(inputWords)
       val puzzleConfig = PuzzleConfig(
         width = widthInputElement.valueAsNumber.toInt,
-        height = heightInputElement.valueAsNumber.toInt
+        height = heighInputElement.valueAsNumber.toInt
       )
       generateSpinner.classList.remove("invisible")
       generateButton.classList.add("invisible")
