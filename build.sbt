@@ -14,3 +14,4 @@ libraryDependencies ++= Seq(
 )
 
 Compile / fastOptJS / crossTarget := file("docs/js")
+
